@@ -21,6 +21,9 @@ header:
   <p>
     دانشگاه فردوسی مشهد<br>
     مهندسی کامپیوتر
+    
+[لینک ویدئو](https://www.youtube.com/watch?v=mFOEYQR7HBI)
+
   </p>
 </div>
 
