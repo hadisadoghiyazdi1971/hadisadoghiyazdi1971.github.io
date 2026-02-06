@@ -102,7 +102,10 @@ Where:
 $J(w)$ is a quadratic function of w, meaning it can be expressed in the form $J(w) = aw² + bw + c$, Where $a$, $b$, and $c$ are constants and $a ≠ 0$. So we can wrote $J(w + \Delta w)$ :
 
 $$
-J(w + \Delta w) = J(w) + \frac{\Delta w}{1!}J^{'}(w)  + \frac{{\Delta w}^2}{2!}J^{"}(w) + ...
+J(w + \Delta w) = J(w)
++ \frac{\Delta w}{1!} J'(w)
++ \frac{(\Delta w)^2}{2!} J''(w)
++ \dots
 $$
 
 
