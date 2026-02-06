@@ -76,3 +76,24 @@ header:
 <strong>PULP</strong>
 </div>
 <a href="/teaching/toolkit/PULP" style="text-decoration:underline; color:green;" target="_blank"><strong> ابزار بهینه سازی</strong></a>
+
+
+<!--11-->
+<div class="english-text">
+<strong>Meta Learning</strong>
+</div>
+<a href="/teaching/toolkit/MetaLearning" style="text-decoration:underline; color:green;" target="_blank"><strong> فرایادگیری</strong></a>
+
+
+<!--12-->
+<div class="english-text">
+<strong>Proximal Algorithm</strong>
+</div>
+<a href="/teaching/toolkit/ProximalMapping" style="text-decoration:underline; color:green;" target="_blank"><strong> الگوریتم‌های پروگسیمال </strong></a>
+
+<!--13-->
+<div class="english-text">
+<strong>Proximal Algorithm</strong>
+</div>
+<a href="/teaching/toolkit/ProximalMapping" style="text-decoration:underline; color:green;" target="_blank"><strong>   تست الگوریتم‌های پروگسیمال </strong></a>
+

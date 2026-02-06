@@ -1,6 +1,5 @@
 ---
-layout: single
-title: Single-class anomaly detection based on implicit convex hull and ensemble learning
+title: "Single-class anomaly detection based on implicit convex hull and ensemble learning"
 date: 2025-10-02
 categories: [Physics, Computational]
 tags: [anomaly detection, anomaly detection, ensemble learning]
@@ -628,35 +627,35 @@ The simulations have been performed on Gaussian, orthogonal, and heavy-tailed ra
 **Table 1: Comparison of mean ranks and test statistics by matrix type based on the Mean Squared Error criterion**
 
 | Matrix Type | Ranks: method | Ranks: N | Ranks: Mean Rank | Test Statistics: Mann-Whitney U | Test Statistics: Wilcoxon W | Test Statistics: Z | Test Statistics: Asymp. Sig. (2-tailed) |
-|-------------|---------------|----------|------------------|--------------------------------|-----------------------------|-------------------|------------------------------------------|
-| Gaussian    | AMP           | 30       | 45.50            | 0.000                          | 465.000                     | -6.653            | < 0.001                                  |
-|             | KAMP          | 30       | 15.50            |                                |                             |                   |                                          |
-| Heavy       | AMP           | 29       | 44.72            | 8.000                          | 473.000                     | -6.474            | < 0.001                                  |
-|             | KAMP          | 30       | 15.77            |                                |                             |                   |                                          |
-| Orthogonal  | AMP           | 30       | 42.73            | 83.000                         | 548.000                     | -5.426            | < 0.001                                  |
-|             | KAMP          | 30       | 18.27            |                                |                             |                   |                                          |
+| ----------- | ------------- | -------- | ---------------- | ------------------------------- | --------------------------- | ------------------ | --------------------------------------- |
+| Gaussian    | AMP           | 30       | 45.50            | 0.000                           | 465.000                     | -6.653             | < 0.001                                 |
+|             | KAMP          | 30       | 15.50            |                                 |                             |                    |                                         |
+| Heavy       | AMP           | 29       | 44.72            | 8.000                           | 473.000                     | -6.474             | < 0.001                                 |
+|             | KAMP          | 30       | 15.77            |                                 |                             |                    |                                         |
+| Orthogonal  | AMP           | 30       | 42.73            | 83.000                          | 548.000                     | -5.426             | < 0.001                                 |
+|             | KAMP          | 30       | 18.27            |                                 |                             |                    |                                         |
 
 **Table 2: Comparison of mean ranks and test statistics by matrix type based on the Signal-to-Noise Ratio criterion**
 
 | Matrix Type | Ranks: method | Ranks: N | Ranks: Mean Rank | Test Statistics: Mann-Whitney U | Test Statistics: Wilcoxon W | Test Statistics: Z | Test Statistics: Asymp. Sig. (2-tailed) |
-|-------------|---------------|----------|------------------|--------------------------------|-----------------------------|-------------------|------------------------------------------|
-| Gaussian    | AMP           | 30       | 15.50            | 0.000                          | 465.000                     | -6.653            | < 0.001                                  |
-|             | KAMP          | 30       | 45.50            |                                |                             |                   |                                          |
-| Heavy       | AMP           | 29       | 15.00            | 0.000                          | 435.000                     | -6.595            | < 0.001                                  |
-|             | KAMP          | 30       | 44.50            |                                |                             |                   |                                          |
-| Orthogonal  | AMP           | 30       | 15.50            | 0.000                          | 465.000                     | -6.653            | < 0.001                                  |
-|             | KAMP          | 30       | 45.50            |                                |                             |                   |                                          |
+| ----------- | ------------- | -------- | ---------------- | ------------------------------- | --------------------------- | ------------------ | --------------------------------------- |
+| Gaussian    | AMP           | 30       | 15.50            | 0.000                           | 465.000                     | -6.653             | < 0.001                                 |
+|             | KAMP          | 30       | 45.50            |                                 |                             |                    |                                         |
+| Heavy       | AMP           | 29       | 15.00            | 0.000                           | 435.000                     | -6.595             | < 0.001                                 |
+|             | KAMP          | 30       | 44.50            |                                 |                             |                    |                                         |
+| Orthogonal  | AMP           | 30       | 15.50            | 0.000                           | 465.000                     | -6.653             | < 0.001                                 |
+|             | KAMP          | 30       | 45.50            |                                 |                             |                    |                                         |
 
 **Table 3: Comparison of mean ranks and test statistics by matrix type based on the Peak Signal-to-Noise Ratio criterion**
 
 | Matrix Type | Ranks: method | Ranks: N | Ranks: Mean Rank | Test Statistics: Mann-Whitney U | Test Statistics: Wilcoxon W | Test Statistics: Z | Test Statistics: Asymp. Sig. (2-tailed) |
-|-------------|---------------|----------|------------------|--------------------------------|-----------------------------|-------------------|------------------------------------------|
-| Gaussian    | AMP           | 30       | 15.50            | 0.000                          | 465.000                     | -6.653            | < 0.001                                  |
-|             | KAMP          | 30       | 45.50            |                                |                             |                   |                                          |
-| Heavy       | AMP           | 29       | 15.31            | 9.000                          | 444.000                     | -6.459            | < 0.001                                  |
-|             | KAMP          | 30       | 44.20            |                                |                             |                   |                                          |
-| Orthogonal  | AMP           | 30       | 18.33            | 85.000                         | 550.000                     | -5.396            | < 0.001                                  |
-|             | KAMP          | 30       | 42.67            |                                |                             |                   |                                          |
+| ----------- | ------------- | -------- | ---------------- | ------------------------------- | --------------------------- | ------------------ | --------------------------------------- |
+| Gaussian    | AMP           | 30       | 15.50            | 0.000                           | 465.000                     | -6.653             | < 0.001                                 |
+|             | KAMP          | 30       | 45.50            |                                 |                             |                    |                                         |
+| Heavy       | AMP           | 29       | 15.31            | 9.000                           | 444.000                     | -6.459             | < 0.001                                 |
+|             | KAMP          | 30       | 44.20            |                                 |                             |                    |                                         |
+| Orthogonal  | AMP           | 30       | 18.33            | 85.000                          | 550.000                     | -5.396             | < 0.001                                 |
+|             | KAMP          | 30       | 42.67            |                                 |                             |                    |                                         |
 
 Based on the conducted statistical tests, it can be seen that the proposed method consistently maintains its superiority over the AMP method in all cases.
 

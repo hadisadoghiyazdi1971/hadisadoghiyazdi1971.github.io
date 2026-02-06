@@ -116,14 +116,26 @@ Generalization Error</strong>
 
 <!--14-->
 <div class="english-text">
+<strong> SGD </strong>
+</div>
+<a href="/teaching/patterneffort/SGD" style="text-decoration:underline; color:green;" target="_blank"><strong>Stochastic Gradient Descent (SGD)</strong></a>
+
+
+<!--15-->
+<div class="english-text">
+<strong> LMS-RBF</strong>
+</div>
+<a href="/teaching/patterneffort/LMS_RBF" style="text-decoration:underline; color:green;" target="_blank"><strong>LMS RBF</strong></a>
+
+<!--16-->
+<div class="english-text">
 <strong> Unsupervised Text Classification </strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/unsupervised_text_classification" style="text-decoration:underline; color:green;" target="_blank"><strong> طقبه بندی متن ها بدون لیبل با مدل های زبانی</strong></a>
 
 
-<!--15-->
+<!--17-->
 <div class="english-text">
 <strong>A synergistic multi-stage RAG architecture for boosting context relevance in data science literature</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/synergistic-rag" style="text-decoration:underline; color:green;" target="_blank"><strong>معماری RAG هم‌افزایانه</strong></a>
-
