@@ -139,3 +139,17 @@ Generalization Error</strong>
 <strong>A synergistic multi-stage RAG architecture for boosting context relevance in data science literature</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/synergistic-rag" style="text-decoration:underline; color:green;" target="_blank"><strong>معماری RAG هم‌افزایانه</strong></a>
+
+
+<!--18-->
+<div class="english-text">
+<strong>fast_rag_ui</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/fast_rag_ui" style="text-decoration:underline; color:green;" target="_blank"><strong> اجرای یک ui سبک برای اجرای سیستم‌های rag روی سرور ابری</strong></a>
+
+
+<!--19-->
+<div class="english-text">
+<strong>Transformer Loss Function and code</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/Transformer-LossFunc_code" style="text-decoration:underline; color:green;" target="_blank"><strong>ترنسفورمر و نقش توابع ضرر در یادگیری</strong></a>

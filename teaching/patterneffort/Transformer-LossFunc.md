@@ -23,9 +23,6 @@ header:
     <img src="https://upload.wikimedia.org/wikipedia/fa/e/e3/FUM_Logo.png" width="169" height="217" alt="STFT-overview" style="object-fit: contain;">
 </div>
 
-<div style="display: flex; justify-content: start; align-items: center; gap: 10px; ">
-    <img src="/assets/patterneffort/TAL_Images/my photo.jpg" alt="IPS1" style="width: 200px; height: 200px; object-fit: contain;">
-</div>
 
 **نویسنده**: صابره عسکری
 
@@ -97,58 +94,7 @@ header:
 
 ---
 
-## **1) Encoder (انکودر)**
-
-انکودر ورودی را دریافت کرده و آن را به یک نمایش معنایی غنی تبدیل می‌کند.
-هر لایهٔ انکودر شامل دو زیرلایه اصلی است:
-
-### **Self-Attention**
-
-در این مرحله مدل مشخص می‌کند هر توکن باید به کدام توکن‌های دیگر توجه بیشتری داشته باشد.
-سه بردار **Query، Key و Value** ساخته می‌شود و میزان ارتباط هر توکن با توکن‌های دیگر محاسبه می‌گردد.
-این بخش به مدل اجازه می‌دهد ساختار جمله و روابط نحوی/معنایی را یاد بگیرد.
-
-### **Feed-Forward Network**
-
-بعد از Self-Attention، خروجی وارد یک شبکهٔ کاملاً متصل (MLP) می‌شود.
-این بخش کمک می‌کند مدل توانایی تبدیل ویژگی‌ها و ترکیب اطلاعات را داشته باشد.
-
-### **Residual Connections + Layer Normalization**
-
-برای جلوگیری از گم شدن گرادیان‌ها و سرعت بخشیدن به یادگیری، در هر زیرلایه مسیر میان‌بُر (Residual) و نرمال‌سازی لایه‌ها استفاده می‌شود.
-
----
-
-## **2) Decoder (دیکودر)**
-
-دیکودر وظیفهٔ تولید خروجی نهایی را دارد (مثلاً ترجمهٔ جمله یا پیش‌بینی توکن بعدی).
-هر لایهٔ دیکودر سه زیرلایه دارد:
-
-### **Masked Self-Attention**
-
-این بخش مشابه Self-Attention انکودر است با یک تفاوت مهم:
-**مدل فقط اجازه دارد به توکن‌های قبلی نگاه کند.**
-این ماسک ضروری است تا مدل بتواند به ترتیب توکن‌ها را تولید کند و خروجی “تقلب” نکند.
-
-### **Cross-Attention (Encoder–Decoder Attention)**
-
-در این بخش دیکودر به خروجی لایه‌های انکودر توجه می‌کند.
-این کار باعث می‌شود مدل بتواند ارتباط بین ورودی و خروجی را بسازد (مثل ارتباط بین زبان مبدأ و زبان مقصد در ترجمه).
-
-### **Feed-Forward Network**
-
-مشابه انکودر، دیکودر هم از شبکهٔ پیش‌خور استفاده می‌کند.
-
----
-
-## **3) Positional Encoding**
-
-از آنجا که ترنسفورمر ترتیب توکن‌ها را مشابه RNN بررسی نمی‌کند، نیاز دارد که اطلاعات موقعیت توکن‌ها را به‌صورت صریح دریافت کند.
-برای همین، به بردارهای ورودی یک بردار موقعیت (Positional Encoding) اضافه می‌شود تا مدل بتواند ترتیب را تشخیص دهد. این بردارها معمولاً بر اساس توابع سینوسی/کسینوسی ساخته می‌شوند.
-
----
-
-## **4) خروجی ترنسفورمر**
+## **خروجی ترنسفورمر**
 
 در نهایت خروجی دیکودر وارد یک لایهٔ خطی (Linear Projection) و سپس **Softmax** می‌شود تا توزیع احتمال برای پیش‌بینی توکن بعدی یا کلمهٔ هدف ایجاد گردد.
 در اینجا **تابع ضرر (Loss Function)** وارد عمل می‌شود و بر اساس این توزیع احتمال، مقدار خطا محاسبه شده و گرادیان‌ها برای به‌روزرسانی وزن‌ها تولید می‌شوند.
@@ -169,33 +115,46 @@ header:
   $$
   \hat{y} = \text{Softmax}(z)
   $$
-* توزیع هدف (Ground Truth):
+
+
   $$
-  y
+  \text{Softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^{K} e^{z_j}}
   $$
 
-Cross Entropy اندازه می‌گیرد مدل چقدر از پاسخ درست فاصله دارد.
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/patterneffort/transformer loss function/TAL_Images/image.png" alt="IPS1" style="object-fit: contain;">
+</div>
 
----
+
+
+  #### توضیح اجزای فرمول:
+
+  * ($z_i$): نمره (logit) مربوط به کلاس (i)
+  * ( K ): تعداد کل کلاس‌ها
+  * ( e ): عدد نپر (حدود 2.718)
+  * خروجی سافت‌مکس: عددی بین 0 و 1 برای هر کلاس، طوری که **جمع همه خروجی‌ها = 1**
+
+
+  * توزیع هدف (Ground Truth):
+    $$
+    y
+    $$
+
+  Cross Entropy اندازه می‌گیرد مدل چقدر از پاسخ درست فاصله دارد.
+
+
 
 ##  **فرمول Cross Entropy Loss**
 
 برای یک نمونه و یک توزیع روی کلاس‌ها:
 
-$$
-\mathcal{L}_{CE} = - \sum{i=1}^{K} y_i \log(\hat{y}_i)
+ $$ Loss = - \sum_{i=1}^{C} y_i \cdot \log(\hat{p}_i)
 $$
 
-اگر y **One-hot** باشد (در NLP معمولی):
+- $C$ : تعداد کلاس‌ها  
+- $y_i$: برچسب واقعی (بردار one-hot)  
+- $\hat{p}_i$: احتمال پیش‌بینی‌شده برای کلاس $i$ 
 
-$$
-\mathcal{L}_{CE} = - \log(\hat{y}_{\text{target}})$$
-
-برای یک جمله با T توکن:
-
-$$
-\mathcal{L} = -\frac{1}{T} \sum_{t=1}^{T} \log(\hat{y}_{t, \text{target}} )
-$$
 
 ---
 
@@ -275,7 +234,7 @@ $$
 
 $$y_i^{LS} =
 \begin{cases}
-1 - \epsilon & \text{اگر } i = \text{کلاس صحیح}
+1 - \epsilon & \text{اگر } i = \text{کلاس صحیح} ,,,
 \dfrac{\epsilon}{K - 1} & \text{در غیر این صورت}
 \end{cases}
 $$
@@ -283,7 +242,7 @@ $$
 سپس Cross Entropy روی این برچسب جدید اعمال می‌شود:
 
 
-$$\mathcal{L}_{LS} = - \sum{i=1}^{K} y_i^{LS} \log(\hat{y}_i)
+$$\mathcal{L}_{LS} = - \sum_{i=1}^{K} y_i^{LS} \log(\hat{y}_i)
 $$
 
 یعنی همان Cross Entropy است، فقط $(y)$ عوض شده است.
@@ -329,7 +288,7 @@ $$
 به ازای یک دنباله با طول $(T)$:
 
 
-$$\mathcal{L}_{CLM} = - \sum{t=1}^{T} \log P(x_t \mid x_{<t})
+$$\mathcal{L}_{CLM} = - \sum_{t=1}^{T} \log P(x_t \mid x_{<t})
 $$
 
 به بیان ساده:
@@ -341,7 +300,7 @@ $$
 
 
 $$\mathcal{L}_{CLM}
-= - \sum{t=1}^{T} \log(\hat{y}_{t, x_t})
+= - \sum_{t=1}^{T} \log(\hat{y}_{t, x_t})
 $$
 
 در اینجا:
@@ -443,7 +402,7 @@ $$
 فرمول کامل‌تر:
 
 
-$$\mathcal{L}_{MLM} = - \sum{t=1}^{T} m_t \log P(x_t \mid x_{1:T}^{\setminus t})
+$$\mathcal{L}_{MLM} = - \sum_{t=1}^{T} m_t \log P(x_t \mid x_{1:T}^{\setminus t})
 $$
 
 که:
@@ -521,7 +480,7 @@ Contrastive Loss مدل را مجبور می‌کند:
 
 
 $$\mathcal{L}_{t \rightarrow v}
-= - \sum{i=1}^{N}
+= - \sum_{i=1}^{N}
 \log\frac{
 \exp(\text{sim}(t_i, v_i) / \tau)
 }{
@@ -533,7 +492,7 @@ $$
 
 
 $$\mathcal{L}_{v \rightarrow t}
-= - \sum{i=1}^{N}
+= - \sum_{i=1}^{N}
 \log\frac{
 \exp(\text{sim}(v_i, t_i) / \tau)
 }{
@@ -881,18 +840,6 @@ LLM بدون RLHF:
 
 ---
 
-# **جمع‌بندی تحلیلی**
-
-| نوع Loss         | اثر بر یادگیری                     | اثر بر معماری                                  |
-| ---------------- | ---------------------------------- | ---------------------------------------------- |
-| Cross Entropy    | یادگیری توزیع احتمال               | پایهٔ تمام خروجی‌های ترنسفورمر                 |
-| Label Smoothing  | پایداری، جلوگیری از overconfidence | attention متعادل و پایدار                      |
-| CLM Loss         | تولید متن، انسجام زمانی            | Masked Self-Attention الزامی                   |
-| MLM Loss         | درک زبان عمیق                      | توجه دوطرفه در Encoder                         |
-| Contrastive Loss | یادگیری فضای معنایی                | attention سطح بالا + embedding space           |
-| RLHF / PPO Loss  | رفتار انسانی، ایمنی                | تغییر جهت‌دهی attention به مسیرهای مطلوب انسان |
-
----
 
 ## منابع
 ### معماری ترنسفورمر و Attention
@@ -934,5 +881,4 @@ LLM بدون RLHF:
 
 * Oord et al., **Representation Learning with Contrastive Predictive Coding**, 2018
   (پایه InfoNCE Loss) <a href="https://arxiv.org/abs/1807.03748" target="_blank">[https://arxiv.org/abs/1807.03748](https://arxiv.org/abs/1807.03748)</a>
-
-
+  
