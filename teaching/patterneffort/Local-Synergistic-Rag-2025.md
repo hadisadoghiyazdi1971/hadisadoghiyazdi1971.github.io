@@ -13,7 +13,8 @@ header:
 ---
 
 
-# گزارش پیاده سازی معماری ارائه شده مقاله : A synergistic multi-stage RAG architecture for boosting context relevance in data science literature
+# گزارش پیاده سازی معماری ارائه شده مقاله :
+# A synergistic multi-stage RAG architecture for boosting context relevance in data science literature
 
 
 ---
@@ -25,13 +26,21 @@ header:
     <img src="/assets/patterneffort/synergistic-rag/media/logo2.jpg" width="169" height="217" alt="FUM-logo" style="object-fit: contain;">
 </div>
 
+**دانشگاه فردوسی مشهد**
+
+**دانشکده مهندسی**
+
+**گروه کامپیوتر**
+
+**درس شناسایی آماری الگو**
+
+**استاد : دکتر صدوقی یزدی**
+
+**گزارش پروژه**
+
 **نویسنده**: دانیال آقاخانی زاده  – دانشجوی کارشناسی‌ارشد هوش مصنوعی
 
 **ایمیل :** [DanialAghakhanizadeh@gmail.com](mailto:@gmail.com)
-
-**دانشگاه فردوسی مشهد**
-**دانشکده مهندسی**
-**گروه کامپیوتر**
 
 ---
 
@@ -389,9 +398,10 @@ category_papers = defaultdict(list)
 <br>
 
 هر کد از فهرست زیر، معرف یک شاخه‌ی پژوهشی در پایگاه داده‌ی arXiv می‌باشد:
+
 <br>
 
-<div align="center">
+
 
 |                      عنوان                     |     کد دسته بندی    |
 |:----------------------------------------------:|:-------------------:|
@@ -406,11 +416,11 @@ category_papers = defaultdict(list)
 |               Software Engineering             |         cs.SE       |
 |         Social and Information Networks        |         cs.SI       |
 
-</div>
 
-<p style="text-align:center;">
-  <sub>جدول ۱ – کد های مربوط به شاخه های پژوهشی در arXiv</sub>
-</p>
+
+
+<sub>جدول ۱ – کد های مربوط به شاخه های پژوهشی در arXiv</sub>
+
 
 <br>
 
@@ -609,7 +619,7 @@ if __name__ == "__main__":
 &nbsp;•	ابزارهای تخصصی‌تر:
 <br>
 
-&nbsp;&nbsp;&nbsp;o	Camelot [18] این ابزار به‌طور ویژه برای استخراج جدول‌ها از فایل‌های PDF طراحی شده و در پروژه‌هایی که نیاز به پردازش داده‌های جدولی دارند بسیار کاربردی است.
+&nbsp;&nbsp;&nbsp;o	ابزار Camelot [18] این ابزار به‌طور ویژه برای استخراج جدول‌ها از فایل‌های PDF طراحی شده و در پروژه‌هایی که نیاز به پردازش داده‌های جدولی دارند بسیار کاربردی است.
 
 <br>
 برای پیش‌پردازش و پاکسازی متن، عملیات‌هایی مانند حذف علائم زائد و نویز (کاراکترهای ویژه)، جداسازی یا توکن‌سازی کلمات و ساده‌سازی داده‌ها انجام می‌شود. در این زمینه، ابزارهای NLP و پردازش متن متعددی ارائه شده‌اند.
@@ -845,7 +855,7 @@ print(f"\n✅ Completed. {len(os.listdir(OUT_DIR))} TEI files created in {OUT_DI
 در پایان نیز پیام اتمام پردازش به نمایش در می‌آید.
 
 
-![تصویر ۱۰ – نمونه ی دستور اجرای کانتینر GROBID](/assets/patterneffort/synergistic-rag/media/fig10.jpg)
+![تصویر ۱۰ – نمونه ی دستور اجرای کانتینر GROBID](/assets/patterneffort/synergistic-rag/media/fig10.JPG)
 <p style="text-align:center;">
   <sub>تصویر ۱۰ – نمونه ی دستور اجرای کانتینر GROBID</sub>
 </p>
@@ -853,7 +863,7 @@ print(f"\n✅ Completed. {len(os.listdir(OUT_DIR))} TEI files created in {OUT_DI
 <br>
 
 
-![تصویر ۱۱ – نمونه ی ترمینال اجرای دستورات کد پیش‌پردازش](/assets/patterneffort/synergistic-rag/media/fig11.jpg)
+![تصویر ۱۱ – نمونه ی ترمینال اجرای دستورات کد پیش‌پردازش](/assets/patterneffort/synergistic-rag/media/fig11.JPG)
 <p style="text-align:center;">
   <sub>تصویر ۱۱ – نمونه ی ترمینال اجرای دستورات کد پیش‌پردازش</sub>
 </p>
@@ -884,7 +894,7 @@ print(f"\n✅ Completed. {len(os.listdir(OUT_DIR))} TEI files created in {OUT_DI
 
 در حوزه‌ی یادگیری ماشین، جانمایی‌ یکی از روش‌های یادگیری بازنمایی [^37] یا یادگیری ویژگی [^38] به‌شمار می‌رود که طی آن داده‌های پیچیده و با ابعاد بالا به یک فضای برداری با ابعاد کمتر نگاشت می‌شوند. هدف از این فرایند، کاهش پیچیدگی داده‌ها و استخراج ویژگی‌های کلیدی بدون اتکا به دانش پیشین [^39] درباره‌ی ساختار یا محتوای داده است.<br>
 
-![تصویر ۱۲ – شمای کلی از نحوه ی عملکرد مدل embedding](/assets/patterneffort/synergistic-rag/media/fig12.jpg)
+![تصویر ۱۲ – شمای کلی از نحوه ی عملکرد مدل embedding](/assets/patterneffort/synergistic-rag/media/fig12.JPG)
 <p style="text-align:center;">
   <sub>تصویر ۱۲ – شمای کلی از نحوه ی عملکرد مدل embedding</sub>
 </p>
@@ -910,6 +920,7 @@ $$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;فرمول اسکالر:
 <br>
+
 $$
 \sqrt{ \sum (a_n - b_n)^2 }
 $$
@@ -1434,7 +1445,7 @@ print(f"✅ Best fine-tuned model saved to: {SAVE_DIR}/best_model")
  
 ![
 تصویر ۱۳ – مثالی از ترمینال اجرای دستورات کد فاین‌تیون مدل embedding – برای پیکربندی 5 TB + G
-](/assets/patterneffort/synergistic-rag/media/fig13.jpg)
+](/assets/patterneffort/synergistic-rag/media/fig13.JPG)
 <p style="text-align:center;">
   <sub>
 تصویر ۱۳ – مثالی از ترمینال اجرای دستورات کد فاین‌تیون مدل embedding – برای پیکربندی  5TB + G
@@ -1445,7 +1456,7 @@ print(f"✅ Best fine-tuned model saved to: {SAVE_DIR}/best_model")
  
 ![
 تصویر ۱۴ – مثالی از ترمینال اجرای دستورات کد فاین‌تیون مدل embedding – برای پیکربندی  5TB + G – اتمام فرآیند
-](/assets/patterneffort/synergistic-rag/media/fig14.jpg)
+](/assets/patterneffort/synergistic-rag/media/fig14.JPG)
 <p style="text-align:center;">
   <sub>
 تصویر ۱۴ – مثالی از ترمینال اجرای دستورات کد فاین‌تیون مدل embedding – برای پیکربندی  5TB + G – اتمام فرآیند
@@ -1684,7 +1695,7 @@ SIM_THRESHOLD = 0.55
 
 ![
 تصویر ۱۵ – آنالیز حساسیت آستانه قطعه بندی معنایی – تصویر ۷ مقاله Aytar
-](/assets/patterneffort/synergistic-rag/media/fig15.jpg)
+](/assets/patterneffort/synergistic-rag/media/fig15.JPG)
 <p style="text-align:center;">
   <sub>
 تصویر ۱۵ – آنالیز حساسیت آستانه قطعه بندی معنایی – تصویر ۷ مقاله Aytar
@@ -1952,11 +1963,9 @@ print(f"✅ Done: {len(txt_files)} TEI files processed, {total_chunks} semantic 
 
 <br>
 
-<div align="center">
 
-![تصویر ۱۶ – مثال خروجی اجرای کد قطعه بندی معنایی برای پیکربندی 5 TB + G](/assets/patterneffort/synergistic-rag/media/fig16.jpg)
+![تصویر ۱۶ – مثال خروجی اجرای کد قطعه بندی معنایی برای پیکربندی 5 TB + G](/assets/patterneffort/synergistic-rag/media/fig16.JPG)
 
-</div>
 
 <p style="text-align:center;">
   <sub>تصویر ۱۶ – مثال خروجی اجرای کد قطعه بندی معنایی برای پیکربندی   5TB + G</sub>
@@ -2646,11 +2655,11 @@ print(f"✅ Done: processed {len(to_process)} articles, stored {total_chunks} ch
 در پایان، تعداد مقالات پردازش‌شده و تعداد کل قطعات معنایی ذخیره‌شده در پایگاه داده چاپ می‌شود:<br>
 
  
-<div align="center">
 
-![تصویر  ۱۷ – مثال خروجی اجرای کد استخراج چکیده ها در رویکرد Abstract-First برای پیکربندی 17TB + G5](/assets/patterneffort/synergistic-rag/media/fig17.jpg)
 
-</div>
+![تصویر  ۱۷ – مثال خروجی اجرای کد استخراج چکیده ها در رویکرد Abstract-First برای پیکربندی 17TB + G5](/assets/patterneffort/synergistic-rag/media/fig17.JPG)
+
+
 
 <p style="text-align:center;">
   <sub>تصویر ۱۷ – مثال خروجی اجرای کد استخراج چکیده ها در رویکرد Abstract-First برای پیکربندی 17TB + G</sub>
@@ -2658,12 +2667,10 @@ print(f"✅ Done: processed {len(to_process)} articles, stored {total_chunks} ch
 
 <br>
 
-<div align="center">
 
 ![تصویر ۱۸ – مثال خروجی اجرای کد قطعه بندی معنایی رویکرد Abstract-First برای پیکربندی 17 TB + G
-](/assets/patterneffort/synergistic-rag/media/fig18.jpg)
+](/assets/patterneffort/synergistic-rag/media/fig18.JPG)
 
-</div>
 
 <p style="text-align:center;">
   <sub>تصویر ۱۸ – مثال خروجی اجرای کد قطعه بندی معنایی رویکرد Abstract-First برای پیکربندی 17TB + G
@@ -3138,12 +3145,10 @@ RAGAS با اتصال به یک API مدل زبانی خارجی مانند Open
 در این مقاله از سه معیار وفاداری به متن [^58]، ارتباط پاسخ [^59] و ارتباط زمینه [^60]  برای سنجش عملکرد معماری استفاده شده است. در ادامه، هر یک از این معیارها و نحوه پیاده‌سازی آن‌ها در چهارچوب RAGAS به‌صورت دقیق معرفی می‌شود.<br>
  
 
-<div align="center">
 
 ![تصویر ۱۹ – ارتباط سه معیار ارزیابی عملکرد در RAGAS و جنبه های مربوط به آنها.
-](/assets/patterneffort/synergistic-rag/media/fig19.jpg)
+](/assets/patterneffort/synergistic-rag/media/fig19.JPG)
 
-</div>
 
 <p style="text-align:center;">
   <sub>تصویر ۱۹ – ارتباط سه معیار ارزیابی عملکرد در RAGAS و جنبه های مربوط به آنها.
@@ -3164,8 +3169,9 @@ RAGAS با اتصال به یک API مدل زبانی خارجی مانند Open
 
 $$
 \text{Faithfulness Score} = 
-\frac{\text{تعداد ادعاهایی که از کانتکست یا متن برداشت شده‌اند}}
-     {\text{تعداد کل ادعاهای موجود در پاسخ}}
+\frac{\text{Number of claims in the generated answer
+that can be inferred from the given context}}
+     {\text{Total number of claims in the generated answer}}
 $$
 
 
@@ -3286,7 +3292,7 @@ print("Answer Relevancy:", r_result.value)
 
 $$
 \text{Context Relevance} = 
-\frac{|S|}{\text{تعداد کل جملات متن بازیابی‌شده}}
+\frac{|S|}{\text{Total number of sentences in retrieved context}}
 $$
 
 
@@ -3612,7 +3618,6 @@ if __name__ == "__main__":
 
 جدول ۲ نتایج ارزیابی مدل‌های زبانی محلی را در ترکیب با مدل جانمایی all‑mpnet‑base‑v2 (ریزتنظیم‌شده با پیکربندی 17 TB + G + SNS) نشان می‌دهد:
 
-<div align="center">
 
 |     نام مدل                         |     Context Relevancy    |     Faithfulness    |     Answer Relevance    |
 |-------------------------------------|--------------------------|---------------------|-------------------------|
@@ -3633,11 +3638,9 @@ if __name__ == "__main__":
 |     Qwen3-4B                        |     0.268                |     **0.674**           |     0.684               |
 
 
-</div>
 
-<p style="text-align:center;">
-  <sub> جدول ۲ - نتایج ارزیابی مدل‌های زبانی محلی با مدل جانمایی all mpnet base v2 (ریزتنظیم‌شده با پیکربندی 17TB + G + SNS)</sub>
-</p>
+<sub> جدول ۲ - نتایج ارزیابی مدل‌های زبانی محلی با مدل جانمایی all mpnet base v2 (ریزتنظیم‌شده با پیکربندی 17TB + G + SNS)</sub>
+
 
 <br>
 
@@ -3961,7 +3964,7 @@ best_group_ranked = best_group_df.sort_values("weighted_score", ascending=False)
 
 
 رتبه‌بندی نهایی نتایج آزمایش ۱ به صورت زیر خواهد بود:
-<div align="center">
+
 
 |     نام مدل                         |     Weighted Score    |     Context Relevancy    |     Faithfulness    |     Answer Relevance    |
 |-------------------------------------|-----------------------|--------------------------|---------------------|-------------------------|
@@ -3981,11 +3984,10 @@ best_group_ranked = best_group_df.sort_values("weighted_score", ascending=False)
 |     gemma-3-4b-it                   |     0.593             |     0.268                |     0.658           |     0.565               |
 |     Falcon-7b                       |     0.570             |     0.268                |     0.445           |     0.624               |
 
-</div>
 
-<p style="text-align:center;">
-  <sub> جدول ۳ – نتایج نهایی ارزیابی مدل‌های زبانی محلی در آزمایش ۱ </sub>
-</p>
+
+<sub> جدول ۳ – نتایج نهایی ارزیابی مدل‌های زبانی محلی در آزمایش ۱ </sub>
+
 
 <br>
 
@@ -4005,7 +4007,7 @@ best_group_ranked = best_group_df.sort_values("weighted_score", ascending=False)
 
 در این آزمایش، مطابق با پیکربندی‌های تعریف‌شده در مقاله ، مدل جانمایی `all‑mpnet‑base‑v2` به‌ازای هر پیکربندی ایجاد و ریزتنظیم شد. سپس برای هر پیکربندی پایگاه داده مستقل ساخته شد و عملکرد آن‌ها در ترکیب با مدل زبانی `Qwen2.5‑3B` مورد ارزیابی قرار گرفت. معیارهای اصلی ارزیابی شامل Answer Relevance (AR)، Faithfulness  (F) و Context Relevancy  (CR) بودند.<br>
 
-<div align="center">
+
 
 |     پیکر بندی             |     Context Relevancy    |     Faithfulness    |     Answer Relevance    |
 |---------------------------|--------------------------|---------------------|-------------------------|
@@ -4015,15 +4017,13 @@ best_group_ranked = best_group_df.sort_values("weighted_score", ascending=False)
 |     4. 5 TB + G           |     0.233                |     0.542           |     0.810               |
 |     5. 17 TB + G          |     0.242                |     0.586           |     0.802               |
 |     6. 17 TB + G + SNS    |     **0.268**                |     0.604           |     0.786               |
-</div>
 
-<p style="text-align:center;">
-  <sub>  جدول ۴ - نتایج ارزیابی مدل جانمایی  all mpnet base v2با توجه به پیکربندی های مقاله (مدل Qwen2.5-3B) </sub>
-</p>
+<sub>  جدول ۴ - نتایج ارزیابی مدل جانمایی  all mpnet base v2با توجه به پیکربندی های مقاله (مدل Qwen2.5-3B) </sub>
+
 
 <br>
 
-<div align="center">
+
 
 |     پیکر بندی             |     Context Relevancy    |     Faithfulness    |     Answer Relevance    |
 |---------------------------|--------------------------|---------------------|-------------------------|
@@ -4034,11 +4034,10 @@ best_group_ranked = best_group_df.sort_values("weighted_score", ascending=False)
 |     5. 17 TB + G          |     0.335                |     0.740           |     **0.909**               |
 |     6. 17 TB + G + SNS    |     0.339                |     0.701           |     0.902               |
 
-</div>
 
-<p style="text-align:center;">
-  <sub>   جدول ۵ - نتایج ارزیابی مدل جانمایی  all mpnet base v2با توجه به پیکربندی های مقاله (دومین جدول مقاله) </sub>
-</p>
+
+
+<sub>   جدول ۵ - نتایج ارزیابی مدل جانمایی  all mpnet base v2با توجه به پیکربندی های مقاله (دومین جدول مقاله) </sub>
 
 <br>
 
@@ -4070,18 +4069,17 @@ best_group_ranked = best_group_df.sort_values("weighted_score", ascending=False)
 
 <br>
 
-<div align="center">
+
 
 |     نام مدل   جانمایی       |     Context Relevancy    |     Faithfulness    |     Answer Relevance    |
 |-----------------------------|--------------------------|---------------------|-------------------------|
 |     1. all-mpnet-base-v2    |     0.261                |     0.645           |     0.835               |
 |     2. all-MiniLM-L6-v2     |     0.258                |     0.636           |     0.771               |
 |     3. bge-base-en-v1.5     |     0.304                |     0.653           |     0.855               |
-</div>
 
-<p style="text-align:center;">
-  <sub> جدول ۶ - نتایج ارزیابی پاسخ معماری RAG هم افزا (رویکرد اول-چکیده) بر اساس بازیابی اطلاعات توسط مدل های جانمایی مختلف</sub>
-</p>
+
+<sub> جدول ۶ - نتایج ارزیابی پاسخ معماری RAG هم افزا (رویکرد اول-چکیده) بر اساس بازیابی اطلاعات توسط مدل های جانمایی مختلف</sub>
+
 
 <br>
 
@@ -4227,7 +4225,6 @@ I will tip you 1000 dollars for a perfect response.
 
 <br>
 
-<div align="center">
 
 |     تکنیک دستوردهی           |     Context Relevancy    |     Faithfulness    |     Answer Relevance    |
 |------------------------------|--------------------------|---------------------|-------------------------|
@@ -4237,12 +4234,9 @@ I will tip you 1000 dollars for a perfect response.
 |     4. Chain-of-Thought      |     0.312                |     0.577           |     0.832               |
 |     5. Emotional-Estimuli    |     0.312                |     0.650           |     0.824               |             |
 
-</div>
 
-<p style="text-align:center;">
-  <sub>جدول ۷ - نتایج ارزیابی پاسخ معماری RAG هم افزا (رویکرد اول-چکیده) بر اساس تفاوت دستورات ورودی
-</sub>
-</p>
+<sub>جدول ۷ - نتایج ارزیابی پاسخ معماری RAG هم افزا (رویکرد اول-چکیده) بر اساس تفاوت دستورات ورودی</sub>
+
 
 <br>
 
@@ -4260,7 +4254,7 @@ I will tip you 1000 dollars for a perfect response.
 
 در مقاله گرچه نتایج دستورات اعلام نشده است، اما اختلاف عملکرد دستورات با دستور پایه	 (CR = 0.507, F = 0.592, AR = 0.863) در قالب جدول زیر ارائه شده است:
 
-<div align="center">
+
 
 |     تکنیک دستوردهی         | Context Relevance 𝛥 |     Faithfulness   𝛥    |     Answer   Relevance 𝛥    |
 |----------------------------|---------------------|-------------------------|-----------------------------|
@@ -4268,11 +4262,11 @@ I will tip you 1000 dollars for a perfect response.
 |      Few-Shot              |     0.000           |     0.000               |     + 0.009                 |
 |      Chain-of-Thought      |     0.000           |     0.000               |     + 0.008                 |
 |      Emotional-Estimuli    |     0.000           |     0.000               |     **+ 0.027**                 |
-</div>
 
-<p style="text-align:center;">
-  <sub>جدول ۸ - نتایج ارزیابی پاسخ معماری RAG هم افزا بر اساس اختلاف عملکرد دستورات ورودی (منبع: جدول ۹ مقاله)</sub>
-</p>
+
+
+<sub>جدول ۸ - نتایج ارزیابی پاسخ معماری RAG هم افزا بر اساس اختلاف عملکرد دستورات ورودی (منبع: جدول ۹ مقاله)</sub>
+
 
 <br>
 
@@ -4323,12 +4317,10 @@ I will tip you 1000 dollars for a perfect response.
 
 <br>
 
-<div align="center">
 
 ![تصویر ۲۰ – برش هایی از دو پاسخ تولید شده توسط مدل Meta Llama 3.1 8B 
 ](/assets/patterneffort/synergistic-rag/media/fig20.jpg)
 
-</div>
 
 <p style="text-align:center;">
   <sub> تصویر ۲۰ – برش هایی از دو پاسخ تولید شده توسط مدل Meta Llama 3.1 8B </sub>
@@ -4347,12 +4339,10 @@ I will tip you 1000 dollars for a perfect response.
 
 <br>
 
-<div align="center">
 
 ![تصویر ۲۱ – برش هایی از سه پاسخ تولید شده توسط مدل Meta Llama 3.1 8B 
 ](/assets/patterneffort/synergistic-rag/media/fig21.jpg)
 
-</div>
 
 <p style="text-align:center;">
   <sub> تصویر ۲۱ – برش هایی از سه پاسخ تولید شده توسط مدل Meta Llama 3.1 8B </sub>
@@ -4370,12 +4360,10 @@ I will tip you 1000 dollars for a perfect response.
 
 <br>
 
-<div align="center">
 
 ![تصویر ۲۲ – برشی از پاسخ تولید شده توسط مدل Meta Llama 3.1 8B  
 ](/assets/patterneffort/synergistic-rag/media/fig22.jpg)
 
-</div>
 
 <p style="text-align:center;">
   <sub> تصویر ۲۲ – برشی از پاسخ تولید شده توسط مدل Meta Llama 3.1 8B </sub>
@@ -4395,12 +4383,10 @@ I will tip you 1000 dollars for a perfect response.
 
 <br>
 
-<div align="center">
 
 ![تصویر ۲۳ – برشی از پاسخ تولید شده توسط مدل Meta Llama 3.1 8B   
 ](/assets/patterneffort/synergistic-rag/media/fig23.jpg)
 
-</div>
 
 <p style="text-align:center;">
   <sub>تصویر ۲۳ – برشی از پاسخ تولید شده توسط مدل Meta Llama 3.1 8B </sub>
@@ -4418,12 +4404,11 @@ I will tip you 1000 dollars for a perfect response.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	answer: I don’t know. Question Answering with ChatGPT ### Question: ...
 
 
-<div align="center">
+
 
 ![تصویر ۲۴ – برشی از پاسخ تولید شده توسط مدل Meta Llama 3.1 8B    
 ](/assets/patterneffort/synergistic-rag/media/fig24.jpg)
 
-</div>
 
 <p style="text-align:center;">
   <sub>تصویر ۲۴ – برشی از پاسخ تولید شده توسط مدل Meta Llama 3.1 8B </sub>
@@ -4469,7 +4454,7 @@ Write a clear and concise answer in no more than three sentences.
 نتایج نهایی به صورت زیر است:
 
 
-<div align="center">
+
 
 |     تکنیک دستوردهی          |     Weighted Score    |     Context Relevancy    |     Faithfulness    |     Answer Relevance    |
 |-----------------------------|-----------------------|--------------------------|---------------------|-------------------------|
@@ -4480,11 +4465,11 @@ Write a clear and concise answer in no more than three sentences.
 |     5. Emotional-stimuli    |     0.737             |     0.312                |     0.650           |     0.824               |
 |     6. Proposed ES          |     0.767             |     0.312                |     0.698           |     0.836               |
 
-</div>
 
-<p style="text-align:center;">
-  <sub>  جدول ۹ - نتایج ارزیابی نهایی پاسخ معماری RAG هم افزا (رویکرد اول-چکیده) بر اساس تفاوت دستورات ورودی </sub>
-</p>
+
+
+<sub>  جدول ۹ - نتایج ارزیابی نهایی پاسخ معماری RAG هم افزا (رویکرد اول-چکیده) بر اساس تفاوت دستورات ورودی </sub>
+
 
 <br>
 
@@ -4523,34 +4508,31 @@ Write a clear and concise answer in no more than three sentences.
 
 
 
-<div align="center">
 
 |     متن پرسش                                                                                                                                                                                           |     Contexts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |     پاسخ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |     CR        |     F       |     AR        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-------------|---------------|
 |     As a data   scientist in social media analysis, I’m detecting trends from tweets. Beyond   LSTM, which cutting-edge NLP technique should I consider for more insightful   trend analysis?          |     • ample, in the   2016 U.S elections, along with #Election2016, the two political parties used   the #VoteTrump and #ivotedforHillaryClinton respectively to reach out to the   general public on social media. In Twitter, for a hashtag to qualify as a   trending topic, the Twitter trending algorithm is designed in such a way that   the users will be shown the trending tweets based on their location,   interests and the profiles they follow. Trends are usually the hashtags that   have been used vastly in a short period. Facebook also has a trending module   to show what topics are being discussed. Trends are an adequate way to ignite   a discussion on a topic. However, considering the dynamic and erratic nature   of social media, a trending topic can be replaced within seconds of its   initiation; this can have a disadvantage over a current problem, which is   trending. If the issue at hand carries a significant concern and needs to   reach out to its con-• The engagement for Vauxhall remained at a consistent   level throughout the event (see Figures 5 and 11), despite the rapid drop-off   in the use of the promoted hashtag. CONCLUSIONS & FUTURE DIRECTIONS In   this paper, we present a measurement-driven study of the effects of promoted   tweets and trends on Twitter on the engagement level of users, using a number   of ML and NLP techniques in order to detect relevant tweets and their   sentiments. Our results indicate that the use of accurate methods for   sentiment analysis, and robust filtering for topical content, is crucial.   Given this, we then see that promoted tweets and trends differ considerably   in the form of engagement they produce and the overall sentiment associated   with them. We found that promoted trends lead to higher engagement volumes   than promoted tweets. However, although promoted tweets obtain less   engagement than promoted trends, their engagement forms are often more   brand-inclusive.     • features of the   event as the location of the event’s peak, its growth and relaxation   signatures, contain valuable information and must be used in the analytics.   The predictive power of Twitter events in this study was evaluated using two   scenarios: in the first scenario, we performed the analysis for the   aggregated Twitter signal considering only tweets’ sentiment; in the second   scenario, we cluster Twitter sentiment events based on their shape and then   calculate the statistics of successful predictions separately for every event   type. The results of our analysis can be summarized as follows: - Aggregated   Twitter events can be used to predict sales spikes. - Spikes can be separated   into categories based on their shapes (position of the peak, growth, and   relaxation signatures). - Different spike shapes are differently associated   with sales. - Some spike types have a higher predictive power than the   aggregated Twitter signal.• This shows that Twitter users do not tweet as   positively about a promoted trend as they would about a promoted tweet.   Instead, a large proportion of tweets relating to a promoted trend contained   no emotional words, or if they did, the positive and negative sentiments   balanced each other out. They generally contained just the promoted hashtag   or generally had an objective, matter-of-fact tone (e.g., - ‘‘Get 3G where I   live... #O2WhatWouldYouDo’’). Figure 11:# related engagements     • Social media   sites like Facebook and Twitter have emerged as popular destinations for   users to get real-time news about the world around them. On these sites,   users are increasingly relying on crowdsourced recommendations called   Trending Topics to find important events and breaking news stories. Typically   topics, including key phrases and keywords (e.g., hashtags), are recommended   as trending when they exhibit a sharp spike in their popularity, i.e., their   usage by the crowds suddenly jumps at a particular time (Twitter 2010). Once   a topic is selected as trending, it gets prominently displayed on social   media homepages, thus reaching a large user population. Additionally,   traditional news organizations often pick trending topics and cover them in   their news stories (a practice termed Hashtag journalism), further amplifying   their reach. Recognizing their importance, • Benevenuto, F., Magno, G.,   Rodrigues, T., and Almeida, V. 2010. ‘‘Detecting spammers on Twitter’’, in   Collaboration, electronic messaging, anti-abuse and spam conference, pp.   12-21. Bermingham, A., and Smeaton, A. F. 2011. ‘‘On using Twitter to monitor   political sentiment and predict election results’’, in Proceedings of the   Sentiment Analysis where AI meets Psychology Workshop. Bollen, J., Mao, H.,   and Zeng, X. 2011. ‘‘Twitter mood predicts the stock market’’, Journal of   Computational Science (2:1), pp. 1-8. Cha, M., Haddadi, H., Benevenuto, F.,   and Gummadi, P. K. 2010. ‘‘Measuring User Influence in Twitter: The Million   Follower Fallacy’’, in Proceedings of the Fourth International AAAI   Conference on Weblogs and Social Media, pp. 10–17. Culotta, A. 2013.   ‘‘Lightweight methods to estimate influenza rates and alcohol sales volume   from Twitter messages’’, Language resources and evaluation (47:1), pp.   217-238. Dann, S. 2010. ‘‘Twitter content classification’’, First Monday   (15:12).    |     Consider using   transformer-based models like BERT or GPT for more insightful trend analysis   in social media. These models excel in understanding context and semantics,   which can enhance sentiment analysis and topic detection. Additionally,   exploring techniques like clustering for sentiment events can provide deeper   insights into the dynamics of trending topics.            REFERENCES            • Poddar, D. (2020, April 23). War of the   hashtags: Trending new hashtags to override critical topics in social media.      • Dacres, S.,   Haddadi, H., and Purver, M. (2013, December 23). Topic and sentiment analysis   on OSNs: A case study of advertising strategies on Twitter.     • Kolchyna, O.,   Souza, T. T. P., Aste, T., and Treleaven, P. C. (2015, August 17). In quest   of significance: Identifying types of Twitter sentiment events that predict   spikes in sales.      • Chakraborty, A.,   Messias, J., Benevenuto, F., Ghosh, S., Ganguly, N., and Gummadi, K. P.   (2017, April 1). Who makes trends? Understanding demographic biases in   crowdsourced recommendations.      • Dijkman, R.,   Ipeirotis, P., Aertsen, F., and van Helden, R. (2015, March 16). Using   Twitter to predict sales: A case study.    |     0.0059    |     0.25    |     0.8943    |
 
-</div>
 
-<p style="text-align:center;">
-  <sub>  
+
+<sub>  
 جدول ۱۰ – سوال شماره ۴۰ به همراه دانش زمینه و پاسخ فراهم شده توسط معماری نهایی مقاله – برگرفته از جدول D.11 در پیوست
 مقاله
 </sub>
-</p>
+
 
 <br>
 
-<div align="center">
+
 
 | متن پرسش                                                                                                                                                                                      | Contexts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | پاسخ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | CR        | F    | AR           |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------|--------------|
 | As a data scientist in sports analytics, I’m clustering player performance metrics. Beyond Gaussian Mixture Models, which advanced clustering method should I consider for improved insights? | Global lifestyle and investment patterns are significantly influenced by socioeconomic changes. The widespread availability of high-speed internet and online social media has enabled people to express their views freely on various scales. Nowadays, a majority of users utilize platforms such as WhatsApp, Twitter, Instagram, etc., to communicate and share comments through tweets, status updates, stories, reels, shorts, etc. The digital revolution has also transformed the financial market, making stocks, mutual funds, and precious metals easily accessible in electronic form, allowing people to make online purchases conveniently from the comfort of their homes. Throughout the last century, economics has achieved unprecedented heights. In the multicurrency system, nearly all governments worldwide strive to manage their country’s economic status by boosting GDP, reducing inflation, and controlling the exchange rate between their domestic currency and foreign currency to enhance the lifestyle and income levels of their citizens. Microeconomics focuses on the financial position of entities such as farms and enterprises, guiding decision-making and choice among various options. Stocks, mutual funds, oil, gas, precious metals, goods, services, and products witness fluctuations in their market prices over time. These variations are influenced by factors such as news, natural calamities, political stability, climate, and other dynamic elements. The nature of news has changed considerably, with users now primarily accessing information online through various social media platforms rather than relying solely on traditional printed newspapers. Consequently, social media posts play a crucial role in shaping the financial market, especially when authored by influential leaders, significantly amplifying their impact. In this study, we explore the impact of social media posts, such as tweets, on the financial market using artificial intelligence. We analyze the relationship between tweets and stock prices through the application of Natural Language Processing. This motivation propels us to develop a sophisticated model that can effectively analyze the influence of social media posts, particularly tweets, on financial markets. 1. Beyond Traditional Models and Temporal Sentiment Dynamics: In contrast to existing financial market prediction models employed by investment banks, which predominantly rely on historical price analysis, our model extends its reach by considering the influential voices of market leaders on social media platforms. By incorporating Twitter sentiments, we introduce a state-of-the-art Memory-based Sentiment Analysis, which goes beyond immediate effects by gauging the temporal impact of tweets on financial market prices. Twitter Sentiment: Our model adopts a multistep learning process, beginning with learning to analyze Twitter sentiment. This phase involves the generation of sentiment scores and categorization into positive, negative, or neutral sentiment statuses based on leaders’ tweets. This state-of-the-art approach enables the system to discern the emotional tone of leaders’ voices in real-time. Additionally, historical sentiment patterns from previous 𝑛 days are used to capture more enduring effects on market prices. This dual approach enhances our model’s predictive accuracy by considering both the immediate and longer-term impacts of social media sentiments on financial markets. Building on sentiment analysis, our model progresses to learn to map tweet sentiments with different financial components. Here, the model establishes a connection between sentiment scores and statuses with dated market prices, effectively synchronizing the ebb and flow of sentiments with market trends. This mapping provides a comprehensive understanding of how social media sentiments correlate with financial components. Mapping: The final phase, learning to predict the price using tweets stock mapping, equips the model with the ability to forecast financial market fluctuations based on the established mapping between social media sentiments and historical prices. This integration allows our model to offer timely and state-of-the-art predictions that consider both traditional market factors and social media dynamics. To enhance interpretability, this essentially teaches a backtraversal mechanism. By analyzing the effects of specific words or sets of words on Twitter that influence market fluctuations, the system gains the ability to identify and highlight the linguistic triggers influencing financial markets. This granular analysis enhances the model’s transparency and provides state-of-the-art insights into the relationship between social media sentiments and market movements. | Consider using Memory-based Sentiment Analysis, which captures both immediate and longer-term impacts of tweets on financial markets. This technique allows for the generation of sentiment scores and the mapping of these sentiments to market prices, enhancing predictive accuracy. Additionally, it provides insights into the linguistic triggers that influence market fluctuations, improving model interpretability. REFERENCES • Das, A., Nandi, T., Saha, P., Das, S., Mukherjee, S., Naskar, S. K., and Saha, D. (2024). Effect of Leaders’ Voice on Financial Market: An Empirical Deep Learning Expedition on NASDAQ, NSE, and Beyond |    1.0    | 0.75 |    0.8618    |               |
-</div>
 
-<p style="text-align:center;">
-  <sub>
-جدول ۱۱ – سوال شماره ۳۰ به همراه دانش زمینه و پاسخ فراهم شده توسط معماری نهایی مقاله – برگرفته از جدول E.12 در پیوست مقاله</sub>
-</p>
+
+
+<sub>جدول ۱۱ – سوال شماره ۳۰ به همراه دانش زمینه و پاسخ فراهم شده توسط معماری نهایی مقاله – برگرفته از جدول E.12 در پیوست مقاله</sub>
+
 
 <br>
 
@@ -4677,7 +4659,7 @@ print(df[["id", "faithfulness", "answer_relevancy", "context_relevancy"]])
 سپس آزمایش ۵ به صورت زیر اجرا می‌شود:
 در این حالت سوال، دانش بازیابی شده و پاسخ ارائه شده توسط مقاله توسط مدل های مختلف زبانی و جانمایی (متن باز و تجاری) مورد قضاوت قرار می‌گیرد.
 
-<div align="center">
+
 
 |     شماره سوال    |      مدل جانمایی(Contexts)    |     مدل زبانی پاسخ    |     مدل زبانی   ارزیابی           |     مدل جانمایی   ارزیابی     |     CR        |     F        |     AR       |
 |-------------------|-------------------------------|-----------------------|-----------------------------------|-------------------------------|---------------|--------------|--------------|
@@ -4703,12 +4685,10 @@ print(df[["id", "faithfulness", "answer_relevancy", "context_relevancy"]])
 |     40            |     All-mpnet  (مقاله)        |     GPT-4O (مقاله)    |     Mistral 7B v0.3   instruct    |     bge-small-en-v1.5         |     0.142     |     1        |     0.820    |
 |     30            |     All-mpnet  (مقاله)        |     GPT-4O (مقاله)    |     OpenAI (مقاله)                |     OpenAI (مقاله)            |     1         |     0.75     |     0.861    |
 |     40            |     All-mpnet  (مقاله)        |     GPT-4O (مقاله)    |     OpenAI (مقاله)                |     OpenAI (مقاله)            |     0.0059    |     0.25     |     0.894    |
-</div>
 
-<p style="text-align:center;">
-  <sub>
-جدول ۱۲ - نتایج ارزیابی RAGAS بر اساس نتایج اعلام شده توسط مقاله</sub>
-</p>
+
+
+<sub>جدول ۱۲ - نتایج ارزیابی RAGAS بر اساس نتایج اعلام شده توسط مقاله</sub>
 
 <br>
 
@@ -4755,12 +4735,12 @@ print(df[["id", "faithfulness", "answer_relevancy", "context_relevancy"]])
 
 
 
-<div align="center">
+
 
 ![تصویر ۲۵ – محیط LM Studio – در حال اجرای RAGAS و ارزیابی نتایج آزمایشات گزارش 
-](/assets/patterneffort/synergistic-rag/media/fig25.jpg)
+](/assets/patterneffort/synergistic-rag/media/fig25.JPG)
 
-</div>
+
 
 <p style="text-align:center;">
   <sub>تصویر ۲۵ – محیط LM Studio – در حال اجرای RAGAS و ارزیابی نتایج آزمایشات گزارش</sub>
@@ -5031,12 +5011,12 @@ print("\n[DONE] SNS Completed Successfully!")
 
 &nbsp;&nbsp;&nbsp; ۵) پایان اجرای برنامه: پس از ذخیره‌سازی کامل زیرگره‌ها، پیام موفقیت‌آمیز بودن فرآیند نمایش داده می‌شود. <br>
  
-<div align="center">
+
 
 ![تصویر ۲۶ – مثال خروجی اجرای کد قطعه بندی SNS برای پیکربندی 17 TB + G 
-](/assets/patterneffort/synergistic-rag/media/fig26.jpg)
+](/assets/patterneffort/synergistic-rag/media/fig26.JPG)
 
-</div>
+
 
 <p style="text-align:center;">
   <sub>تصویر ۲۶ – مثال خروجی اجرای کد قطعه بندی SNS برای پیکربندی 17 TB + G </sub>
@@ -5406,18 +5386,16 @@ Enter your prompts here.
 ### نتایج:
 نتایج عملکرد معماری پیشنهاد شده به صورت زیر خواهد بود: 
 
-<div align="center">
+
 
 |     معماری                                                                    |     Context Relevancy    |     Faithfulness    |     Answer Relevance    |
 |-------------------------------------------------------------------------------|--------------------------|---------------------|-------------------------|
 |     1. Abstract-First (مقاله)                                                 |     0.312                |     0.621           |     0.789               |
 |     2. Abstract-First + Semnatic Node Splitter            For Body (گزارش)    |     0.276                |     0.731           |     0.866               |
-</div>
 
-<p style="text-align:center;">
 <sub> 
 جدول ۱۳ - نتایج ارزیابی پاسخ معماری RAG هم افزای پیشنهاد شده در گزارش بر اساس تفاوت دستورات ورودی  (مدل زبانی: Qwen-2.5 – مدل جانمایی: bge-base-en-v1.5 ) </sub>
-</p>
+
 
 <br>
 تحلیل نتایج: 
@@ -5432,18 +5410,15 @@ Enter your prompts here.
 حال به بررسی عملکرد معماری پیشنهاد شده روی مدل تجاری `GPT-4O` و مدل جانمایی `all-mpnet-base-v2` مشابه آنچه که در مقاله پیاده سازی شده است می‌پردازیم: <br>
 
 
-<div align="center">
 
 |     معماری                                                                    |     Context Relevancy    |     Faithfulness    |     Answer Relevance    |
 |-------------------------------------------------------------------------------|--------------------------|---------------------|-------------------------|
 |     1. Abstract-First (مقاله)                                                 |     0.268                |     0.606           |     0.791               |
 |     2. Abstract-First + Semnatic Node   Splitter          For Body (گزارش)    |     0.254                |     0.717           |     0.831               |
 
-</div>
 
-<p style="text-align:center;">
 <sub>  جدول ۱۴ - نتایج ارزیابی پاسخ معماری RAG هم افزای پیشنهاد شده در گزارش بر اساس تفاوت دستورات ورودی  (مدل زبانی: GPT-4O – مدل جانمایی: all-mpnet-base-v2) </sub>
-</p>
+
 
 <br>
 
@@ -5470,7 +5445,6 @@ Enter your prompts here.
 در انتهای این گزارش نتایج آزمایش ها و روش های ارائه شده، به صورت زیر جمع‌بندی می‌شود:
 
 
-<div align="center">
 
 |     نام پیکربندی                      |     معماری                    |     مدل زبانی پاسخ    |     مدل جانمایی   بازیابی    |     CR       |     F        |     AR       |
 |---------------------------------------|-------------------------------|-----------------------|------------------------------|--------------|--------------|--------------|
@@ -5481,13 +5455,11 @@ Enter your prompts here.
 |     معماری   پیشنهادی گزارش           |     Abstract-First + SNS      |     GPT-4O (مقاله)    |     All-mpnet  (مقاله)       |     0.254    |     0.717    |     0.831    |
 |     تجمیع ۱+۳+۴ و   معماری گزارش      |     Abstract-First + SNS      |     Qwen2.5-3B        |     bge-base-en-v1.5         |     0.276    |     0.731    |     0.866    |
 
-</div>
 
-<p style="text-align:center;">
 <sub>
 جدول ۱۵ – بررسی پاسخ معماری RAG بر اساس تنظیمات آزمایشات انجام شده و معماری پیشنهادی به صورت مجزا
 </sub>
-</p>
+
 
 <br>
 
@@ -5496,6 +5468,7 @@ Enter your prompts here.
 ![
 تصویر ۲۷ - نمودار تاثیرات هر یک از آزمایشات این گزارش روی معماری RAG هم افزا و اختلاف آن با معماری مقاله Aytar
 ](/assets/patterneffort/synergistic-rag/media/fig27.png)
+
 <p style="text-align:center;">
 <sub>
 تصویر ۲۷ - نمودار تاثیرات هر یک از آزمایشات این گزارش روی معماری RAG هم افزا و اختلاف آن با معماری مقاله Aytar
@@ -5652,7 +5625,7 @@ Enter your prompts here.
 
 <br>
 
-پیکربندی های آزمایش شماره ۳: 
+پیکربندی های آزمایش شماره ۳: <br>
 •	https://huggingface.co/DigitalAsocial/all-MiniLM-L6-v2-ds-rag-s/ <br>
 •	https://huggingface.co/DigitalAsocial/bge-base-en-v1.5-ds-rag-s/ <br>
 
