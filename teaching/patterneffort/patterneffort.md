@@ -196,3 +196,10 @@ Generalization Error</strong>
 <strong>Using LLMs with LangChain Models</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/Using_LLMs_with_LangChain_Models" style="text-decoration:underline; color:green;" target="_blank"><strong>استفاده از llmها به کمک langchain</strong></a>
+
+<!--26-->
+<div class="english-text">
+<strong>Exploring the LangChain Framework</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/Exploring_the_LangChain_Framework" style="text-decoration:underline; color:green;" target="_blank"><strong>بررسی چارچوب LangChain: توسعه برنامه‌های مبتنی بر مدل‌های زبانی بزرگ</strong></a>
+
