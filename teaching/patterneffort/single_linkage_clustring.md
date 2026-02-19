@@ -15,6 +15,8 @@ header:
 
 # روش‌های تجمعی (Agglomerative Methods) در یادگیری ماشین
 ---
+
+
 <p>
 
 <p> نویسنده : عرفان موسوی نژاد</p>
@@ -28,6 +30,7 @@ er.mousavinezhad@gmail.com  </a>
 
 ## مقدمه
 ---
+
 در مقدمه این مقاله و پیش از ورود به بحث الگوریتم‌های تجمعی،  لازم است ابتدا مفاهیم پایه‌ای در تکنیک‌های خوشه‌بندی را درک کنیم. بنابراین، ابتدا به مفهوم خوشه‌بندی (Clustering)  در یادگیری ماشین می‌پردازیم:
 "خوشه‌بندی مجموعه‌ای گسترده از روش‌هاست که هدف آن یافتن زیرگروه‌ها یا خوشه‌هایی در داده‌هاست؛ به‌گونه‌ای که اعضای هر خوشه از نظر ویژگی‌ها یا مشخصه‌های درون‌داده‌ای به یکدیگر شبیه باشند، اما با اعضای خوشه‌های دیگر تفاوت داشته باشند."
 اصل اساسی در خوشه‌بندی این است که داده‌های موجود درون یک خوشه باید تا حد ممکن بیشترین شباهت را با یکدیگر داشته باشند و در مقابل، داده‌های خارج از آن خوشه باید بیشترین تفاوت را نسبت به اعضای آن داشته باشند.
@@ -40,6 +43,7 @@ er.mousavinezhad@gmail.com  </a>
 
 ## تعریف تئوری ماتریس با یک مثال
 ---
+
 ماتریس زیر که مرتبط با 5 نقطه در صفحه دکارتی هستند را در نظر بگیرید:
 
 | Sample | X   | Y   |
@@ -69,13 +73,14 @@ $$
 
 ## دندروگرام (Dendrogram)
 ---
+
 نمودار دندروگرام (Dendrogram) که ساختاری درخت‌مانند دارد، روشی موثر برای نمایش توالی خوشه‌هایی است که توسط یک الگوریتم تجمعی تولید می‌شوند. در این ساختار:
 -	هر شی (داده منفرد) با یک گره برگ (leaf node)  نمایش داده می‌شود.
 -	هر  خوشه (که از ادغام چند داده یا خوشه کوچکتر تشکیل شده است) با یک گره ریشه (root node) نشان داده می‌شود.
 به بیان دیگر، دندروگرام به ما نشان می‌دهد که چه نقاطی، در چه مراحلی و با چه میزان شباهتی با یکدیگر ادغام شده‌اند. در قسمت پایین، درخت داده‌های منفرد قرار دارند و با بالا رفتن از درخت، خوشه‌های بزرگ‌تر حاصل از ادغام‌های پی‌در‌پی نمایش داده می‌شوند.
 دندروگرام ماتریس تفاوت برای داده‌های بالا به شکل زیر خواهد بود:
 
-<img src="/assets/patterneffort/linkage/img-00.png" alt="Dendrogram">
+<img src="/assets/patterneffort/single_linkage_clustring/dnd.png" alt="Dendrogram">
 
 ## الگوریتم‌های تجمعی بر پایه تئوری ماتریس – متد اتصال مجرد (Single Link Method)
 ---
@@ -86,10 +91,9 @@ $$ d(C_i, C_j) = min[d(x_k, x_l)], x_k \in C_i, x_l \in C_j $$
 
 این روش تمایل دارد خوشه‌هایی باریک و دراز تولید کند که در آن‌ها عناصر مجاورِ درون یک خوشه، فاصله‌ای اندک دارند، اما عناصر واقع در دو انتهای یک خوشه ممکن است فاصله‌ای بسیار بیشتر از دو عنصر متعلق به خوشه‌های دیگر از یکدیگر داشته باشند. برای برخی از داده ها، این ویژگی می‌تواند به ایجاد مشکلاتی در تعریف کلاس‌هایی که بتوانند داده را به شکلی درست تقسیم بندی کند، بینجامد. با این حال، این روش در اخترشناسی برای تحلیل خوشه‌های کهکشانی - که اغلب ممکن است شامل رشته‌های درازی از ماده باشند - پرطرفدار است. در این حوزه کاربردی، این الگوریتم با نام الگوریتم دوستانِ دوستان (friends-of-friends) نیز شناخته می‌شود.
 
-<img src="/assets/patterneffort/linkage/img-01.jpg" alt="Dendrogram">
-
 ### متد اتصال مجرد – مثال
 ---
+
 فرض کنید ماتریس فاصله به روش اقلیدس برای 6 نقطه بصورت زیر است:
 
 $$
@@ -149,7 +153,7 @@ $$
 \begin{array}{c|ccccc}
  & (1,2) & (3,5) & 4 & 6 \\ \hline
 (1,2) & 0 & 10 & 22 & 8  \\
-(3,5) &   & 0 & \enclose{circle}{6} & 8.5 \\
+(3,5) &   & 0 & \textcircled{6} & 8.5 \\
 4 &   &   & 0 & 18 \\
 6 &   &   &   & 0
 \end{array}
@@ -160,7 +164,7 @@ $$
 $$
 \begin{array}{c|ccccc}
  & (1,2) & (3,4,5)  & 6 \\ \hline
-(1,2) & 0 & 10 &  \enclose{circle}{8}  \\
+(1,2) & 0 & 10 & \textcircled{8}  \\
 (3,4,5) &   & 0 & 8.5 \\
 6 &   &   & 0
 \end{array}
@@ -171,19 +175,19 @@ $$
 $$
 \begin{array}{c|ccccc}
  & (1,2,6) & (3,4,5)  \\ \hline
-(1,2,6) & 0 &  \enclose{circle}{8.5}  \\
+(1,2,6) & 0 & \textcircled{8.5}  \\
 (3,4,5) &   & 0 \\
 \end{array}
 $$
 
 دندروگرام این داده‌ها به شکل زیر خواهد بود:
 
-<img src="/assets/patterneffort/linkage/img-02.jpg" alt="Dendrogram">
+<img src="/assets/patterneffort/single_linkage_clustring/Linkage_ppt.jpg" alt="Dendrogram">
 
 الگوریتم تجمعی پیشین در روش اتصال مجرد (single-link) نشان می‌دهد که برای اتصال دو گروه مجزا، تنها وجود یک پیوند کافی است. در این روش، فاصله‌ی میان دو گروه برابر است با فاصله‌ی نزدیک‌ترین اعضای آن‌ها. به همین دلیل، این روش را **روش نزدیک‌ترین همسایگان** نیز می‌نامند.
 
 ## الگوریتم‌های تجمعی بر پایه تئوری ماتریس – متد اتصال کامل (Complete Link Method)
----
+
 این روش هم بسیار شبیه به متد قبل است با این تفاوت که در این روش، معیار اتصال نقاط به شکل زیر تعریف می‌شود:
 
 $$ d(C_q, C_s) = max[d(C_i, C_s), d(C_j, C_s)] $$
@@ -402,6 +406,7 @@ clusterdata(X, method='single', metric='euclidean', t=1.0, criterion='inconsiste
 
 ## حل یک مثال
 ---
+
 کد زیر به جهت تفهیم بیشتر مفاهیم و یک مثال کامل آورده شده است.
 ابتدا کتابخانه‌ها و توابع مورد نیاز را به برنامه اضافه میکنیم:
 
@@ -482,7 +487,7 @@ dendrogram(Z)
 
 <i>خروجی:</i>
 
-<img src="/assets/patterneffort/linkage/img-03.png" alt="Dendrogram">
+<img src="/assets/patterneffort/single_linkage_clustring/download.png" alt="Dendrogram">
 
 ```python
 R = inconsistent(Z, d=2)
@@ -513,7 +518,7 @@ print(W)
  [1.84535455 0.86216774 5.         1.52745578]]
 ```
 
-<img src="/assets/patterneffort/linkage/img-04.png" alt="Inconsistancy">
+<img src="/assets/patterneffort/single_linkage_clustring/sc01.png" alt="Inconsistancy">
 
 
 در نهایت با استفاده از `fcluster`، میتوانیم داده‌ها را در دسته‌های (خوشه‌ها)، دسته‌بندی کنیم:
@@ -531,6 +536,12 @@ print(T)
 
 پر واضخ است که داده‌ها در دو دسته و با برچسب 1 و 2 خوشه‌بندی شده‌اند؛ به این شکل که داده اول و دوم در خوشه 2 و داده سوم در خوشه 1 و ... قرار گرفته‌اند.
 
+
+
+
+
+
+<!-- The REST -->
 
 ## تولید چرخ از اول!
 ---
@@ -640,11 +651,67 @@ if __name__ == "__main__":
 
 در انتها، نمونه تصویری از خروجی کد بالا آورده شده است:
 
-<img src="/assets/patterneffort/single_linkage_clustring/img-05.png" alt="Single Linkage">
+<img src="/assets/patterneffort/single_linkage_clustring/implementation.png" alt="Single Linkage">
 
+
+<!-- The REST -->
+
+## حل یک مثال کاربردی
+---
+
+در مثال زیر، مجموعه ای از جملات در هم ریخته داریم که ظاهرا ارتباط مستقیمی با هم ندارند اما از نظر محتوایی به سه موضوع متفاوت تعلق دارند. حال میخواهیم با استفاده از این الگوریتم، ارتباط بین این جملات را بیابیم:
+
+چالش اصلی که در این مثال خواهیم داشت این است که مدل نباید صرفا به کلمات مشترک نگاه کند؛ پس از ترنسفورمرها (برای درک معنا) استفاده خواهیم کرد.
+
+```python
+import matplotlib.pyplot as plt
+from sentence_transformers import SentenceTransformer
+from scipy.cluster.hierarchy import linkage, dendrogram
+from scipy.spatial.distance import pdist
+
+documents = [
+    "The cat is sleeping on the sofa",
+    "A kitten is resting on the couch",
+    "Stock market prices are falling",
+    "Wall Street is in a downtrend",
+    "Google released a new AI model",
+    "Deep learning algorithms are advancing"
+]
+
+print("Transformer Loading")
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+embeddings = model.encode(documents)
+
+distance_matrix = pdist(embeddings, metric='cosine')
+
+Z = linkage(distance_matrix, method='single')
+
+plt.figure(figsize=(10, 6))
+plt.title('Single Linkage Clustering with BERT Embeddings')
+plt.xlabel('Document Index')
+plt.ylabel('Semantic Distance (Cosine)')
+
+dendrogram(
+    Z,
+    labels=[f"Doc {i+1}: {documents[i][:20]}..." for i in range(len(documents))],
+    leaf_rotation=45,
+    leaf_font_size=10,
+    orientation='top'
+)
+
+plt.tight_layout()
+plt.show()
+```
+
+در نهایت، خروجی این خوشه بندی به شکل زیر خواهد بود:
+
+<img src="download.png">
 
 ### منابع
 ---
+
+
 1. <a href="https://www.geeksforgeeks.org/machine-learning/agglomerative-methods-in-machine-learning/" target ="_blank">https://www.geeksforgeeks.org/machine-learning/agglomerative-methods-in-machine-learning/</a>
 2. <a href="https://www.geeksforgeeks.org/machine-learning/ml-types-of-linkages-in-clustering/" target ="_blank">https://www.geeksforgeeks.org/machine-learning/ml-types-of-linkages-in-clustering/</a>
 3. <a href="https://en.wikipedia.org/wiki/Single-linkage_clustering" target ="_blank">https://en.wikipedia.org/wiki/Single-linkage_clustering</a>
