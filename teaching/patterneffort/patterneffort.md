@@ -172,3 +172,15 @@ Generalization Error</strong>
 <strong>Understanding Pull Requests</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/PULL_REQUEST" style="text-decoration:underline; color:green;" target="_blank"><strong>آموزش Pull request</strong></a>
+
+<!--23-->
+<div class="english-text">
+<strong>Ollama</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/OLLAMA" style="text-decoration:underline; color:green;" target="_blank"><strong>اجرای  مدل‌های زبانی به صورت محلی در Google Colab برای اجرای برنامه‌های LangChain</strong></a>
+
+<!--24-->
+<div class="english-text">
+<strong>Ollama</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/PLAGIARISM_DETECTION" style="text-decoration:underline; color:green;" target="_blank"><strong>تشخیص سرقت ادبی - Plagiarism Detection</strong></a>
