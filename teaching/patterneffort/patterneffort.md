@@ -213,4 +213,4 @@ Generalization Error</strong>
 <div class="english-text">
 <strong>Prompt Engineering</strong>
 </div>
-<a href="/teaching/studenteffort/patterneffort/LangChain_ShortMemoty_Doc" style="text-decoration:underline; color:green;" target="_blank"><strong> مهندسی پرامپت</strong></a>
+<a href="/teaching/studenteffort/patterneffort/prompt_engineering" style="text-decoration:underline; color:green;" target="_blank"><strong> مهندسی پرامپت</strong></a>

@@ -1,7 +1,7 @@
 ---
 layout: persian
 title: "Prompt Engineering"
-permalink: /teaching/studenteffort/patterneffort/prompt_engineering_complete (1)/
+permalink: /teaching/studenteffort/patterneffort/prompt_engineering/
 dir: rtl
 classes: wide rtl-layout
 author_profile: true
