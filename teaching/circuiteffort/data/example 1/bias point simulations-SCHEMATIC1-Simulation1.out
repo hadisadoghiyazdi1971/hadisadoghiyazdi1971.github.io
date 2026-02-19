@@ -1,0 +1,70 @@
+
+**** 10/24/25 11:38:06 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Simulation1"  [ C:\USERS\ASUS\PSpice Projects\bias point simulations-SCHEMATIC1-Simulation1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias point simulations-SCHEMATIC1-Simulation1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 10 0.01 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\bias point simulations-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING "bias point simulations-SCHEMATIC1.net" ****
+* source BIAS POINT SIMULATIONS
+R_R1         0 N00189  0.5k  
+D_D1         N00093 N00189 D1N4148 
+V_V1         N00093 0 10Vdc
+
+**** RESUMING "bias point simulations-SCHEMATIC1-Simulation1.sim.cir" ****
+.END
+
+**** 10/24/25 11:38:06 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Simulation1"  [ C:\USERS\ASUS\PSpice Projects\bias point simulations-SCHEMATIC1-Simulation1.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

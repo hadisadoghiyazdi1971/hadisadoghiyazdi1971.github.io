@@ -97,3 +97,27 @@ header:
 </div>
 <a href="/teaching/toolkit/ProximalMapping" style="text-decoration:underline; color:green;" target="_blank"><strong>   تست الگوریتم‌های پروگسیمال </strong></a>
 
+<!--14-->
+<div class="english-text">
+<strong>Entropy and Complexity</strong>
+</div>
+<a href="/teaching/toolkit/Entropy" style="text-decoration:underline; color:green;" target="_blank"><strong> انتروپی و پیچیدگی چیست</strong></a>
+
+<!--15-->
+<div class="english-text">
+<strong>Cross Entropy</strong>
+</div>
+<a href="/teaching/toolkit/CrossEntropy" style="text-decoration:underline; color:green;" target="_blank"><strong> انتروپی متقاطع چیست</strong></a>
+
+<!--16-->
+<div class="english-text">
+<strong>Bayes Estimator- Square Loss</strong>
+</div>
+<a href="/teaching/toolkit/BayesianEstimator" style="text-decoration:underline; color:green;" target="_blank"><strong> تخمین گر بیز- تابع ضرر مربعات</strong></a>
+
+
+<!--17-->
+<div class="english-text">
+<strong>Gaussian Processes</strong>
+</div>
+<a href="/teaching/toolkit/GP" style="text-decoration:underline; color:green;" target="_blank"><strong> فرآیندهای گوسی</strong></a>

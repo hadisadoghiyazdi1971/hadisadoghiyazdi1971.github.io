@@ -1,0 +1,7 @@
+* source EXAMPLE 2 SIMULATION
+C_C1         N00471 N00163  1u  
+V_V2         N00471 0  
++PULSE 10 -20 0 1us 1us 0.5ms 1ms
+D_D1         N00213 N00163 D1N4148 
+V_V1         N00213 0 5Vdc
+R_R1         0 N00163  100k  

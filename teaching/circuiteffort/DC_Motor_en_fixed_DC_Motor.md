@@ -3,12 +3,11 @@ layout: single
 classes: wide
 dir: ltr
 title: "DC Motor"
-permalink: /teaching/studenteffort/DC_Motor_en_fixed_DC_Motor/
+permalink: /teaching/circuiteffort/DC_Motor_en_fixed_DC_Motor/
 author_profile: true
 ---
 
 
-# DC Motor
 
 ## Table of Contents
 <ul style="list-style-position: inside;">
@@ -115,9 +114,9 @@ author_profile: true
 
 <div align="center" style="display:flex; justify-content:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/4_1.jpg" width="30%">
-  <img src="./assets/circuiteffort/DC_Motor/5_1.jpg" width="30%">
-  <img src="./assets/circuiteffort/DC_Motor/اجزای-موتورهای-DC.jpg" width="30%">
+  <img src="/assets/circuiteffort/DC_Motor/4_1.jpg" width="30%">
+  <img src="/assets/circuiteffort/DC_Motor/5_1.jpg" width="30%">
+  <img src="/assets/circuiteffort/DC_Motor/اجزای-موتورهای-DC.jpg" width="30%">
 
 </div>
 
@@ -140,7 +139,7 @@ By understanding how a motor works you can learn a lot about magnets, electromag
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/42xU_F.gif" alt="DC Motor Animation" width="250" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/42xU_F.gif" alt="DC Motor Animation" width="250" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
 So, if you have two bar magnets with their ends marked "north" and "south," then the north end of one magnet will attract the south end of the other. On the other hand, the north end of one magnet will repel the north end of the other (and south will repel south). Inside an electric motor, these attracting and repelling forces create rotational motion.
@@ -158,7 +157,7 @@ As the opposite poles face each other, an attractive force is created — strong
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_1 (1).gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_1 (1).gif"
 </div>
 
 
@@ -175,7 +174,7 @@ By winding the wire into several loops, the magnetic fields of each turn combine
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_3.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_3.gif"
   
 </div>
 
@@ -192,7 +191,7 @@ The stronger the current or the magnetic field, the greater the torque, and thus
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_4.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_4.gif"
   
 </div>
 
@@ -205,7 +204,7 @@ Next, we bend the coil into a loop, creating a structure that can rotate freely 
 When current flows through this loop, one side of the coil is pushed upward while the other side is pushed downward, due to the interaction between the magnetic field and the electric current — a direct application of the Lorentz force.
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_5.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_5.gif"
 </div>
 
 
@@ -220,7 +219,7 @@ But manually changing the current every half turn is impossible — the motor ne
 This is where the commutator and brushes come to the rescue.
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_6.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_6.gif"
 </div>
 
 
@@ -234,7 +233,7 @@ When these loops are properly arranged, their magnetic effects combine, resultin
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_7.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_7.gif"
 </div>
 
 
@@ -245,7 +244,7 @@ The commutator distributes current to each coil in sequence, maintaining a conti
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_1.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_1.gif"
 </div>
 
 
@@ -259,11 +258,11 @@ As a result, the magnetic flux linkage and induced electromotive force (EMF) are
 This not only enhances the mechanical power output but also improves energy conversion efficiency and reduces magnetic losses within the rotor.
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_1.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_1.gif"
 </div>
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_2.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_2.gif"
 </div>
 
 
@@ -274,15 +273,15 @@ To minimize these losses, the core is built using thin laminated sheets of iron,
 This structure limits the path of eddy currents and greatly improves the efficiency of the motor.
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_3.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_3.gif"
 </div>
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_4.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_4.gif"
 </div>
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_5.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_5.gif"
 </div>
 
 Next, the armature coils are added around the laminated iron core of the rotor.
@@ -291,7 +290,7 @@ Each loop is carefully insulated to prevent short circuits and to ensure uniform
 The terminals of these coils are then connected to the commutator segments, which serve as the electrical interface between the rotating armature and the stationary brushes.
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_6.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_6.gif"
 </div>
 
 
@@ -306,15 +305,15 @@ The brushes allow current to flow into and out of the armature windings without 
 This system enables smooth torque production and unidirectional rotation, making the DC motor highly reliable and efficient in industrial applications.
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_7.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_7.gif"
 </div>
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_8.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_8.gif"
 </div>
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_9.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_9.gif"
 </div>
 
 
@@ -334,7 +333,7 @@ Such a configuration is used in shunt, series, and compound DC motors, making th
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/magnetic-flux-2.webp" alt="DC Motor Animation" width="250" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/magnetic-flux-2.webp" alt="DC Motor Animation" width="250" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
   
@@ -373,7 +372,7 @@ $$
 
 
 <p align="center">
-  <img src="./assets/circuiteffort/DC_Motor/emf-induction.png" width="400">
+  <img src="/assets/circuiteffort/DC_Motor/emf-induction.png" width="400">
 </p>
 
 
@@ -390,7 +389,7 @@ There are three main ways to change $\Phi_B$:
 
 | **Change the magnetic field $B$** | **Change the area $A$** | **Change the angle $θ$** |
 |:--:|:--:|:--:|
-| <img src="./assets/circuiteffort/DC_Motor/75_orig.jpg" width="250"> | <img src="./assets/circuiteffort/DC_Motor/magnetic_flux_02.jpg" width="250"> | <img src="./assets/circuiteffort/DC_Motor/magnetic_flux_03.jpg" width="250"> |
+| <img src="/assets/circuiteffort/DC_Motor/75_orig.jpg" width="250"> | <img src="/assets/circuiteffort/DC_Motor/magnetic_flux_02.jpg" width="250"> | <img src="/assets/circuiteffort/DC_Motor/magnetic_flux_03.jpg" width="250"> |
 | Move a magnet closer or farther from a coil. | Expand or shrink the size of the loop. | Rotate the loop in the magnetic field. |
 | $\mathcal{E} = -A \cos\theta \cdot \frac{dB}{dt}$ | $\mathcal{E} = -B \cos\theta \cdot \frac{dA}{dt}$ | $\mathcal{E} = +B A \sin\theta \cdot \frac{d\theta}{dt}$ |
 
@@ -556,7 +555,7 @@ In electromagnetism, the Lorentz force is the force exerted on a charged particl
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/Magnetic-force-on-wire-with-electrons.svg.png" alt="DC Motor Animation" width="250" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/Magnetic-force-on-wire-with-electrons.svg.png" alt="DC Motor Animation" width="250" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
   
@@ -639,9 +638,9 @@ In the absence of the stator, the rotor would have no magnetic environment in wh
 
 <div align="center" style="display:flex; justify-content:center; gap:15px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/df.f8.1f.H1MatthiesLichtmaschine700169810046677.webp" width="20%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/stator.jpg" width="20%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/what is a stator.png" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/df.f8.1f.H1MatthiesLichtmaschine700169810046677.webp" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/stator.jpg" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/what is a stator.png" width="20%" style="border-radius:20px">
 
 </div>
 
@@ -677,9 +676,9 @@ Without the rotor, the motor would not be able to deliver torque or perform usef
 
 <div align="center" style="display:flex; justify-content:center; gap:15px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/Various_motor_rotor_TICI.jpg" width="20%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/615guzeyTcL.jpg" width="20%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/8ysm63qq.jpg" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/Various_motor_rotor_TICI.jpg" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/615guzeyTcL.jpg" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/8ysm63qq.jpg" width="20%" style="border-radius:20px">
 
 </div>
 
@@ -716,9 +715,9 @@ The commutator works in combination with the brushes to ensure that current in t
 
 <div align="center" style="display:flex; justify-content:center; gap:15px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/sparking-in-vacuum-cleaner-collector5.webp" width="20%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/Commutator.webp" width="20%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/Commutator.jpg" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/sparking-in-vacuum-cleaner-collector5.webp" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/Commutator.webp" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/Commutator.jpg" width="20%" style="border-radius:20px">
 
 </div>
 
@@ -754,8 +753,8 @@ Without brushes, electrical current could not be supplied to the rotor, and the 
 
 <div align="center" style="display:flex; justify-content:center; gap:30px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/Carbon_brushes.jpg" width="15%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/615E1QceDzL.jpg" width="15%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/Carbon_brushes.jpg" width="15%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/615E1QceDzL.jpg" width="15%" style="border-radius:20px">
 
 </div>
 
@@ -782,7 +781,7 @@ This system allows the motor to maintain continuous torque and smooth operation.
 
 <div align="center" style="display:flex; justify-content:center; gap:30px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/Electric_Motors_Chapter_2_Fig3-_960_x_500.png" width="40%" style="border-radius:20px" >
+  <img src="/assets/circuiteffort/DC_Motor/Electric_Motors_Chapter_2_Fig3-_960_x_500.png" width="40%" style="border-radius:20px" >
 
 </div>
 
@@ -798,7 +797,7 @@ This system allows the motor to maintain continuous torque and smooth operation.
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/Equivalent-circuit-of-an-armature-controlled-dc-motor.png" alt="DC Motor Animation" width="500" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/Equivalent-circuit-of-an-armature-controlled-dc-motor.png" alt="DC Motor Animation" width="500" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
   
@@ -826,7 +825,7 @@ $$
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/ChatGPT Image Oct 10, 2025, 12_47_07 PM.png" alt="DC Motor Animation" width="250" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/ChatGPT Image Oct 10, 2025, 12_47_07 PM.png" alt="DC Motor Animation" width="250" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
   
@@ -903,7 +902,7 @@ Separately Excited DC Motor
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/dl-dc-motors-500x500.webp" alt="DC Motor Animation" width="250" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/dl-dc-motors-500x500.webp" alt="DC Motor Animation" width="250" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
   
@@ -933,7 +932,7 @@ Each conductor of the armature experiences a force and the compilation of those 
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-<img src="./assets/circuiteffort/DC_Motor/equivalent-circuit-of-pmdc.gif" alt="DC Motor Animation" width="250" style="border-radius:10px;">
+<img src="/assets/circuiteffort/DC_Motor/equivalent-circuit-of-pmdc.gif" alt="DC Motor Animation" width="250" style="border-radius:10px;">
 
 <div style="text-align:justify; line-height:1.6; font-size:15px;">
   
@@ -987,7 +986,7 @@ Where, I is armature current and R is armature resistance of the motor.
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/gif.gif" alt="Brushless DC Motor" width="250" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/gif.gif" alt="Brushless DC Motor" width="250" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
 
@@ -1002,7 +1001,7 @@ BLDC motors produce significant torque across a broad speed range, thanks to per
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/media.gif"
+  <img src="/assets/circuiteffort/DC_Motor/media.gif"
     <source src="video/Brushless DC Motor, How it works -_1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   
@@ -1030,7 +1029,7 @@ It determines the motor’s speed by adjusting the duty cycle or pulse width of 
 
 <div align="center" style="display:flex; justify-content:center; gap:30px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/brushless-motor.png" width="20%" style="border-radius:20px" >
+  <img src="/assets/circuiteffort/DC_Motor/brushless-motor.png" width="20%" style="border-radius:20px" >
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
   
@@ -1044,7 +1043,7 @@ It determines the motor’s speed by adjusting the duty cycle or pulse width of 
 
 <div align="center" style="display:flex; justify-content:center; gap:30px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/bldc-motor.png" width="20%" style="border-radius:20px" >
+  <img src="/assets/circuiteffort/DC_Motor/bldc-motor.png" width="20%" style="border-radius:20px" >
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
   
@@ -1061,7 +1060,7 @@ It determines the motor’s speed by adjusting the duty cycle or pulse width of 
 
 <div align="center" style="display:flex; justify-content:center; gap:30px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/Arduino-BLDC-Motor-Control-Circuit-Diagram-Schematic-1024x558.webp" width="50%" style="border-radius:20px" >
+  <img src="/assets/circuiteffort/DC_Motor/Arduino-BLDC-Motor-Control-Circuit-Diagram-Schematic-1024x558.webp" width="50%" style="border-radius:20px" >
 
 </div>
 
@@ -1147,7 +1146,7 @@ void loop() {
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/separately-excited-dc-motor.gif" alt="Separately Excited DC Motor" width="250" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/separately-excited-dc-motor.gif" alt="Separately Excited DC Motor" width="250" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
 
@@ -1206,7 +1205,7 @@ Because flux is assumed constant, **speed – armature current** and **torque �
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/shunt-dc-motor.gif" alt="Shunt DC Motor Diagram" width="250" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/shunt-dc-motor.gif" alt="Shunt DC Motor Diagram" width="250" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
 
@@ -1264,7 +1263,7 @@ where ($R_{sh}$) is the shunt field resistance.
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/series-dc-motor.gif" alt="Series DC Motor Diagram" width="250" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/series-dc-motor.gif" alt="Series DC Motor Diagram" width="250" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
 
@@ -1323,7 +1322,7 @@ Also, **running the motor without load is dangerous**, because with very low cur
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/dc-compound-motor.gif" alt="Compound DC Motor" width="250" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/dc-compound-motor.gif" alt="Compound DC Motor" width="250" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
 
@@ -1340,7 +1339,7 @@ They can also be categorized by connection style into **long-shunt** and **short
 
 <div style="display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/dc-compound-motor-2-13-2-15.gif" alt="Compound DC Motor Circuit" width="250" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/dc-compound-motor-2-13-2-15.gif" alt="Compound DC Motor Circuit" width="250" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.6; font-size:15px;">
 

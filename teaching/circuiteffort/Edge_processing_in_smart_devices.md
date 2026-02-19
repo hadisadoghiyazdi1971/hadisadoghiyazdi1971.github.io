@@ -2,7 +2,7 @@
 layout: persian
 classes: wide rtl-layout
 dir: rtl
-title: ""
+title: "edge computing"
 permalink: /teaching/circuiteffort/Edge_processing_in_smart_devices/
 author-profile: true
 
@@ -10,11 +10,8 @@ author-profile: true
 
 # پردازش لبه در دستگاه های هوشمند
 
- <hr style="border: none; height: 2px; background-color: #000000 ; margin-top: -16px" />
-
 
 ##  فهرست مطالب
-
 
 <div dir="rtl">
     <ul style = "display:flex; flex-direction:column;">
@@ -72,9 +69,6 @@ author-profile: true
 
 
 ## اطلاعات نویسنده
-
-
-
 **نام :**  حسین جهانبانی فر
 
 **وابستگی:** گروه مهندسی کامپیوتر ، دانشگاه فردوسی مشهد
@@ -122,7 +116,7 @@ author-profile: true
 
 این گره‌ها داده‌ها را به‌شکل محلی پردازش می‌کنند؛ مثل فیلتر کردن، تحلیل اولیه یا اجرای الگوریتم‌های هوش مصنوعی.
 
-## تصمیم گیری و واکنش سریع
+### تصمیم گیری و واکنش سریع
 
 بر اساس نتایج پردازش، واکنش‌های فوری مثل ارسال هشدار، کنترل دستگاه‌ها یا ذخیره‌سازی محلی انجام می‌شود 
 
@@ -132,7 +126,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px; margin-top:40px">
-    <img src="/assets/circuiteffort/images/the-complete-guide-to-edge-computing-architecture-edited.png" alt="IPS1" style="width: 100%; height: 50%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/edge_computing_images/the-complete-guide-to-edge-computing-architecture-edited.png" alt="IPS1" style="width: 100%; height: 50%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top:8px; margin-bottom:15px ">
@@ -165,7 +159,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px; margin-top:40px">
-    <img src="/assets/circuiteffort/images/Figure_Edge_computing_architecture_1f8ad84d31.png" alt="IPS1" style="width: 90%; height: 50%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/edge_computing_images/Figure_Edge_computing_architecture_1f8ad84d31.png" alt="IPS1" style="width: 90%; height: 50%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top:8px; margin-bottom:15px ">
@@ -199,7 +193,7 @@ author-profile: true
 
 
 <div style="display: flex; justify-content: center; gap: 10px; margin-top:40px">
-    <img src="/assets/circuiteffort/images/How-Does-Edge-Computing-Reduce-Latency-for-End-Users-1024x576.webp" alt="IPS1" style="width: 90%; height: 50%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/edge_computing_images/How-Does-Edge-Computing-Reduce-Latency-for-End-Users-1024x576.webp" alt="IPS1" style="width: 90%; height: 50%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top:8px; margin-bottom:15px ">
@@ -208,7 +202,6 @@ author-profile: true
 
 
 ## کاربردهای پردازش لبه
-
 
 
 ### اینترنت اشیا(IoT)
@@ -227,11 +220,10 @@ author-profile: true
 
 ## پردازش لبه در معماری سیستم های هوشمند
 
-
 ایده اصلی پردازش لبه این است که هر رویداد مهم—از لرزش غیرعادی یک موتور تا تغییر ناگهانی دما—در همان محل تشخیص داده شود. این فرآیند با ترکیب پردازش سیگنال، استخراج ویژگی، تشخیص آنومالی و انتقال فقط اطلاعات ضروری انجام می‌شود.
 
 <div style="display: flex; justify-content: center; gap: 10px; margin-top:40px">
-    <img src="/assets/circuiteffort/images/self_driving_cars.jpg" alt="IPS1" style="width: 90%; height: 50%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/edge_computing_images/self_driving_cars.jpg" alt="IPS1" style="width: 90%; height: 50%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top:8px; margin-bottom:15px ">
@@ -261,9 +253,6 @@ Wavelet آن را پاک‌سازی می‌کند.
 
 
 ```python
-
-
-
 import pywt
 import numpy as np
 import matplotlib.pyplot as plt
@@ -300,14 +289,11 @@ plt.plot(t, clean, label="Clean")
 plt.legend()
 plt.savefig("wavelet.png", dpi=150)
 plt.show()
-
-
-
 ```
 
 
 <div style="display: flex; justify-content: center; gap: 10px; margin-top:40p;">
-    <img src="/assets/circuiteffort/images/What+is+a+Vibration+Sensor.webp" alt="IPS1" style="width: 90%; height: 20%; border-radius:5px; object-fit:contain; ">
+    <img src="/assets/circuiteffort/edge_computing_images/What+is+a+Vibration+Sensor.webp" alt="IPS1" style="width: 90%; height: 20%; border-radius:5px; object-fit:contain; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top:8px; margin-bottom:15px ">
@@ -474,7 +460,7 @@ while True:
 
 
 <div style="display: flex; justify-content: center; gap: 10px; margin-top:40px">
-    <img src="/assets/circuiteffort/images/hamed-taha-NEqR20e6eY4-unsplash-Edited1.jpg" alt="IPS1" style="width: 90%; height: 30%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/edge_computing_images/hamed-taha-NEqR20e6eY4-unsplash-Edited1.jpg" alt="IPS1" style="width: 90%; height: 30%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top:8px; margin-bottom:15px ">
@@ -574,7 +560,7 @@ print(dt.status())
 
 
 <div style="display: flex; justify-content: center; gap: 10px; margin-top:40px">
-    <img src="/assets/circuiteffort/images/DigitalTwin_V02.jpg" alt="IPS1" style="width: 90%; height: 50%; border-radius:5px; object-fit:cover; ">
+    <img src="/assets/circuiteffort/edge_computing_images/DigitalTwin_V02.jpg" alt="IPS1" style="width: 90%; height: 50%; border-radius:5px; object-fit:cover; ">
 </div>
 
 <div class="caption" style="text-align: center; margin-top:8px; margin-bottom:15px ">
@@ -584,14 +570,10 @@ print(dt.status())
 
 ## نتیجه گیری
 
-
-
 پردازش لبه به عنوان یک فناوری کلیدی نقش مهمی در افزایش سرعت واکنش سیستم‌ها و بهینه‌سازی مصرف منابع شبکه ایفا می‌کند. با انجام پردازش نزدیک به منبع داده، این روش توانسته چالش‌های مربوط به تاخیر، پهنای باند و امنیت را تا حد زیادی کاهش دهد و راه‌حل‌های موثری برای کاربردهای حساس به زمان ارایه کند. 
 
 
 ## منابع
-
-
 
 <div style="direction: rtl; text-align: right; padding:10px 0; ">
   <a href="https://www.arvancloud.ir/blog/fa/what-is-edge-computing/" 

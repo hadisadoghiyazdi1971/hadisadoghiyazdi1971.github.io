@@ -1,0 +1,102 @@
+
+**** 10/24/25 19:52:47 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Example 2 Simulation"  [ C:\USERS\ASUS\PSpice Projects\example 2 simulation-SCHEMATIC1-Example 2 Simulation.
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "example 2 simulation-SCHEMATIC1-Example 2 Simulation.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10m 0 1u 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\example 2 simulation-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING "example 2 simulation-SCHEMATIC1.net" ****
+* source EXAMPLE 2 SIMULATION
+C_C1         N00471 N00163  1u  
+V_V2         N00471 0  
++PULSE 10 -20 0 1us 1us 0.5ms 1ms
+D_D1         N00213 N00163 D1N4148 
+V_V1         N00213 0 5Vdc
+R_R1         0 N00163  100k  
+
+**** RESUMING "example 2 simulation-SCHEMATIC1-Example 2 Simulation.sim.cir" ****
+.END
+
+**** 10/24/25 19:52:47 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Example 2 Simulation"  [ C:\USERS\ASUS\PSpice Projects\example 2 simulation-SCHEMATIC1-Example 2 Simulation.
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4148         
+          IS    2.682000E-09 
+           N    1.836        
+         ISR    1.565000E-09 
+         IKF     .04417      
+          BV  100            
+         IBV  100.000000E-06 
+          RS     .5664       
+          TT   11.540000E-09 
+         CJO    4.000000E-12 
+          VJ     .5          
+           M     .3333       
+
+
+**** 10/24/25 19:52:47 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Example 2 Simulation"  [ C:\USERS\ASUS\PSpice Projects\example 2 simulation-SCHEMATIC1-Example 2 Simulation.
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00163)    4.5433 (N00213)    5.0000 (N00471)   10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         0.000E+00
+    V_V1        -4.543E-05
+
+    TOTAL POWER DISSIPATION   2.27E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .41
+

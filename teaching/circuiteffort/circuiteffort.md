@@ -112,3 +112,123 @@ header:
 <strong>زمین کردن </strong>
 </div>
 <a href="/teaching/circuiteffort/earthing" style="text-decoration:underline; color:green;" target="_blank"><strong> زمین کردن</strong></a>
+
+
+<!--15-->
+<div class="english-text">
+<strong>رسم شماتیک مدار الکتریکی</strong>
+</div>
+<a href="/teaching/circuiteffort/Circuit_Schematic_Drawing_Project" style="text-decoration:underline; color:green;" target="_blank"><strong> رسم شماتیک مدار</strong></a>
+
+
+<!--15-->
+<div class="english-text">
+<strong>تحلیل و کاهش تداخل الکترومغناطیسی در مبدل‌های سوئیچینگ</strong>
+</div>
+<a href="/teaching/circuiteffort/Analysis_and_reduction_of_electromagnetic_interference_in_buck_converters" style="text-decoration:underline; color:green;" target="_blank"><strong> تحلیل و کاهش تداخل الکترومغناطیسی در مبدل‌های سوئیچینگ</strong></a>
+
+
+<!--16-->
+<div class="english-text">
+<strong>مولتی متر (نحوه عملکرد و کاربرد ها)</strong>
+</div>
+<a href="/teaching/circuiteffort/multimeter-operating-principle-and-uses" style="text-decoration:underline; color:green;" target="_blank"><strong> مولتی متر (نحوه عملکرد و کاربرد ها)</strong></a>
+
+
+<!--17-->
+<div class="english-text">
+<strong>مبدل AC  به  DC</strong>
+</div>
+<a href="/teaching/circuiteffort/ACTODCFARSI" style="text-decoration:underline; color:green;" target="_blank"><strong>مبدل AC  به  DC</strong></a>
+
+<!--18-->
+<div class="english-text">
+<strong> طراحی خودکار فیلتر RC پایین‌گذر با الهام از WiseEDA</strong>
+</div>
+<a href="/teaching/circuiteffort/wiseeda-like-automated-design-of-rc-low-pass-filters" style="text-decoration:underline; color:green;" target="_blank"><strong> طراحی خودکار فیلتر RC پایین‌گذر با الهام از WiseEDA</strong></a>
+
+
+<!--19-->
+<div class="english-text">
+<strong>تحلیل AC مدارهای الکترونیکی با استفاده از NgSpice و بررسی عملی PySpice</strong>
+</div>
+<a href="/teaching/circuiteffort/Simulation-and-Circuit-Analysis" style="text-decoration:underline; color:green;" target="_blank"><strong>تحلیل AC مدارهای الکترونیکی با استفاده از NgSpice و بررسی عملی PySpice</strong></a>
+
+
+<!--20-->
+<div class="english-text">
+<strong>Tilt Sensor</strong>
+</div>
+<a href="/teaching/circuiteffort/Tilt_sensor" style="text-decoration:underline; color:green;" target="_blank"><strong>Tilt Sensor</strong></a>
+
+
+<!--20-->
+<div class="english-text">
+<strong>PID controller</strong>
+</div>
+<a href="/teaching/circuiteffort/pid_rocket" style="text-decoration:underline; color:green;" target="_blank"><strong>PID controller</strong></a>
+
+
+<!--21-->
+<div class="english-text">
+<strong>circuit elements guide</strong>
+</div>
+<a href="/teaching/circuiteffort/circuit-elements-guide" style="text-decoration:underline; color:green;" target="_blank"><strong>کتابچه المان‌های مدار برای دانش‌آموزان</strong></a>
+
+<!--22-->
+<div class="english-text">
+<strong>LLM-Aware PID</strong>
+</div>
+<a href="/teaching/circuiteffort/llm_pid" style="text-decoration:underline; color:green;" target="_blank"><strong>کنترل به کمک مدل زبانی بزرگ</strong></a>
+
+
+<!--23-->
+<div class="english-text">
+<strong>تحلیل و کاهش تداخل الکترومغناطیسی در مبدل‌های سوئیچینگ</strong>
+</div>
+<a href="/teaching/circuiteffort/Analysis_and_reduction_of_electromagnetic_interference_in_buck_converters_2" style="text-decoration:underline; color:green;" target="_blank"><strong>تحلیل و کاهش تداخل الکترومغناطیسی در مبدل‌های سوئیچینگ</strong></a>
+
+<!--24-->
+<div class="english-text">
+<strong>Internet of Things</strong>
+</div>
+<a href="/teaching/circuiteffort/iot-system" style="text-decoration:underline; color:green;" target="_blank"><strong>اینترنت اشیا</strong></a>
+
+
+<!--25-->
+<div class="english-text">
+<strong>DC Motor</strong>
+</div>
+<a href="/teaching/circuiteffort/DC_Motor_fa" style="text-decoration:underline; color:green;" target="_blank"><strong>موتور DC</strong></a>
+
+<!--26-->
+<div class="english-text">
+<strong>Simulation and Circuit Analysis</strong>
+</div>
+<a href="/teaching/circuiteffort/Simulation-and-Circuit-Analysis" style="text-decoration:underline; color:green;" target="_blank"><strong>شبیه سازی و تحلیل مدار</strong></a>
+
+<!--27-->
+<div class="english-text">
+<strong>تحلیل AC مدارهای الکترونیکی با استفاده از NgSpice و بررسی عملی PySpice</strong>
+</div>
+<a href="/teaching/circuiteffort/AC-Analysis-of-Electronic-Circuits-Using-NgSpice" style="text-decoration:underline; color:green;" target="_blank"><strong>تحلیل AC مدارهای الکترونیکی با استفاده از NgSpice و بررسی عملی PySpice</strong></a>
+
+<!--28-->
+<div class="english-text">
+<strong>Bias Point Analysis</strong>
+</div>
+<a href="/teaching/circuiteffort/BiasPoint" style="text-decoration:underline; color:green;" target="_blank"><strong>Bias Point Analysis</strong></a>
+
+
+<!--29-->
+<div class="english-text">
+<strong>Ohmmeter</strong>
+</div>
+<a href="/teaching/circuiteffort/ohmmeter_from_classical_theory_to_digital_precision" style="text-decoration:underline; color:green;" target="_blank"><strong>اهم‌سنج: از تئوری کلاسیک تا دقت دیجیتال</strong></a>
+
+
+<!--30-->
+<div class="english-text">
+<strong>Diode sensitivity Analysis</strong>
+</div>
+<a href="/teaching/circuiteffort/Diode-sensitivity-Analysis" style="text-decoration:underline; color:green;" target="_blank"><strong>تحلیل حساسیت در مدارات دیودی</strong></a>

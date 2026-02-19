@@ -1,0 +1,75 @@
+- Edge case
+Lowpass filter for a sensor.
+Passband 1 kHz with at most 1 dB loss.
+Stopband 3 kHz with at least 30 dB attenuation.
+Maximum stages is 2.
+Source impedance is 50 ohm, load is 10k.
+
+Minimum stages 3 and Maximum stages 4.
+
+- Low-frequency noise filter (avoid high R)
+RC lowpass for filtering low-frequency noise in a measurement chain.
+Passband up to 50 Hz with less than 1 dB loss.
+At 1 kHz attenuation should exceed 30 dB.
+High value resistors should be avoided (keep R below 100k).
+Source impedance 100 ohm, load 100k.
+
+- ADC anti-aliasing
+RC lowpass filter for ADC anti-aliasing.
+Passband edge fp = 1 kHz with at most 1 dB loss.
+Stopband edge fs = 10 kHz with at least 40 dB attenuation.
+Maximum stages is 4.
+Source impedance is 50 ohm, load is 100k.
+Prefer E24 resistors.
+
+- Audio smoothing
+Simple RC lowpass for audio smoothing.
+Passband up to 5 kHz with less than 1 dB loss.
+At 20 kHz attenuation should be at least 15 dB.
+Maximum stages is 2.
+Source impedance 200 ohm, load 10k.
+
+Design an RC low-pass filter for ADC anti-aliasing.
+
+Interfaces:
+- Rs = 50 ohm
+- RL = 100k ohm
+
+Targets:
+- Passband edge fp = 1 kHz
+- Passband loss Ap = 1 dB
+- Stopband edge fs = 10 kHz
+- Stopband attenuation As = 40 dB
+
+Topology:
+- Prefer rc_cascade_staggered (if not possible, try rc_cascade_equal)
+
+Constraints:
+- stages_min = 1
+- stages_max = 4
+- snap_r_to_series = true
+- e_series = E24
+- r_min_ohm = 100
+- r_max_ohm = 1e6
+- c_min_f = 1e-12
+- c_max_f = 1e-3
+
+Optimizer:
+- objective = weighted_penalty
+- seed = 1
+- particles = 25
+- iters = 50
+- w = 0.72
+- c1 = 1.49
+- c2 = 1.49
+- fmax_hz = 1e6
+- points = 400
+
+////
+Constraints:
+- r_min_ohm = 100
+- r_max_ohm = 100000
+- c_min_f = 1e-12
+- c_max_f = 1e-7
+
+- stages_min = 3

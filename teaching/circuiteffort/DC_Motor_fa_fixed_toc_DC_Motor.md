@@ -3,7 +3,7 @@ layout: persian
 classes: wide rtl-layout
 dir: rtl
 title: "موتور جریان مستقیم (DC Motor)"
-permalink: /teaching/studenteffort/circuiteffort/DC_Motor_fa_fixed_toc_DC_Motor/
+permalink: /teaching/circuiteffort/DC_Motor_fa_fixed_toc_DC_Motor/
 author_profile: true
 ---
 
@@ -106,9 +106,9 @@ author_profile: true
 
 <div align="center" style="display:flex; justify-content:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/4_1.jpg" width="30%">
-  <img src="./assets/circuiteffort/DC_Motor/5_1.jpg" width="30%">
-  <img src="./assets/circuiteffort/DC_Motor/اجزای-موتورهای-DC.jpg" width="30%">
+  <img src="/assets/circuiteffort/DC_Motor/4_1.jpg" width="30%">
+  <img src="/assets/circuiteffort/DC_Motor/5_1.jpg" width="30%">
+  <img src="/assets/circuiteffort/DC_Motor/اجزای-موتورهای-DC.jpg" width="30%">
 
 </div>
 
@@ -140,7 +140,7 @@ author_profile: true
 
 <div style="direction: rtl; display:flex; align-items:center; gap:20px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/42xU_F.gif" alt="انیمیشن موتور DC" width="250" style="border-radius:10px;">
+  <img src="/assets/circuiteffort/DC_Motor/42xU_F.gif" alt="انیمیشن موتور DC" width="250" style="border-radius:10px;">
 
   <div style="text-align:justify; line-height:1.8; font-size:15px;">
 بنابراین، اگر دو آهن‌ربای میله‌ای داشته باشید که دو سر آن‌ها با حروف «شمال» و «جنوب» مشخص شده باشد، سر شمالی یکی از آهن‌رباها، سر جنوبی آهن‌ربای دیگر را جذب می‌کند.  
@@ -165,7 +165,7 @@ author_profile: true
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_1 (1).gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_1 (1).gif"
   
 </div>
 
@@ -187,7 +187,7 @@ author_profile: true
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_3.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_3.gif"
   
 </div>
 
@@ -209,7 +209,7 @@ author_profile: true
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_4.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_4.gif"
 </div>
 
 <div style="direction: rtl; text-align: right;">  
@@ -228,7 +228,7 @@ author_profile: true
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_5.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_5.gif"
 </div>
 
 
@@ -249,7 +249,7 @@ author_profile: true
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_6.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_6.gif"
 </div>
 
 
@@ -265,7 +265,7 @@ author_profile: true
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_7.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How does an Electric Motor work   (DC Motor)_7.gif"
 </div>
 
 
@@ -288,11 +288,11 @@ author_profile: true
 </div>
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_1.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_1.gif"
 </div>
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_2.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_2.gif"
 </div>
 
 <div style="direction: rtl; text-align: right;">  
@@ -305,15 +305,15 @@ author_profile: true
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_3.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_3.gif"
 </div>
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_4.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_4.gif"
 </div>
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_5.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_5.gif"
 </div>
 
 
@@ -328,7 +328,7 @@ author_profile: true
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_6.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_6.gif"
 </div>
 
 
@@ -346,15 +346,15 @@ author_profile: true
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_7.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_7.gif"
 </div>
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_8.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_8.gif"
 </div>
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_9.gif"
+  <img src="/assets/circuiteffort/DC_Motor/How a DC Motor Works   Full Breakdown with 3D Animation - The science works (720p, h264)_9.gif"
 </div>
 
 
@@ -386,7 +386,7 @@ author_profile: true
 
 <div style="direction: rtl; display:flex; align-items:center; gap:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/magnetic-flux-2.webp" alt="شار مغناطیسی" width="250" style="border-radius:10px;">  
+  <img src="/assets/circuiteffort/DC_Motor/magnetic-flux-2.webp" alt="شار مغناطیسی" width="250" style="border-radius:10px;">  
 
   <div style="text-align:justify; line-height:1.8; font-size:15px;">  
 <a id="شار-مغناطیسی"></a>
@@ -426,7 +426,7 @@ $$
 </ul>  
 
 <p align="center">
-  <img src="./assets/circuiteffort/DC_Motor/emf-induction.png" width="400" alt="القای الکترومغناطیسی">
+  <img src="/assets/circuiteffort/DC_Motor/emf-induction.png" width="400" alt="القای الکترومغناطیسی">
 </p>  
 
 </div>
@@ -442,7 +442,7 @@ $$
 
 | **Change the magnetic field $B$** | **Change the area $A$** | **Change the angle $θ$** |
 |:--:|:--:|:--:|
-| <img src="./assets/circuiteffort/DC_Motor/75_orig.jpg" width="250"> | <img src="./assets/circuiteffort/DC_Motor/magnetic_flux_02.jpg" width="250"> | <img src="./assets/circuiteffort/DC_Motor/magnetic_flux_03.jpg" width="250"> |
+| <img src="/assets/circuiteffort/DC_Motor/75_orig.jpg" width="250"> | <img src="/assets/circuiteffort/DC_Motor/magnetic_flux_02.jpg" width="250"> | <img src="/assets/circuiteffort/DC_Motor/magnetic_flux_03.jpg" width="250"> |
 | Move a magnet closer or farther from a coil. | Expand or shrink the size of the loop. | Rotate the loop in the magnetic field. |
 | $\mathcal{E} = -A \cos\theta \cdot \frac{dB}{dt}$ | $\mathcal{E} = -B \cos\theta \cdot \frac{dA}{dt}$ | $\mathcal{E} = +B A \sin\theta \cdot \frac{d\theta}{dt}$ |
 
@@ -453,7 +453,7 @@ $$
   <!-- 🧲 بخش تصویر -->
 
   <div style="flex:1; min-width:260px; max-width:340px;">
-    <img src="./assets/circuiteffort/DC_Motor/Figure_24_02_01.jpg" width="100%" style="border-radius:10px;">
+    <img src="/assets/circuiteffort/DC_Motor/Figure_24_02_01.jpg" width="100%" style="border-radius:10px;">
   </div>
 
   <!-- 📘 بخش متن -->
@@ -630,7 +630,7 @@ $$
 
 <div style="display:flex; align-items:center; gap:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/Magnetic-force-on-wire-with-electrons.svg.png" alt="نیروی مغناطیسی بر رسانا" width="250" style="border-radius:10px;">  
+  <img src="/assets/circuiteffort/DC_Motor/Magnetic-force-on-wire-with-electrons.svg.png" alt="نیروی مغناطیسی بر رسانا" width="250" style="border-radius:10px;">  
 
   <div style="text-align:justify; line-height:1.8; font-size:15px;">  
   <p>نیروی لورنتز \( \vec{F} \) که بر یک ذره‌ی نقطه‌ای با بار الکتریکی \( q \) و سرعت \( \vec{v} \) در اثر میدان‌های الکتریکی \( \vec{E} \) و مغناطیسی \( \vec{B} \) اعمال می‌شود، به‌صورت زیر تعریف می‌شود:</p>  
@@ -726,9 +726,9 @@ $$
 در نبود استاتور، روتور محیط مغناطیسی لازم برای عملکرد را نخواهد داشت و موتور قادر به تبدیل انرژی الکتریکی به انرژی مکانیکی نخواهد بود.</p>  
 
 <div align="center" style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-  <img src="./assets/circuiteffort/DC_Motor/df.f8.1f.H1MatthiesLichtmaschine700169810046677.webp" width="20%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/stator.jpg" width="20%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/what is a stator.png" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/df.f8.1f.H1MatthiesLichtmaschine700169810046677.webp" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/stator.jpg" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/what is a stator.png" width="20%" style="border-radius:20px">
 </div>  
 <a id="ساختار-استاتور"></a>
 
@@ -768,9 +768,9 @@ $$
 بدون وجود روتور، موتور قادر به تولید گشتاور یا انجام کار مکانیکی مفید نخواهد بود.</p>  
 
 <div align="center" style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-  <img src="./assets/circuiteffort/DC_Motor/Various_motor_rotor_TICI.jpg" width="20%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/615guzeyTcL.jpg" width="20%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/8ysm63qq.jpg" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/Various_motor_rotor_TICI.jpg" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/615guzeyTcL.jpg" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/8ysm63qq.jpg" width="20%" style="border-radius:20px">
 </div>  
 <a id="ساختار-روتور"></a>
 
@@ -817,9 +817,9 @@ $$
 به‌طوری که گشتاور تولیدشده توسط موتور همواره در یک جهت باقی بماند.</p>  
 
 <div align="center" style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-  <img src="./assets/circuiteffort/DC_Motor/sparking-in-vacuum-cleaner-collector5.webp" width="20%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/Commutator.webp" width="20%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/Commutator.jpg" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/sparking-in-vacuum-cleaner-collector5.webp" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/Commutator.webp" width="20%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/Commutator.jpg" width="20%" style="border-radius:20px">
 </div>  
 <a id="ساختار-کموتاتور"></a>
 
@@ -864,8 +864,8 @@ $$
 بدون وجود جاروبک‌ها، جریان الکتریکی نمی‌توانست به روتور منتقل شود و موتور عملاً از کار می‌افتاد.</p>
 
 <div align="center" style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap;">
-  <img src="./assets/circuiteffort/DC_Motor/Carbon_brushes.jpg" width="15%" style="border-radius:20px">
-  <img src="./assets/circuiteffort/DC_Motor/615E1QceDzL.jpg" width="15%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/Carbon_brushes.jpg" width="15%" style="border-radius:20px">
+  <img src="/assets/circuiteffort/DC_Motor/615E1QceDzL.jpg" width="15%" style="border-radius:20px">
 </div>  
 <a id="ساختار-جاروبک‌ها"></a>
 
@@ -909,7 +909,7 @@ $$
 
 <div align="center" style="display:flex; justify-content:center; gap:30px;">
 
-  <img src="./assets/circuiteffort/DC_Motor/Electric_Motors_Chapter_2_Fig3-_960_x_500.png" width="40%" style="border-radius:20px" >
+  <img src="/assets/circuiteffort/DC_Motor/Electric_Motors_Chapter_2_Fig3-_960_x_500.png" width="40%" style="border-radius:20px" >
 
 </div>
 
@@ -938,7 +938,7 @@ $$
 
 <div style="direction: rtl; display:flex; align-items:center; gap:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/Equivalent-circuit-of-an-armature-controlled-dc-motor.png" alt="مدار معادل موتور DC" width="500" style="border-radius:10px;">  
+  <img src="/assets/circuiteffort/DC_Motor/Equivalent-circuit-of-an-armature-controlled-dc-motor.png" alt="مدار معادل موتور DC" width="500" style="border-radius:10px;">  
 
   <div style="text-align:justify; line-height:1.8; font-size:15px;">  
 
@@ -974,7 +974,7 @@ J \frac{d\omega(t)}{dt}
 
 <div style="direction: rtl; display:flex; align-items:center; gap:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/ChatGPT Image Oct 10, 2025, 12_47_07 PM.png" alt="حرکت چرخشی موتور DC" width="250" style="border-radius:10px;">  
+  <img src="/assets/circuiteffort/DC_Motor/ChatGPT Image Oct 10, 2025, 12_47_07 PM.png" alt="حرکت چرخشی موتور DC" width="250" style="border-radius:10px;">  
 
   <div style="text-align:justify; line-height:1.8; font-size:15px;">  
 
@@ -1052,7 +1052,7 @@ $$
 
 <div style="direction: rtl; display:flex; align-items:center; gap:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/dl-dc-motors-500x500.webp" alt="موتور جریان مستقیم با آهنربای دائمی" width="250" style="border-radius:10px;">  
+  <img src="/assets/circuiteffort/DC_Motor/dl-dc-motors-500x500.webp" alt="موتور جریان مستقیم با آهنربای دائمی" width="250" style="border-radius:10px;">  
 
   <div style="text-align:justify; line-height:1.9; font-size:15px;">  
 
@@ -1111,7 +1111,7 @@ $$
 
 <div style="direction: rtl; display:flex; align-items:center; gap:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/equivalent-circuit-of-pmdc.gif" alt="مدار معادل موتور PMDC" width="250" style="border-radius:10px;">  
+  <img src="/assets/circuiteffort/DC_Motor/equivalent-circuit-of-pmdc.gif" alt="مدار معادل موتور PMDC" width="250" style="border-radius:10px;">  
 
   <div style="text-align:justify; line-height:1.9; font-size:15px;">  
 
@@ -1177,7 +1177,7 @@ $$
 
 <div style="direction: rtl; display:flex; align-items:center; gap:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/gif.gif" alt="موتور جریان مستقیم بدون جاروبک (BLDC)" width="250" style="border-radius:10px;">  
+  <img src="/assets/circuiteffort/DC_Motor/gif.gif" alt="موتور جریان مستقیم بدون جاروبک (BLDC)" width="250" style="border-radius:10px;">  
 
   <div style="text-align:justify; line-height:1.9; font-size:15px;">  
 
@@ -1195,7 +1195,7 @@ $$
 
 
 <div align="center">
-  <img src="./assets/circuiteffort/DC_Motor/media.gif"
+  <img src="/assets/circuiteffort/DC_Motor/media.gif"
     <source src="video/Brushless DC Motor, How it works -_1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   
@@ -1227,7 +1227,7 @@ $$
 
 <div style="direction: rtl; text-align: justify; display:flex; align-items:center; gap:30px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/brushless-motor.png" width="20%" style="border-radius:20px;">  
+  <img src="/assets/circuiteffort/DC_Motor/brushless-motor.png" width="20%" style="border-radius:20px;">  
 
   <div style="line-height:1.9; font-size:15px;">  
   
@@ -1243,7 +1243,7 @@ $$
 
 <div style="direction: rtl; text-align: justify; display:flex; align-items:center; gap:30px; margin-top:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/bldc-motor.png" width="20%" style="border-radius:20px;">  
+  <img src="/assets/circuiteffort/DC_Motor/bldc-motor.png" width="20%" style="border-radius:20px;">  
 
   <div style="line-height:1.9; font-size:15px;">  
   
@@ -1263,7 +1263,7 @@ $$
 <h2>کنترل موتور بدون جاروبک (BLDC) با آردوینو</h2>  
 
 <div align="center" style="display:flex; justify-content:center; gap:30px; margin:20px 0;">  
-  <img src="./assets/circuiteffort/DC_Motor/Arduino-BLDC-Motor-Control-Circuit-Diagram-Schematic-1024x558.webp" width="50%" style="border-radius:20px;">  
+  <img src="/assets/circuiteffort/DC_Motor/Arduino-BLDC-Motor-Control-Circuit-Diagram-Schematic-1024x558.webp" width="50%" style="border-radius:20px;">  
 </div>  
 
 <ul style="line-height:1.9; font-size:15px; text-align:justify;">  
@@ -1349,7 +1349,7 @@ void loop() {
 
 <div style="display:flex; align-items:center; gap:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/separately-excited-dc-motor.gif" alt="موتور جریان مستقیم با تحریک مستقل" width="250" style="border-radius:10px;">  
+  <img src="/assets/circuiteffort/DC_Motor/separately-excited-dc-motor.gif" alt="موتور جریان مستقیم با تحریک مستقل" width="250" style="border-radius:10px;">  
 
   <div style="text-align:justify; line-height:1.9; font-size:15px;">  
 
@@ -1364,7 +1364,7 @@ void loop() {
 
 
 <div align="center" style="display:flex; justify-content:center; gap:30px; margin:20px 0;">  
-  <img src="./assets/circuiteffort/DC_Motor/images (2).png" width="30%" style="border-radius:20px;">  
+  <img src="/assets/circuiteffort/DC_Motor/images (2).png" width="30%" style="border-radius:20px;">  
 </div>  
 
 <p style="text-align:justify; line-height:1.9; font-size:15px;">  
@@ -1444,7 +1444,7 @@ $$
 
 <div style="display:flex; align-items:center; gap:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/shunt-dc-motor.gif" alt="مدار موتور شنت DC" width="250" style="border-radius:10px;">  
+  <img src="/assets/circuiteffort/DC_Motor/shunt-dc-motor.gif" alt="مدار موتور شنت DC" width="250" style="border-radius:10px;">  
 
   <div style="text-align:justify; line-height:1.9; font-size:15px;">  
 
@@ -1459,7 +1459,7 @@ $$
 </div>  
 
 <div align="center" style="display:flex; justify-content:center; gap:30px; margin:20px 0;">  
-  <img src="./assets/circuiteffort/DC_Motor/DC-Shunt-Motor-Diagram.png" width="30%" style="border-radius:20px;">  
+  <img src="/assets/circuiteffort/DC_Motor/DC-Shunt-Motor-Diagram.png" width="30%" style="border-radius:20px;">  
 </div> 
 
 
@@ -1544,7 +1544,7 @@ $$
 
 <div style="display:flex; align-items:center; gap:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/series-dc-motor.gif" alt="مدار موتور DC سری" width="250" style="border-radius:10px;">  
+  <img src="/assets/circuiteffort/DC_Motor/series-dc-motor.gif" alt="مدار موتور DC سری" width="250" style="border-radius:10px;">  
 
   <div style="text-align:justify; line-height:1.9; font-size:15px;">  
 
@@ -1556,7 +1556,7 @@ $$
 </div>  
 
 <div align="center" style="display:flex; justify-content:center; gap:30px; margin:20px 0;">  
-  <img src="./assets/circuiteffort/DC_Motor/Types-of-DC-Motor-1.jpg" width="30%" style="border-radius:20px;">  
+  <img src="/assets/circuiteffort/DC_Motor/Types-of-DC-Motor-1.jpg" width="30%" style="border-radius:20px;">  
 </div>
 
 <p style="text-align:justify; line-height:1.9; font-size:15px;">  
@@ -1622,7 +1622,7 @@ $$
 
 <div style="display:flex; align-items:center; gap:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/dc-compound-motor.gif" alt="موتور DC مرکب" width="250" style="border-radius:10px;">  
+  <img src="/assets/circuiteffort/DC_Motor/dc-compound-motor.gif" alt="موتور DC مرکب" width="250" style="border-radius:10px;">  
 
   <div style="text-align:justify; line-height:1.9; font-size:15px;">  
 
@@ -1650,7 +1650,7 @@ $$
 
 <div style="display:flex; align-items:center; gap:20px;">  
 
-  <img src="./assets/circuiteffort/DC_Motor/dc-compound-motor-2-13-2-15.gif" alt="مدار موتور مرکب DC" width="250" style="border-radius:10px;">  
+  <img src="/assets/circuiteffort/DC_Motor/dc-compound-motor-2-13-2-15.gif" alt="مدار موتور مرکب DC" width="250" style="border-radius:10px;">  
 
   <div style="text-align:justify; line-height:1.9; font-size:15px;">  
 

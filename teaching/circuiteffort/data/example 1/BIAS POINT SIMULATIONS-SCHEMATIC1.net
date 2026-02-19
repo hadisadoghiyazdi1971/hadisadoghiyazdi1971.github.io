@@ -1,0 +1,4 @@
+* source BIAS POINT SIMULATIONS
+R_R1         0 N00189  0.5k  
+D_D1         N00093 N00189 D1N4148 
+V_V1         N00093 0 10Vdc

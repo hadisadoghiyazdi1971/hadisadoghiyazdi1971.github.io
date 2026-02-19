@@ -99,7 +99,7 @@ Where:
 
 **Taylor Expansion of $J(w + \Delta w)$**
 
-$J(w)$ is a quadratic function of w, meaning it can be expressed in the form $J(w) = aw² + bw + c$, Where $a$, $b$, and $c$ are constants and $a ≠ 0$. So we can wrote $J(w + \Delta w)$ :
+Assume $J(w)$ is quadratic in $w$, e.g. $J(w)=aw^2+bw+c$ with $a\neq0$.
 
 $$
 J(w + \Delta w) = J(w)
@@ -108,31 +108,44 @@ J(w + \Delta w) = J(w)
 + \dots
 $$
 
-
 **Simplifying the Expansion**
 
-Let’s define the second-order term as:
+Let the second–order term be:
 
 $$
-b = \frac{1}{2} J^{"}(w)+...
+b = \frac{1}{2} J''(w)
 $$
 
-Thus, the expansion becomes:
+Then:
 
 $$
-J(w + \Delta w) = J(w) + \Delta wJ^{'}(w)  + {\Delta w}^2b
+J(w + \Delta w)
+=
+J(w) + \Delta w \, J'(w) + (\Delta w)^2 b
 $$
+
 
 So
-$$J(w + \Delta w) - J(w) = \Delta w \nabla_w J(w) + {\Delta w}^2b$$
 
-we called :
+$$
+J(w + \Delta w) - J(w)
+=
+\Delta w \, \nabla_w J(w) + (\Delta w)^2 b
+$$
+
+
+Define
+
 $$
 J_1(\Delta w) = J(w + \Delta w) - J(w)
 $$
-So
+
+Thus
+
 $$
-J_1(\Delta w) = \Delta w \nabla_w J(w) + {\Delta w}^2b
+J_1(\Delta w)
+=
+\Delta w \, \nabla_w J(w) + (\Delta w)^2 b
 $$
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
