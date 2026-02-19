@@ -208,3 +208,9 @@ Generalization Error</strong>
 <strong>LangChain ShortMemoty Doc</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/LangChain_ShortMemoty_Doc" style="text-decoration:underline; color:green;" target="_blank"><strong> مستندات ماژول حافظه کوتاه‌مدت LangChain</strong></a>
+
+<!--28-->
+<div class="english-text">
+<strong>Prompt Engineering</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/LangChain_ShortMemoty_Doc" style="text-decoration:underline; color:green;" target="_blank"><strong> مهندسی پرامپت</strong></a>
