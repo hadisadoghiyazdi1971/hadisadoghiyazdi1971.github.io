@@ -197,9 +197,14 @@ Generalization Error</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/Using_LLMs_with_LangChain_Models" style="text-decoration:underline; color:green;" target="_blank"><strong>استفاده از llmها به کمک langchain</strong></a>
 
-<!--26-->
+<!--27-->
 <div class="english-text">
 <strong>Exploring the LangChain Framework</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/Exploring_the_LangChain_Framework" style="text-decoration:underline; color:green;" target="_blank"><strong>بررسی چارچوب LangChain: توسعه برنامه‌های مبتنی بر مدل‌های زبانی بزرگ</strong></a>
 
+<!--27-->
+<div class="english-text">
+<strong>LangChain ShortMemoty Doc</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/LangChain_ShortMemoty_Doc" style="text-decoration:underline; color:green;" target="_blank"><strong> مستندات ماژول حافظه کوتاه‌مدت LangChain</strong></a>
