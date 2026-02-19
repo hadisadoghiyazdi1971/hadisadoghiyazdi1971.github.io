@@ -190,3 +190,9 @@ Generalization Error</strong>
 <strong>Implementing Conversation Memory: From Manual to Automatic Management</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/Memory_Mousavinezhad" style="text-decoration:underline; color:green;" target="_blank"><strong>پیاده‌سازی حافظه مکالمه: از مدیریت دستی تا خودکار</strong></a>
+
+<!--26-->
+<div class="english-text">
+<strong>Using LLMs with LangChain Models</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/Using_LLMs_with_LangChain_Models" style="text-decoration:underline; color:green;" target="_blank"><strong>استفاده از llmها به کمک langchain</strong></a>
