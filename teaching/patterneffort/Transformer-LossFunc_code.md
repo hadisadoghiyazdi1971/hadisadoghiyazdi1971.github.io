@@ -171,7 +171,7 @@ plt.show()
 ```
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/patterneffort/TAL_Images/outputCrossEntropy.png" alt="IPS1" style="object-fit: contain;">
+    <img src="/assets/patterneffort/transformer loss function/TAL_Images/outputCrossEntropy.png" alt="IPS1" style="object-fit: contain;">
 </div>
 
 
@@ -234,7 +234,7 @@ plt.show()
 ```
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/patterneffort/TAL_Images/outputMSE.png" alt="IPS1" style="object-fit: contain;">
+    <img src="/assets/patterneffort/transformer loss function/TAL_Images/outputMSE.png" alt="IPS1" style="object-fit: contain;">
 </div>
 
 این کد یک مسئله‌ی رگرسیون با ۵۰ نمونه رو شبیه‌سازی می‌کنه.  
@@ -297,7 +297,7 @@ plt.show()
 ```
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/patterneffort/TAL_Images/outputBCE.png" alt="IPS1" style="object-fit: contain;">
+    <img src="/assets/patterneffort/transformer loss function/TAL_Images/outputBCE.png" alt="IPS1" style="object-fit: contain;">
 </div>
 
 این کد یک مسئله‌ی دودویی (دو کلاس: ۰ یا ۱) با ۵۰ نمونه رو شبیه‌سازی می‌کنه.  
@@ -373,7 +373,7 @@ plt.legend()
 plt.show()
 ```
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/patterneffort/TAL_Images/outputContrastive.png" alt="IPS1" style="object-fit: contain;">
+    <img src="/assets/patterneffort/transformer loss function/TAL_Images/outputContrastive.png" alt="IPS1" style="object-fit: contain;">
 </div>
 
 این کد ۵۰ جفت نمونه رو شبیه‌سازی می‌کنه.  
@@ -460,7 +460,7 @@ plt.grid(True)
 plt.show()
 ```
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="/assets/patterneffort/TAL_Images/tripleLoss.png" alt="IPS1" style="object-fit: contain;">
+    <img src="/assets/patterneffort/transformer loss function/TAL_Images/tripleLoss.png" alt="IPS1" style="object-fit: contain;">
 </div>
 
 

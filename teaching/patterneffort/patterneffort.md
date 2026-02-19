@@ -152,7 +152,7 @@ Generalization Error</strong>
 <div class="english-text">
 <strong>Transformer Loss Function and code</strong>
 </div>
-<a href="/teaching/studenteffort/patterneffort/Transformer-LossFunc_code" style="text-decoration:underline; color:green;" target="_blank"><strong>ترنسفورمر و نقش توابع ضرر در یادگیری</strong></a>
+<a href="/teaching/studenteffort/patterneffort/Transformer-LossFunc_code" style="text-decoration:underline; color:green;" target="_blank"><strong>ترنسفورمر و نقش توابع ضرر  در یادگیری و کد آن‌ها</strong></a>
 
 <!--20-->
 <div class="english-text">
