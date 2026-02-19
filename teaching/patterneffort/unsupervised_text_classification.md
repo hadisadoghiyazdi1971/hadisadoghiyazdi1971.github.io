@@ -57,7 +57,7 @@ header:
 مطابق با شکل ۱، فرآیند کلی سیستم به دو بخش مجزا تقسیم می‌شود. در فاز اول (Offline Processing)، داده‌های متنی خام ابتدا به بردارهای معنایی تبدیل شده و سپس با استفاده از الگوریتم‌های خوشه‌بندی بدون ناظر سازمان‌دهی می‌شوند. در فاز دوم (Online Inference)، ورودی کاربر به‌صورت بلادرنگ پردازش شده و با استفاده از جستجوی شباهت در فضای برداری، دسته‌ی مناسب برای آن تعیین می‌شود.
 
 <div style="display:flex; justify-content:center; align-items:center; gap:10px; margin-top: 1rem;">
-  <img src="/assets/patterneffort/unsupervised_text_classification/Diagram.svg" alt="STFT-overview" style="width:70%; height:auto; object-fit:contain;">
+  <img src="/assets/patterneffort/unsupervised_text_classification/Diagram.png" alt="STFT-overview" style="width:70%; height:auto; object-fit:contain;">
 </div>
 <div class="caption" style="text-align:center; margin-top:8px; direction:rtl;">
 نمای کلی از فرآیند پردازش آفلاین و استنتاج آنلاین در سیستم پیشنهادی
