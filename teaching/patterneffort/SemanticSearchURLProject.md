@@ -346,7 +346,7 @@ python app-local.py
 python app-noLLM.py
 ```
 
-![Chunks](Chunks.png)
+<img src="/assets/patterneffort/SemanticSearchURLProject/Chunks.png" alt="prisonheader1" style="width: 50%; height: 50%; object-fit: contain;">
 
 ## 7) n8n (How we connect the chatbot to the LLM)
 
