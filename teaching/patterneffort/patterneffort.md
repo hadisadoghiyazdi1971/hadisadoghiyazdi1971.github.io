@@ -181,6 +181,6 @@ Generalization Error</strong>
 
 <!--24-->
 <div class="english-text">
-<strong>Ollama</strong>
+<strong>Plagiarism Detection</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/PLAGIARISM_DETECTION" style="text-decoration:underline; color:green;" target="_blank"><strong>تشخیص سرقت ادبی - Plagiarism Detection</strong></a>
