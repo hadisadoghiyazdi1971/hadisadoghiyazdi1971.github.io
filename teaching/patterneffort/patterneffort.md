@@ -159,3 +159,16 @@ Generalization Error</strong>
 <strong>Streamlit guide with examples</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/streamlit" style="text-decoration:underline; color:green;" target="_blank"><strong>راهنمای جامع Streamlit با یک مثال کاربردی</strong></a>
+
+<!--21-->
+<div class="english-text">
+<strong>Semantic Search (URL) Project</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/SemanticSearchURLProject" style="text-decoration:underline; color:green;" target="_blank"><strong>پروژه جست‌وجو معنایی آدرس‌های وب</strong></a>
+
+
+<!--22-->
+<div class="english-text">
+<strong>Understanding Pull Requests</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/PULL_REQUEST" style="text-decoration:underline; color:green;" target="_blank"><strong>آموزش Pull request</strong></a>

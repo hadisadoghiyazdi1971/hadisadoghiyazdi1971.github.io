@@ -2,7 +2,7 @@
 layout: persian
 classes: wide rtl-layout
 dir: rtl
-title: "روش های تجمیعی در یادگیری ماشین"
+title: "جست و جوی معنایی صفحات وب"
 permalink: /teaching/studenteffort/patterneffort/SemanticSearchURLProject/
 author_profile: true
 
