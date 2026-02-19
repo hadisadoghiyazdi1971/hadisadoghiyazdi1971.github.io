@@ -153,3 +153,9 @@ Generalization Error</strong>
 <strong>Transformer Loss Function and code</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/Transformer-LossFunc_code" style="text-decoration:underline; color:green;" target="_blank"><strong>ترنسفورمر و نقش توابع ضرر در یادگیری</strong></a>
+
+<!--20-->
+<div class="english-text">
+<strong>Streamlit guide with examples</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/streamlit" style="text-decoration:underline; color:green;" target="_blank"><strong>راهنمای جامع Streamlit با یک مثال کاربردی</strong></a>
