@@ -183,4 +183,10 @@ Generalization Error</strong>
 <div class="english-text">
 <strong>Plagiarism Detection</strong>
 </div>
-<a href="/teaching/studenteffort/patterneffort/PLAGIARISM_DETECTION" style="text-decoration:underline; color:green;" target="_blank"><strong>تشخیص سرقت ادبی - Plagiarism Detection</strong></a>
+<a href="/teaching/studenteffort/patterneffort/PLAGIARISM_DETECTION" style="text-decoration:underline; color:green;" target="_blank"><strong>تشخیص سرقت ادبی</strong></a>
+
+<!--25-->
+<div class="english-text">
+<strong>Implementing Conversation Memory: From Manual to Automatic Management</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/Memory_Mousavinezhad" style="text-decoration:underline; color:green;" target="_blank"><strong>پیاده‌سازی حافظه مکالمه: از مدیریت دستی تا خودکار</strong></a>
