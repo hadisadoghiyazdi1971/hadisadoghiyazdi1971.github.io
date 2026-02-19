@@ -72,18 +72,6 @@ header:
 </div>
 <a href="/teaching/studenteffort/patterneffort/DPC-MK" style="text-decoration:underline; color:green;" target="_blank"><strong>پیاده‌سازی و آزمایش الگوریتم DPC-MK</strong></a>
 
-<!--7-->
-<div class="english-text">
-<strong>BERT</strong>
-</div>
-<a href="/teaching/studenteffort/patterneffort/BERT" style="text-decoration:underline; color:green;" target="_blank"><strong> بردار ساختن از کلمات به کمک روش BERT</strong></a>
-
-<!--8-->
-<div class="english-text">
-<strong>DPC-MK</strong>
-</div>
-<a href="/teaching/studenteffort/patterneffort/DPC-MK" style="text-decoration:underline; color:green;" target="_blank"><strong>پیاده‌سازی و آزمایش الگوریتم DPC-MK</strong></a>
-
 <!--9-->
 <div class="english-text">
 <strong>Agglomerative Methods</strong>
