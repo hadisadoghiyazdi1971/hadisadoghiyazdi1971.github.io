@@ -102,14 +102,11 @@ Where:
 Assume $J(w)$ is quadratic in $w$, e.g. $J(w)=aw^2+bw+c$ with $a\neq0$.
 
 $$
-J(w + \Delta w)
-=
-J(w)
+J(w + \Delta w) = J(w)
 + \frac{\Delta w}{1!} J'(w)
 + \frac{(\Delta w)^2}{2!} J''(w)
 + \dots
 $$
-
 
 **Simplifying the Expansion**
 

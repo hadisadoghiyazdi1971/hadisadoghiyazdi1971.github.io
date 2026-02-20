@@ -35,7 +35,7 @@ header:
     <img src="/assets/patterneffort/Text_Clustering_FAISS/Text Clustering.png" width="700" height="435"  alt="Text Clustering"  style="object-fit: contain;">
 </div>
 
-# مقدمه
+## مقدمه
 
 در عصر دیجیتال، حجم عظیمی از داده‌ها به صورت متن تولید و ذخیره می‌شود. از پست‌های شبکه‌های اجتماعی و ایمیل‌های کاری گرفته تا اسناد علمی و تیکت‌های پشتیبانی مشتریان، همه این‌ها نمونه‌هایی از داده‌های متنی **غیرساختاریافته** هستند که تحلیل آن‌ها برای به دست آوردن بینش، ارزش استراتژیک دارد. یکی از اساسی‌ترین تکنیک‌ها برای سازماندهی و درک این دریا از اطلاعات، **خوشه‌بندی متن (Text Clustering)** است.
 
@@ -100,7 +100,7 @@ header:
   2.  هر سند به یک بردار عددی تبدیل می‌شود که طول آن برابر با اندازه واژگان است. هر عنصر در این بردار، تعداد تکرار (فرکانس) کلمه متناظر در آن سند را نشان می‌دهد.  
   **محدودیت اصلی:** این روش هیچ درکی از معنای کلمات ندارد. برای مثال، کلمات "خودرو" و "اتومبیل" از نظر این مدل کاملاً متفاوت هستند، در حالی که مترادف هستند. همچنین، ترتیب کلمات نادیده گرفته می‌شود، بنابراین جملات "سگ گربه را تعقیب کرد" و "گربه سگ را تعقیب کرد" دارای نمایش یکسانی خواهند بود.
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+  <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="/assets/patterneffort/Text_Clustering_FAISS/BoW.png" width="700" height="435" alt="STFT-overview" style="object-fit: contain;">
 </div>
 
@@ -138,8 +138,24 @@ header:
 - **مدل‌های زبانی تولیدکننده Embedding:**  
   - **BERT (Bidirectional Encoder Representations from Transformers):**  
    این مدل یک نقطه عطف در NLP بود که با درک دوطرفه زمینه، قادر به تولید نمایش‌های متنی بسیار غنی بود. BERT برای هر کلمه بسته به جمله‌ای که در آن قرار دارد، یک بردار منحصر به فرد تولید می‌کند.
+
+
+> <div style="background-color: #fff8b3; padding: 10px; border-radius: 8px;">
+>  می‌توانید جهت آشنایی بیشتر با BERT مقاله زیر را مطالعه کنید:  <br>
+> <a href="https://hadisadoghiyazdi1971.github.io/teaching/studenteffort/patterneffort/BERT/" target="_blank"> بردار ساختن از کلمات به کمک روش BERT</a>
+> </div>
+
+
   - **Sentence Transformers:**  
    این کتابخانه که بر پایه مدل‌هایی مانند BERT ساخته شده، به طور خاص برای تولید یک بردار معنایی باکیفیت برای کل جملات و پاراگراف‌ها تنظیم (Fine-tune) شده است. این ویژگی آن را به ابزاری ایده‌آل برای وظایفی مانند جستجوی معنایی و خوشه‌بندی تبدیل کرده است.
+
+> <div style="background-color: #fff8b3; padding: 10px; border-radius: 8px;">
+>  می‌توانید جهت آشنایی بیشتر با Sentence Transformerها مقالات زیر را مطالعه کنید:  <br>
+> 1. <a href="https://sbert.net/" target="_blank">SentenceTransformers Documentation</a>  <br>
+> 2. <a href="https://cafetadris.com/blog/%D9%85%D8%AF%D9%84-%D8%AA%D8%B1%D9%86%D8%B3%D9%81%D9%88%D8%B1%D9%85%D8%B1/" target="_blank"> مدل ترنسفورمر (Transformer Model) چیست؟ </a>  <br>
+> 3. <a href="https://blog.asax.ir/sentence-transformer/" target="_blank">Sentence Transformer چیست؟</a>  <br>
+> </div>
+
 
 ### نقش Embedding در خوشه‌بندی معنایی
 
@@ -216,39 +232,246 @@ FAISS عمدتاً از **فاصله اقلیدسی (L2)** استفاده می�
 
 FAISS طیف وسیعی از شاخص‌ها را ارائه می‌دهد که هر کدام برای سناریوی خاصی بهینه شده‌اند. در ادامه مهم‌ترین آن‌ها بررسی می‌شوند:
 
-#### ۱. `IndexFlat` (جستجوی دقیق)
+### ۱. `IndexFlat` (جستجوی دقیق)
 این ساده‌ترین نوع شاخص است که جستجوی **دقیق (Exact)** و Brute-Force انجام می‌دهد. تمام بردارها در حافظه ذخیره شده و فاصله پرس‌وجو با همه آن‌ها محاسبه می‌شود.
 - **مزیت:** بالاترین دقت ممکن.
 - **عیب:** کند و مصرف‌کننده حافظه بالا. فقط برای مجموعه داده‌های کوچک (چند صد هزار بردار) مناسب است.
 - **مثال:** `IndexFlatL2` برای جستجوی دقیق با فاصله L2.
 
-#### ۲. IVF (Inverted File Index)
-این شاخص، کلید اصلی جستجوی غیرپوششی (Non-Exhaustive) و سریع در مجموعه داده‌های بزرگ است. IVF از یک تکنیک خوشه‌بندی برای کاهش حجم جستجو استفاده می‌کند.
-- **نحوه کار:**
-  1.  **مرحله آموزش (Training):** ابتدا کل مجموعه داده با استفاده از الگوریتم K-means به `nlist` خوشه (سلول ورونوی) تقسیم می‌شود.
-  2.  **مرحله جستجو:** هنگام جستجو، ابتدا `nprobe` خوشه‌ای که به بردار پرس‌وجو نزدیک‌تر هستند، شناسایی می‌شوند. سپس جستجو فقط **درون همین `nprobe` خوشه** انجام می‌شود.
-- **مزیت:** به شدت سرعت را افزایش می‌دهد.
-- **معاوضه:** پارامتر `nprobe` را باید تنظیم کرد. مقدار بالاتر `nprobe` به معنای جستجوی دقیق‌تر اما کندتر است.
-
-#### ۳. PQ (Product Quantization)
-این تکنیک یک روش **فشرده‌سازی (Compression)** برای بردارهاست که به کاهش شدید مصرف حافظه و افزایش سرعت محاسبات کمک می‌کند.
-- **نحوه کار:**
-  1.  هر بردار با ابعاد بالا به چندین زیربردار (Sub-vector) کوچک‌تر تقسیم می‌شود.
-  2.  برای هر زیربردار، یک Codebook کوچک (Codebook) با استفاده از K-means ایجاد می‌شود.
-  3.  بردار اصلی با مجموعه‌ای از کدها (شناسه‌های نزدیک‌ترین مرکز در هر Codebook) نمایش داده می‌شود.
-- **مزیت:** مصرف حافظه را به شدت کاهش می‌دهد (مثلاً یک بردار ۱۲۸ بعدی را به ۸ یا ۱۶ بایت فشرده می‌کند).
-- **کاربرد:** معمولاً با IVF ترکیب می‌شود (مانند `IndexIVFPQ`) تا هم سرعت و هم مصرف حافظه بهینه شود.
-
-#### ۴. HNSW (Hierarchical Navigable Small World)
-HNSW یک رویکرد مبتنی بر گراف است که برای جستجوی تقریبی با دقت و سرعت بسیار بالا شناخته می‌شود.
-- **نحوه کار:**
-  1.  یک گراف چندلایه از نقاط داده ایجاد می‌کند. لایه‌های بالاتر گراف‌های تنک‌تر و لایه‌های پایین‌تر گراف‌های متراکم‌تر هستند.
-  2.  جستجو از یک نقطه تصادفی در بالاترین لایه شروع شده و به صورت حریصانه به سمت نزدیک‌ترین همسایه‌ها حرکت می‌کند تا به یک نقطه محلی بهینه برسد.
-  3.  سپس به لایه پایین‌تر منتقل شده و جستجو از همان نقطه ادامه می‌یابد تا به لایه پایین (که شامل تمام نقاط است) برسد.
-- **مزیت:** تعادل عالی بین سرعت و دقت (Recall).
-- **عیب:** معمولاً مصرف حافظه بیشتری نسبت به IVF+PQ دارد و ساخت شاخص آن ممکن است زمان‌بر باشد.
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/patterneffort/Text_Clustering_FAISS/IndexFlatL2.png" alt="IndexFlatL2" style="width: 75%; height: 75%; object-fit: contain;">
+</div>
+<p class="wp-caption-text" style="margin-top: 8px; color: #555; align-items: center; text-align: center;">
+محاسبه فاصله L2 بین بردار پرس‌وجو xq و بردارهای indexشده (به عنوان y نشان‌داده‌شده)
+</p>
 
 
+مثال كد:
+```python
+import faiss
+import numpy as np
+
+dimension = 128
+n = 10000
+vectors = np.random.rand(n, dimension).astype('float32')
+query = np.random.rand(1, dimension).astype('float32')
+
+index = faiss.IndexFlatL2(dimension)
+index.add(vectors)
+k = 5
+distances, indices = index.search(query, k)
+print("distances:\n", distances)
+print("indices:\n", indices)
+```
+```
+distances:
+ [[14.145712  14.186624  14.391592  14.5573845 14.564116 ]]
+indices:
+ [[4860 5206 7413 4846  294]]
+ ```
+
+### ۲. IVF (Inverted File Index)
+
+ایندکس‌های IVF فضای برداری را به چندین خوشه (Voronoi Cell) تقسیم می‌کنند. در زمان جستجو، فقط خوشه‌های نزدیک به بردار پرس‌وجو بررسی می‌شوند.
+
+### الگوریتم:
+1. **خوشه‌بندی**: با استفاده از K-means، بردارها به `nlist` خوشه تقسیم می‌شوند.
+2. **جستجو**: فاصله بردار پرس‌وجو با مراکز خوشه‌ها محاسبه شده و فقط `nprobe` خوشه نزدیک جستجو می‌شوند.
+
+### پارامترهای کلیدی:
+- `nlist`: تعداد خوشه‌ها.
+- `nprobe`: تعداد خوشه‌هایی که در زمان جستجو بررسی می‌شوند.
+
+### ویژگی‌ها:
+- **سرعت**: بسیار سریع‌تر از Flat برای مجموعه داده‌های بزرگ.
+- **دقت**: با افزایش `nprobe` دقت افزایش می‌یابد.
+- **مصرف حافظه**: متوسط.
+
+### موارد استفاده:
+- مجموعه داده‌های بزرگ که نیاز به تعادل سرعت و دقت دارند.
+
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/patterneffort/Text_Clustering_FAISS/IVF.jpg" alt="IVF" style="width: 75%; height: 75%; object-fit: contain;">
+</div>
+
+مثال کد:
+```python
+quantizer = faiss.IndexFlatL2(dimension)
+nlist = 100
+index_ivf = faiss.IndexIVFFlat(quantizer, dimension, nlist, faiss.METRIC_L2)
+index_ivf.train(vectors)
+index_ivf.add(vectors)
+distances, indices = index_ivf.search(query, k)
+print("distances:\n", distances)
+print("indices:\n", indices)
+```
+```
+distances:
+ [[15.838599 15.847076 16.249146 16.268185 16.29538 ]]
+indices:
+ [[3847 9148  993 7715 4171]]
+ ```
+
+
+
+
+### PQ (Product Quantization)
+
+PQ یک روش **فشرده‌سازی با اتلاف** (Lossy Compression) است که بردارهای ابعاد بالا را به کدهای کوتاه و نمادین تبدیل می‌کند. ایده اصلی این است که فضای برداری را به **ضرب دکارتی زیرفضاهای با بعد پایین‌تر** تجزیه کرده و هر زیرفضا را به صورت مستقل کوانتیزه .
+
+> **نکته کلیدی**: PQ تعداد بردارها را تغییر نمی‌دهد، بلکه هر بردار را به یک کد کوتاه (مثلاً ۸ بایت) تبدیل می‌کند که نماینده مرکز خوشه‌های مختلف در زیرفضاها است.
+
+
+## ۲. مراحل اجرای Product Quantization
+
+فرآیند PQ را می‌توان به چند مرحله اصلی تقسیم کرد. در ادامه، این مراحل با یک مثال عملی توضیح داده می‌شوند.
+
+### مرحله ۱: تقسیم‌بندی بردارها (Segmentation)
+فرض کنید برداری با بعد ۱۲۸ داریم. این بردار به **۸ بخش** ۱۶ تایی تقسیم می‌شود:
+- بردار اصلی: `[x₁, x₂, ..., x₁₂₈]`
+- بخش‌ها: `[seg₁, seg₂, ..., seg₈]` که هر `seg` دارای ۱۶ مقدار است.
+
+### مرحله ۲: آموزش کوانتایزر (Training)
+برای هر بخش (زیرفضا)، به صورت مستقل **خوشه‌بندی K-means** انجام می‌شود:
+- برای هر بخش، `k` مرکز خوشه (Centroid) محاسبه می‌شود.
+- مجموعه این مراکز، **(Codebook)** آن بخش را تشکیل می‌دهد.
+- مثلاً اگر `k=256` باشد، هر بخش ۲۵۶ centroid خواهد داشت.
+
+### مرحله ۳: کدگذاری (Encoding)
+برای هر بردار در پایگاه داده:
+- در هر بخش، نزدیک‌ترین centroid پیدا شده و **شناسه آن (ID)** ذخیره می‌شود.
+- نتیجه: یک **کد PQ** که از ترکیب IDهای centroidها تشکیل شده است.
+- مثال: کد `[5, 24, 132, ..., 77]` که هر عدد بین ۰ تا ۲۵۵ است (۸ بیت برای هر بخش).
+
+### مرحله ۴: فشرده‌سازی حافظه
+- بردار اصلی ۱۲۸ بعدی: ۱۲۸ × ۳۲ بیت = **۴۰۹۶ بیت** (۵۱۲ بایت)
+- کد PQ: ۸ بخش × ۸ بیت = **۶۴ بیت** (۸ بایت)
+- **نتیجه**: کاهش حافظه به میزان **۶۴ برابر**!
+
+
+## ۳. جستجوی شباهت با PQ
+
+در زمان جستجو، فاصله بین بردار پرس‌وجو و بردارهای فشرده‌شده به صورت **تقریبی** محاسبه می‌شود:
+
+### محاسبه فاصله نامتقارن (Asymmetric Distance)
+1. بردار پرس‌وجو نیز به همان ۸ بخش تقسیم می‌شود.
+2. برای هر بخش، فاصله آن با تمام ۲۵۶ centroid مربوطه محاسبه و در یک **جدول فاصله** ذخیره می‌شود.
+3. فاصله نهایی با جمع کردن فاصله‌های بخش‌های مختلف (با استفاده از جداول) تخمین زده می‌شود.
+
+> **چرا نامتقارن؟** چون بردار پرس‌وجو در حالت اصلی خود باقی می‌ماند، در حالی که بردارهای پایگاه داده فشرده شده‌اند.
+
+
+## ۴. پارامترهای کلیدی در PQ
+
+| پارامتر | توضیح | تأثیر |
+|----------|-------|--------|
+| **M** | تعداد زیرفضاها (بخش‌ها) | افزایش M → دقت بالاتر اما حافظه بیشتر |
+| **nbits** | تعداد بیت برای هر بخش (معمولاً ۸) | افزایش nbits → کدهای طولانی‌تر و دقت بالاتر |
+| **k** | تعداد خوشه‌ها در هر زیرفضا (`k = 2^nbits`) | افزایش k → دقت بالاتر اما حافظه بیشتر |
+
+- **نکته**: برای حافظه بهینه، مقدار `M * nbits` باید مضربی از ۸ باشد.
+
+```python
+# Parameters
+d = 128        # Vector dimension
+M = 8          # Number of segments/subquantizers
+nbits = 8      # Bits per segment
+
+# Create index
+index = faiss.IndexPQ(d, M, nbits)
+
+# Train index (with similar data distribution)
+index.train(training_vectors)
+
+# Add vectors to the index
+index.add(database_vectors)
+
+# Search
+distances, labels = index.search(query, k=10)
+```
+
+
+### ۴. HNSW (Hierarchical Navigable Small World)
+
+ یکی از مهم‌ترین و جالب‌ترین الگوریتم‌ها در زمینه جستجوی شباهت در مقیاس بزرگ است. **Hierarchical Navigable Small World (HNSW)** یک الگوریتم پیشرفته برای پیدا کردن نزدیک‌ترین همسایه‌ها (Nearest Neighbor Search) در مجموعه داده‌های بسیار بزرگ است.
+
+بیایید نام آن را تجزیه کنیم تا بهتر بفهمیم:
+
+*   **Hierarchical (سلسله‌مراتبی):** الگوریتم چندین لایه یا سطح دارد، مانند یک ساختمان چند طبقه.
+*   **Navigable Small World (دنیای کوچک قابل پیمایش):** این یک مفهوم از نظریه گراف است. دنیای کوچک به شبکه‌ای گفته می‌شود که در آن اکثر گره‌ها (نقاط) همسایه نیستند، اما می‌توان با تعداد کمی گام از هر گره‌ای به گره‌ی دیگر رسید. (مانند ایده "شش دست کجایی" در شبکه‌های اجتماعی).
+
+HNSW این دو ایده را با هم ترکیب می‌کند تا یک ساختار داده بسیار کارآمد برای جستجو بسازد.
+
+---
+
+### چگونه کار می‌کند؟ (یک مثال ساده)
+
+تصور کنید می‌خواهید در یک شهر بسیار بزرگ (مجموعه داده‌ای با میلیاردها بردار) آدرس یک مکان خاص (بردار پرس‌وجو) را پیدا کنید. به جای اینکه خیابان به خیابان بگردید (جستجوی خطی یا کند)، از یک سیستم چندلایه نقشه استفاده می‌کنید.
+
+**مرحله ۱: ساختار سلسله‌مراتبی (چند لایه نقشه)**
+
+HNSW یک گراف (شبکه‌ای از نقاط و اتصالات) ایجاد می‌کند که چندین لایه دارد:
+*   **لایه بالایی:** این لایه نقشه کل شهر است. فقط تعداد کمی از نقاط کلیدی (مثل میادین اصلی یا ایستگاه‌های مترو) در آن وجود دارد و اتصالات بین آن‌ها بسیار بلند است (شبیه اتوبان‌ها). این لایه بسیار خلوت است.
+*   **لایه‌های میانی:** این لایه‌ها نقشه مناطق مختلف شهر هستند. جزئیات بیشتری دارند و نقاط بیشتری را شامل می‌شوند.
+*   **لایه پایینی:** این لایه نقشه محله‌ای است. تمام نقاط (تمام بردارهای مجموعه داده) در این لایه وجود دارند و اتصالات بین آن‌ها کوتاه است (شبیه کوچه‌های خیابان).
+
+**مرحله ۲: فرآیند جستجو (پیمایش از کل به جزء)**
+
+حالا شما بردار پرس‌وجوی خود را دارید و می‌خواهید نزدیک‌ترین بردارها را پیدا کنید:
+
+1.  **شروع از بالا:** جستجو از **لایه بالایی (خلوت)** شروع می‌شود. الگوریتم در این لایه، نزدیک‌ترین نقطه به بردار پرس‌وجوی شما را پیدا می‌کند. چون این لایه نقاط کمی دارد، این کار بسیار سریع است.
+2.  **پرش به لایه پایین‌تر:** الگوریتم از نقطه‌ای که در لایه بالا پیدا کرده، به لایه بعدی "پرش" می‌کند. حالا در یک لایه با جزئیات بیشتر هستیم. دوباره در این لایه، نزدیک‌ترین همسایه را به هدف پیدا می‌کند.
+3.  **تکرار تا رسیدن به پایین:** این فرآیند (پرش و جستجوی محلی) لایه به لایه ادامه پیدا می‌کند تا به **لایه پایینی (لایه محله‌ای)** برسد.
+4.  **جستجوی نهایی در لایه پایین:** وقتی به لایه پایین می‌رسیم، در یک محله بسیار نزدیک به هدف قرار داریم. اکنون الگوریتم در این لایه پر از جزئیات، جستجوی دقیق‌تری را برای پیدا کردن نزدیک‌ترین همسایه‌ها انجام می‌دهد. چون محدوده جستجو بسیار کوچک شده، این مرحله نیز بسیار سریع است.
+
+**نتیجه:** به جای جستجو در کل مجموعه داده، HNSW به سرعت مسیر را از یک نقطه کلی به یک نقطه بسیار مشخص محدود می‌کند و در نهایت جستجوی دقیق را در یک محدوده کوچک انجام می‌دهد.
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 40px;">
+    <img src="/assets/patterneffort/Text_Clustering_FAISS/HNSW.jpg" alt="HNSW" style="width: 75%; height: 75%; object-fit: contain;">
+</div>
+
+مثال کد:
+
+```python
+import faiss
+import numpy as np
+
+# Generate sample data
+d = 128  # Vector dimension
+nb = 10000  # Number of database vectors
+nq = 100  # Number of queries
+xb = np.random.random((nb, d)).astype('float32')  # Database vectors
+xq = np.random.random((nq, d)).astype('float32')  # Query vectors
+
+# Create HNSW index
+M = 16  # Maximum number of connections per node
+index = faiss.IndexHNSWFlat(d, M)
+
+# Set parameters
+index.hnsw.efConstruction = 200  # Construction time parameter (higher = better recall, slower build)
+index.hnsw.efSearch = 50  # Search time parameter (higher = better recall, slower search)
+
+# Add data to the index
+index.add(xb)
+
+# Perform search
+k = 5  # Number of nearest neighbors to retrieve
+distances, labels = index.search(xq, k)
+
+print(f"distances: {distances[:2]}")  # Display distances for first 2 queries
+print(f"labels: {labels[:2]}")  # Display labels/indices for first 2 queries
+```
+
+```
+distances: [[14.077484  14.57412   14.74098   14.842341  14.909969 ]
+ [13.139176  13.226721  14.486782  14.6202755 14.68724  ]]
+labels: [[9689 9713 4913 8693 4980]
+ [8132 9254 9418 6248 6564]]
+```
+
+
+---
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 40px;">
     <img src="/assets/patterneffort/Text_Clustering_FAISS/comparison_of_index.png" alt="comparison_of_index" style="width: 75%; height: 75%; object-fit: contain;">
@@ -312,6 +535,23 @@ print(I)
 print("Matching distances:")
 print(D.round(3))
 ```
+
+```
+Search results (indices):
+[[970 250 429 856]
+ [932  51 483 550]
+ [247 632 175 473]
+ [214 755 856 175]
+ [952 516 582 238]]
+Matching distances:
+[[6.499 6.581 7.206 7.227]
+ [5.984 6.115 6.304 6.336]
+ [6.435 6.523 6.648 6.651]
+ [5.607 6.52  6.762 6.893]
+ [6.434 6.457 6.628 6.723]]
+
+```
+
 
 این مثال ساده، هسته اصلی عملکرد FAISS را نشان می‌دهد. در کاربردهای واقعی، از شاخص‌های پیچیده‌تری مانند `IndexIVFFlat` یا `IndexHNSW` برای مقیاس‌پذیری استفاده می‌شود.
 
@@ -484,6 +724,23 @@ Adjusted Rand Index (ARI): 0.8588
 - **نزدیک به ۰:** خوشه‌ها در حال همپوشانی هستند و مرزهای مشخصی ندارند.
 - **نزدیک به -1:** نقاط احتمالاً در خوشه اشتباهی قرار گرفته‌اند.
 
+$$
+s(i) = \frac{b(i) - a(i)}{\max(a(i), b(i))}
+$$
+
+که در آن:
+
+* **a(i)**: میانگین فاصله از نقطه (i) تا تمام نقاط دیگر در **همان خوشه**.
+* **b(i)**: کمترین میانگین فاصله از نقطه (i) تا نقاط در **هر خوشه دیگر** (نزدیک‌ترین خوشه همسایه).
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 40px;">
+    <img src="/assets/patterneffort/Text_Clustering_FAISS/silhouette_score.jpg" alt="silhouette_score" style="width: 75%; height: 75%; object-fit: contain;">
+</div>
+<p class="wp-caption-text" style="margin-top: 8px; color: #555; align-items: center; text-align: center;">
+        مقایسه‌ی بصری خوشه‌بندی با مراکز مختلف و امتیاز Silhouette آن‌ها
+</p>
+
+
 **تفسیر امتیاز 0.1237:**
 این امتیاز بسیار پایین است. این عدد به ما می‌گوید که خوشه‌های شما **مرزهای بسیار مبهمی دارند**. بسیاری از نقاط داده در مرز بین دو یا چند خوشه قرار دارند و فاصله آن‌ها تا مرکز خوشه خودشان، بسیار کمتر از فاصله‌شان تا مرکز خوشه مجاور نیست.
 
@@ -492,10 +749,34 @@ Adjusted Rand Index (ARI): 0.8588
 ### تحلیل امتیاز ARI (0.8588): تطابق عالی با واقعیت
 
 **Adjusted Rand Index (ARI) چیست؟**
-این معیار، شباهت بین برچسب‌های پیش‌بینی شده توسط الگوریتم خوشه‌بندی و برچسب‌های واقعی (Ground Truth) را می‌سنجد. امتیاز آن بین ۰- تا ۱+ است:
+
+
+**شاخص Adjusted Rand Index - ARI** یک **معیار ارزیابی خوشه‌بندی** است که **شباهت بین دو خوشه‌بندی** را می‌سنجد — معمولاً بین **خوشه‌های پیش‌بینی‌شده** و **برچسب‌های واقعی**.
+
+
+معیار ARI اندازه‌گیری می‌کند که الگوریتم خوشه‌بندی شما چقدر داده‌ها را در مقایسه با برچسب‌های واقعی، به درستی گروه‌بندی کرده است. این کار را بر اساس تعداد جفت‌های نمونه انجام می‌دهد که:
+
+* **در یک خوشه** در هر دو برچسب پیش‌بینی‌شده و واقعی قرار دارند.
+* **در خوشه‌های متفاوت** در هر دو برچسب پیش‌بینی‌شده و واقعی قرار دارند.
+
+در واقع، این معیار **هم‌خوانی بین دو تقسیم‌بندی** را بررسی می‌کند.
+
+
+###  فرمول
+
+$$
+\text{ARI} = \frac{\text{RI} - \text{Expected RI}}{\text{Max RI} - \text{Expected RI}}
+$$
+
+که در آن:  
+  شاخص رند (Rand Index - RI) می‌گوید چند درصد از جفت‌های داده‌ها (sample pairs) در هر دو خوشه‌بندی (partitions) (واقعی و پیش‌بینی‌شده) «توافق» دارند: یعنی یا هر دو با هم در یک گروه هستند و یا هر دو از هم جدا هستند. 
+
+این اصلاحیه (adjustment) به ما کمک می‌کند تا امتیازی را که ممکن است صرفاً به دلیل شانس و هم‌زمانی تصادفی (random chance) به دست آمده، نادیده بگیریم و تنها شباهت واقعی را بسنجیم. 
+
 - **نزدیک به ۱:** تطابق تقریباً کامل بین خوشه‌های پیش‌بینی شده و دسته‌بندی واقعی وجود دارد.
 - **نزدیک به ۰:** خوشه‌بندی انجام شده معادل یک دسته‌بندی تصادفی است.
 - **نزدیک به -۱:** خوشه‌بندی کاملاً اشتباه است.
+
 
 **تفسیر امتیاز 0.8588:**
 این یک امتیاز **عالی و بسیار بالا** است! این عدد به ما می‌گوید که الگوریتم K-Means به شکل فوق‌العاده‌ای توانسته است جملات را به خوشه‌های درست (فناوری، آشپزی، سفر، ورزش) تخصیص دهد. به عبارت دیگر، اگرچه مرزها مبهم بودند، اما الگوریتم تقریباً تمام نقاط را در سمت درست مرز قرار داده است.
@@ -1012,3 +1293,7 @@ URL: https://github.com/huggingface/datasets/issues/824
 7. <a href="https://primo.ai/index.php/Density-Based_Spatial_Clustering_of_Applications_with_Noise_%28DBSCAN%29" target="_blank"><strong>Density-Based Spatial Clustering of Applications with Noise (DBSCAN)</strong></a>  
 8. <a href="https://medium.com/@khushivirpariya/agglomerative-clustering-with-graph-557668ed1f2e" target="_blank"><strong>Agglomerative Clustering with Graph</strong></a>  
 9. <a href="https://medium.com/@VectorWorksAcademy/part-2-understanding-and-using-faiss-examples-of-different-index-types-read-and-write-eb9206753853" target="_blank"><strong>Part 2: Understanding and Using FAISS — Exploring FAISS Index Types with Practical Examples for Reading and Writing</strong></a>
+10. <a href="https://www.pinecone.io/learn/series/faiss/hnsw/" target="_blank"><strong>Hierarchical Navigable Small Worlds (HNSW) [Pinecone]</strong></a>
+11. <a href="https://www.geeksforgeeks.org/machine-learning/what-is-silhouette-score/" target="_blank"><strong>
+What is Silhouette Score?
+ [geeksforgeek]</strong></a>

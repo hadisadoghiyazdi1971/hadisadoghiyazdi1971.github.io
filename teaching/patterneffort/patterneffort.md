@@ -72,18 +72,6 @@ header:
 </div>
 <a href="/teaching/studenteffort/patterneffort/DPC-MK" style="text-decoration:underline; color:green;" target="_blank"><strong>پیاده‌سازی و آزمایش الگوریتم DPC-MK</strong></a>
 
-<!--7-->
-<div class="english-text">
-<strong>BERT</strong>
-</div>
-<a href="/teaching/studenteffort/patterneffort/BERT" style="text-decoration:underline; color:green;" target="_blank"><strong> بردار ساختن از کلمات به کمک روش BERT</strong></a>
-
-<!--8-->
-<div class="english-text">
-<strong>DPC-MK</strong>
-</div>
-<a href="/teaching/studenteffort/patterneffort/DPC-MK" style="text-decoration:underline; color:green;" target="_blank"><strong>پیاده‌سازی و آزمایش الگوریتم DPC-MK</strong></a>
-
 <!--9-->
 <div class="english-text">
 <strong>Agglomerative Methods</strong>
@@ -114,7 +102,6 @@ Generalization Error</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/TOURIST_ASSISTANT" style="text-decoration:underline; color:green;" target="_blank"><strong>آموزش پیاده سازی پروژه RAG برای راهنمایی گردشگران</strong></a>
 
-
 <!--14-->
 <div class="english-text">
 <strong> SGD </strong>
@@ -142,4 +129,90 @@ Generalization Error</strong>
 <a href="/teaching/patterneffort/vla_LLM" style="text-decoration:underline; color:green;" target="_blank"><strong> بینایی–زبان–کنش (VLA_LLM)</strong></a>
 
 
+<!--18-->
+<div class="english-text">
+<strong> Unsupervised Text Classification </strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/unsupervised_text_classification" style="text-decoration:underline; color:green;" target="_blank"><strong> طقبه بندی متن ها بدون لیبل با مدل های زبانی</strong></a>
 
+
+<!--19-->
+<div class="english-text">
+<strong>A synergistic multi-stage RAG architecture for boosting context relevance in data science literature</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/synergistic-rag" style="text-decoration:underline; color:green;" target="_blank"><strong>معماری RAG هم‌افزایانه</strong></a>
+
+
+<!--20-->
+<div class="english-text">
+<strong>fast_rag_ui</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/fast_rag_ui" style="text-decoration:underline; color:green;" target="_blank"><strong> اجرای یک ui سبک برای اجرای سیستم‌های rag روی سرور ابری</strong></a>
+
+
+<!--21-->
+<div class="english-text">
+<strong>Transformer Loss Function and code</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/Transformer-LossFunc_code" style="text-decoration:underline; color:green;" target="_blank"><strong>ترنسفورمر و نقش توابع ضرر  در یادگیری و کد آن‌ها</strong></a>
+
+<!--22-->
+<div class="english-text">
+<strong>Streamlit guide with examples</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/streamlit" style="text-decoration:underline; color:green;" target="_blank"><strong>راهنمای جامع Streamlit با یک مثال کاربردی</strong></a>
+
+<!--23-->
+<div class="english-text">
+<strong>Semantic Search (URL) Project</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/SemanticSearchURLProject" style="text-decoration:underline; color:green;" target="_blank"><strong>پروژه جست‌وجو معنایی آدرس‌های وب</strong></a>
+
+
+<!--24-->
+<div class="english-text">
+<strong>Understanding Pull Requests</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/PULL_REQUEST" style="text-decoration:underline; color:green;" target="_blank"><strong>آموزش Pull request</strong></a>
+
+<!--25-->
+<div class="english-text">
+<strong>Ollama</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/OLLAMA" style="text-decoration:underline; color:green;" target="_blank"><strong>اجرای  مدل‌های زبانی به صورت محلی در Google Colab برای اجرای برنامه‌های LangChain</strong></a>
+
+<!--26-->
+<div class="english-text">
+<strong>Plagiarism Detection</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/PLAGIARISM_DETECTION" style="text-decoration:underline; color:green;" target="_blank"><strong>تشخیص سرقت ادبی</strong></a>
+
+<!--27-->
+<div class="english-text">
+<strong>Implementing Conversation Memory: From Manual to Automatic Management</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/Memory_Mousavinezhad" style="text-decoration:underline; color:green;" target="_blank"><strong>پیاده‌سازی حافظه مکالمه: از مدیریت دستی تا خودکار</strong></a>
+
+<!--28-->
+<div class="english-text">
+<strong>Using LLMs with LangChain Models</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/Using_LLMs_with_LangChain_Models" style="text-decoration:underline; color:green;" target="_blank"><strong>استفاده از llmها به کمک langchain</strong></a>
+
+<!--29-->
+<div class="english-text">
+<strong>Exploring the LangChain Framework</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/Exploring_the_LangChain_Framework" style="text-decoration:underline; color:green;" target="_blank"><strong>بررسی چارچوب LangChain: توسعه برنامه‌های مبتنی بر مدل‌های زبانی بزرگ</strong></a>
+
+<!--30-->
+<div class="english-text">
+<strong>LangChain ShortMemoty Doc</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/LangChain_ShortMemoty_Doc" style="text-decoration:underline; color:green;" target="_blank"><strong> مستندات ماژول حافظه کوتاه‌مدت LangChain</strong></a>
+
+<!--31-->
+<div class="english-text">
+<strong>Prompt Engineering</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/prompt_engineering" style="text-decoration:underline; color:green;" target="_blank"><strong> مهندسی پرامپت</strong></a>

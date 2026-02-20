@@ -3,7 +3,7 @@ layout: persian  # یا single با کلاس rtl-layout
 classes: wide rtl-layout
 dir: rtl
 title: "راهنمای جامع Streamlit با یک مثال کاربردی"
-permalink: /teaching/studenteffort/patterneffort/CrossValidation/
+permalink: /teaching/studenteffort/patterneffort/streamlit/
 author_profile: true
 sidebar:
   nav: "patterneffort"
@@ -1908,3 +1908,6 @@ st.write(x)         # ← این خط هم دوباره اجرا می‌شود
 ## سخن آخر
 
 Streamlit انقلابی در نحوه ارائه پروژه‌های داده محور ایجاد کرده است. این ابزار **"فتوشاپ" دنیای علم داده نیست، بلکه "Paint" است**؛ یعنی ابزاری برای سریع‌ترین حالت ممکن از ایده تا اجرا. اگر به دنبال ساخت **داشبوردهای سریع، دموهای اثرگذار و MVP** هستید، بهترین انتخاب است. اما اگر به دنبال **مقیاس‌پذیری بالا، کنترل کامل بر ظاهر و تعاملات پیچیده** هستید، باید به گزینه‌هایی مانند Dash یا Reflex فکر کنید.
+
+---
+شما می‌توانید از <a href="/assets/patterneffort/streamlit/penguin_classifier.py"  target="_blank">اینجا</a> می‌توانید فایل <a href="/assets/patterneffort/streamlit/penguin_classifier.py"  target="_blank">`penguin_classifier.py`</a> را دانلود کنید.
