@@ -222,3 +222,9 @@ Generalization Error</strong>
 <strong>lang chain intro</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/lang_chain_intro" style="text-decoration:underline; color:green;" target="_blank"><strong>لنگچین</strong></a>
+
+<!--33-->
+<div class="english-text">
+<strong>n8n Workflow Automation & Integration System</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/n8nOverviewfa" style="text-decoration:underline; color:green;" target="_blank"><strong>سیستم اتوماسیون و یکپارچه‌سازی گردش کار n8n</strong></a>
