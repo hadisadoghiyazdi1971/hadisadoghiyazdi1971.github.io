@@ -19,7 +19,7 @@ header:
 ---
 
 <div style="display: flex; justify-content: start; align-items: center; gap: 10px;">
-    <img src="/assets/patterneffort/va/FUM_Logo.png" width="169" height="217" alt="STFT-overview" style="object-fit: contain;">
+    <img src="/assets/patterneffort/va/FUM_Logo.jpg" width="169" height="217" alt="STFT-overview" style="object-fit: contain;">
 </div>
 
 <div style="display: flex; justify-content: start; align-items: center; gap: 10px; ">
