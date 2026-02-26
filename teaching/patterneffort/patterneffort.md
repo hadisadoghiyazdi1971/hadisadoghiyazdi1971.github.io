@@ -216,3 +216,10 @@ Generalization Error</strong>
 <strong>Prompt Engineering</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/prompt_engineering" style="text-decoration:underline; color:green;" target="_blank"><strong> مهندسی پرامپت</strong></a>
+
+<!--32-->
+<div class="english-text">
+<strong>Aision Action In Brain</strong>
+</div>
+<a href="/teaching/patterneffort/Histiory_Vla" style="text-decoration:underline; color:green;" target="_blank"><strong> بینایی–کنش؛ داستان دو مسیر در مغز </strong></a>
+
