@@ -1,22 +1,20 @@
 ---
-layout: persian  # یا single با کلاس rtl-layout
+layout: persian
 classes: wide rtl-layout
 dir: rtl
-title: "Non Linear Programming"
-permalink: /teaching/patterneffort/nlp_libraries_comparison/
+title: "مقایسه کتابخانه‌های بهینه‌سازی غیرخطی (NLP) در پایتون"
+permalink: /nlp-libraries-comparison/
 author_profile: true
 
 header:
-  overlay_image: "/assets/images/background.jpg"
-  overlay_filter: 0.3
-  overlay_color: "#5e616c"
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-
+  overlay_color: "#1d3557"
+  overlay_filter: 0.5
+  caption: "SciPy · GEKKO · CasADi"
 ---
 
 # مقایسه کتابخانه‌های بهینه‌سازی غیرخطی (NLP) در پایتون
 
-در این راهنما یک **مسأله ثابت** را با سه کتابخانه مطرح پایتون حل می‌کنیم و نتایج را با تصویرسازی کامل مقایسه می‌کنیم.
+در این مطلب یک **مسأله ثابت** را با سه کتابخانه مطرح پایتون حل می‌کنیم و نتایج را با تصویرسازی کامل مقایسه می‌کنیم.
 
 ---
 
@@ -24,14 +22,16 @@ header:
 
 **هدف:** کمینه‌سازی مجموع مربعات (فاصله اقلیدسی از مبدأ)
 
-$$\min_{x_1, x_2, x_3} \quad f(x_1, x_2, x_3) = x_1^2 + x_2^2 + x_3^2$$
+$$
+\min_{x_1, x_2, x_3} \quad f(x_1, x_2, x_3) = x_1^2 + x_2^2 + x_3^2
+$$
 
 **تحت قیود:**
 
-| #   | نوع                    | فرمول                           | توضیح                    |
-| --- | ---------------------- | ------------------------------- | ------------------------ |
-| 1   | قید **خطی** (تساوی)    | $x_1 + x_2 + x_3 = 3$           | مجموع متغیرها ثابت است   |
-| 2   | قید **غیرخطی** (تساوی) | $x_1 \times x_2 \times x_3 = 1$ | حاصل‌ضرب متغیرها ثابت است |
+| # | نوع | فرمول | توضیح |
+|---|-----|-------|-------|
+| 1 | قید **خطی** (تساوی) | $x_1 + x_2 + x_3 = 3$ | مجموع متغیرها ثابت است |
+| 2 | قید **غیرخطی** (تساوی) | $x_1 \times x_2 \times x_3 = 1$ | حاصل‌ضرب متغیرها ثابت است |
 
 > **جواب تحلیلی:** طبق نامساوی AM-GM، جواب بهینه $x_1 = x_2 = x_3 = 1$ است که مقدار $f^* = 3$ را می‌دهد.
 
@@ -39,24 +39,30 @@ $$\min_{x_1, x_2, x_3} \quad f(x_1, x_2, x_3) = x_1^2 + x_2^2 + x_3^2$$
 
 ## 🗂️ کتابخانه‌های مورد بررسی
 
-| #   | کتابخانه   | نصب                  | سالور         | روش گرادیان               | کاربرد اصلی              |
-| --- | ---------- | -------------------- | ------------- | ------------------------- | ------------------------ |
-| 1   | **SciPy**  | پیش‌نصب               | SLSQP         | Finite Difference (تقریب) | علمی عمومی — سریع و ساده |
-| 2   | **GEKKO**  | `pip install gekko`  | IPOPT (داخلی) | Automatic Diff            | کنترل بهینه و DAE        |
-| 3   | **CasADi** | `pip install casadi` | IPOPT (داخلی) | Automatic Diff (دقیق‌ترین) | رباتیک، MPC، هوافضا      |
+| # | کتابخانه | نصب | سالور | روش گرادیان | کاربرد اصلی |
+|---|----------|-----|-------|------------|-------------|
+| 1 | **SciPy** | پیش‌نصب | SLSQP | Finite Difference (تقریب) | علمی عمومی — سریع و ساده |
+| 2 | **GEKKO** | `pip install gekko` | IPOPT (داخلی) | Automatic Diff | کنترل بهینه و DAE |
+| 3 | **CasADi** | `pip install casadi` | IPOPT (داخلی) | Automatic Diff (دقیق‌ترین) | رباتیک، MPC، هوافضا |
 
 ---
 
 ## 🔄 مراحل حل هر سالور
 
+<div class="english-text">
+<strong>
+
 ```
-① تعریف تابع هدف f(x)
-② تعریف قیود g(x) = 0
-③ تعیین نقطه شروع x₀
-④ فراخوانی الگوریتم بهینه‌سازی (SLSQP یا IPOPT)
-⑤ استخراج جواب x* و تحقق قیود
-⑥ مقایسه با جواب تحلیلی
+① Define objective     f(x)
+② Define constraints   g(x) = 0
+③ Set initial point    x₀
+④ Call optimizer       (SLSQP or IPOPT)
+⑤ Extract solution     x*  and verify constraints
+⑥ Compare with        analytical solution
 ```
+
+</strong>
+</div>
 
 ---
 
@@ -91,23 +97,31 @@ print(f"🎯 مقدار بهینه تابع هدف: f* = {sum(x_analytical**2)}"
 
 ---
 
-## 1️⃣ SciPy — `scipy.optimize.minimize` با روش SLSQP
+## 1️⃣ SciPy — روش SLSQP
 
 ### ویژگی‌ها
 
-- بدون نیاز به نصب جداگانه (بخشی از اکوسیستم SciPy)
+- بدون نیاز به نصب جداگانه (بخشی از اکوسیستم
+<a href="https://scipy.org/" style="text-decoration:underline; color:green;" target="_blank">
+<strong>SciPy</strong>
+</a>
+)
 - سالور پیش‌فرض `SLSQP` برای مسائل NLP با قید
 - قیود به‌صورت دیکشنری تعریف می‌شوند: `{'type': 'eq'|'ineq', 'fun': ...}`
 - مناسب برای مسائل کوچک تا متوسط
 
 ### الگوریتم SLSQP چیست؟
 
-**SLSQP = Sequential Least SQuares Programming**
+<div class="english-text">
+<strong>SLSQP = Sequential Least SQuares Programming</strong>
+</div>
 
 - در هر تکرار یک زیرمسأله QP (برنامه‌ریزی درجه‌دوم) حل می‌کند
 - گرادیان را با **تفاضل متناهی (Finite Difference)** تقریب می‌زند:
 
-$$\frac{\partial f}{\partial x_i} \approx \frac{f(x + h e_i) - f(x)}{h} \qquad \text{خطای } O(h)$$
+$$
+\frac{\partial f}{\partial x_i} \approx \frac{f(x + h e_i) - f(x)}{h} \qquad \text{خطای } O(h)
+$$
 
 - برای مسائل کوچک تا متوسط (< ~1000 متغیر) مناسب است
 
@@ -181,11 +195,14 @@ f(x*)    : 3.0
 
 ---
 
-## 2️⃣ GEKKO — بهینه‌سازی با سالور IPOPT داخلی
+## 2️⃣ GEKKO — سالور IPOPT داخلی
 
 ### ویژگی‌ها
 
-- نصب: `pip install gekko`
+- نصب:
+<a href="https://gekko.readthedocs.io/" style="text-decoration:underline; color:green;" target="_blank">
+<strong>pip install gekko</strong>
+</a>
 - سالور IPOPT به‌صورت **باینری اجرایی داخلی** همراه پکیج ارائه می‌شود
 - `remote=False` → اجرای کاملاً محلی (بدون اینترنت)
 - مناسب برای کنترل بهینه و مسائل دینامیکی (DAE/ODE)
@@ -204,10 +221,10 @@ f(x*)    : 3.0
 
 ### انتخاب سالور در GEKKO
 
-| گزینه        | توضیح                                                         |
-| ------------ | ------------------------------------------------------------- |
-| `SOLVER = 1` | APOPT — سالور اختصاصی GEKKO، مناسب MINLP                      |
-| `SOLVER = 2` | BPOPT — سالور داخلی دیگر                                      |
+| گزینه | توضیح |
+|-------|-------|
+| `SOLVER = 1` | APOPT — سالور اختصاصی GEKKO، مناسب MINLP |
+| `SOLVER = 2` | BPOPT — سالور داخلی دیگر |
 | `SOLVER = 3` | **IPOPT** ← بهترین برای NLP پیوسته (Interior Point OPTimizer) |
 
 ### الگوریتم IPOPT
@@ -259,11 +276,14 @@ f(x*)   : 3.0
 
 ---
 
-## 3️⃣ CasADi — مشتق‌گیری خودکار + IPOPT داخلی
+## 3️⃣ CasADi — مشتق‌گیری خودکار + IPOPT
 
 ### ویژگی‌ها
 
-- نصب: `pip install casadi`
+- نصب:
+<a href="https://web.casadi.org/" style="text-decoration:underline; color:green;" target="_blank">
+<strong>pip install casadi</strong>
+</a>
 - تخصص در **Automatic Differentiation (AD)** — محاسبه گرادیان و هسیان دقیق
 - زبان نمادین (Symbolic): `SX` (سریع‌تر) یا `MX` (انعطاف بیشتر)
 - سالور IPOPT و OSQP به‌صورت داخلی موجودند
@@ -274,10 +294,10 @@ f(x*)   : 3.0
 
 تفاوت اساسی با SciPy:
 
-| روش        | نحوه محاسبه گرادیان              | دقت                           |
-| ---------- | -------------------------------- | ----------------------------- |
-| **SciPy**  | تفاضل متناهی (Finite Difference) | تقریبی $O(h) \approx 10^{-8}$ |
-| **CasADi** | قانون زنجیره روی گراف محاسباتی   | دقت ماشین $\approx 10^{-16}$  |
+| روش | نحوه محاسبه گرادیان | دقت |
+|-----|---------------------|-----|
+| **SciPy** | تفاضل متناهی (Finite Difference) | تقریبی $O(h) \approx 10^{-8}$ |
+| **CasADi** | قانون زنجیره روی گراف محاسباتی | دقت ماشین $\approx 10^{-16}$ |
 
 AD نه تفاضل عددی است، نه مشتق‌گیری نمادین — **قانون زنجیره (Chain Rule)** را روی گراف محاسباتی اعمال می‌کند:
 - پیچیدگی: $O(n)$ برای **forward mode**، $O(m)$ برای **reverse mode**
@@ -364,131 +384,70 @@ f(x*)    : 3.0
 
 ---
 
-## 📈 تصویرسازی — چشم‌انداز مسأله و مسیر حل
+## 📈 تصویرسازی نتایج
 
 ### پلات ۱ — چشم‌انداز مسأله
 
-چون مسأله ۳ متغیر دارد، برای رسم ۲D از **تقلیل بُعد** استفاده می‌کنیم:
+چون مسأله ۳ متغیر دارد، برای رسم ۲D از **تقلیل بُعد** استفاده می‌شود. از قید خطی $x_3 = 3 - x_1 - x_2$ داریم:
 
-از قید خطی: $x_3 = 3 - x_1 - x_2$
+$$
+f(x_1, x_2) = x_1^2 + x_2^2 + (3 - x_1 - x_2)^2
+$$
 
-بعد از جایگذاری:
-$$f(x_1,x_2) = x_1^2 + x_2^2 + (3 - x_1 - x_2)^2$$
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/patterneffort/NLP/plot1_landscape.png" alt="NLP Problem Landscape" style="width: 90%; height: auto; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+پلات ۱ — سطح تابع هدف (Contour 2D و Surface 3D) روی صفحه قید خطی. خط قرمز نشان‌دهنده قید غیرخطی $x_1 x_2 x_3 = 1$ و ستاره سبز نقطه بهینه $(1, 1, 1)$ است.
+</div>
 
-قید غیرخطی باقی‌مانده: $x_1 \cdot x_2 \cdot (3 - x_1 - x_2) = 1$
+---
 
-```python
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
+### پلات ۲ — مسیر همگرایی SciPy (SLSQP)
 
-# شبکه محاسباتی
-x1_r = np.linspace(0.1, 2.7, 400)
-x2_r = np.linspace(0.1, 2.7, 400)
-X1, X2 = np.meshgrid(x1_r, x2_r)
-X3 = 3 - X1 - X2         # مقدار x3 از قید خطی
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/patterneffort/NLP/plot2_convergence.png" alt="SciPy SLSQP Convergence Path" style="width: 90%; height: auto; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+پلات ۲ — سه نمودار همگرایی: (①) مسیر هر تکرار روی نقشه Contour، (②) کاهش تابع هدف در هر تکرار (مقیاس لگاریتمی)، (③) همگرایی نقض قیودها به صفر.
+</div>
 
-F  = X1**2 + X2**2 + X3**2   # تابع هدف بعد از حذف x3
-G2 = X1 * X2 * X3            # قید غیرخطی (باید = 1 باشد)
+---
 
-mask    = (X3 > 0) & (X1 > 0) & (X2 > 0)
-F_plot  = np.where(mask, F, np.nan)
-G2_plot = np.where(mask, G2, np.nan)
+## 🧠 درک شهودی الگوریتم‌ها از روی مسیر همگرایی (Algorithmic Intuition)
 
-fig, axes = plt.subplots(1, 2, figsize=(16, 6))
+> 📌 **هدف آموزشی:** نمودارهای همگرایی، الگوریتم را از «جعبه سیاه» به یک **فرآیند قابل فهم و بصری** تبدیل می‌کنند.
 
-# ─ نمودار Contour 2D ─────────────────────────────────────────────────────
-ax1 = axes[0]
-cp  = ax1.contourf(X1, X2, F_plot, levels=30, cmap='YlOrRd', alpha=0.85)
-plt.colorbar(cp, ax=ax1)
-ax1.contour(X1, X2, G2_plot, levels=[1.0], colors='#e63946', linewidths=2.5)
-ax1.plot(1, 1, '*', color='#2d6a4f', markersize=18, label='$x^* = (1,1,1)$')
-ax1.set_title('2D View: Objective Contours')
-ax1.legend()
+با ردیابی مسیر حل در **SciPy (SLSQP)** و مقایسه رفتار آن با **IPOPT**، دانشجو می‌بیند که الگوریتم:
 
-# ─ نمودار Surface 3D ─────────────────────────────────────────────────────
-ax2 = axes[1]
-ax2 = fig.add_subplot(1, 2, 2, projection='3d')
-ax2.plot_surface(X1, X2, F_plot, cmap='coolwarm', alpha=0.7)
-ax2.scatter([1], [1], [3], color='#2d6a4f', s=200, label='$x^* = (1,1,1)$')
-ax2.set_title('3D Objective Surface')
+| مرحله | آنچه دانشجو می‌بیند | توضیح ریاضی |
+|-------|---------------------|-------------|
+| **شروع** | نقطه اولیه $x_0$ | حدس اولیه؛ کیفیت آن روی همگرایی تأثیر دارد |
+| **حرکت** | مسیر نقطه‌ها روی نقشه Contour | به‌روزرسانی $x \leftarrow x + \alpha \Delta x$ در هر تکرار |
+| **قید** | کاهش تدریجی $\|g(x)\|$ به صفر | الگوریتم به‌مرور قیدها را ارضا می‌کند، نه یکباره |
+| **همگرایی** | کاهش $f(x^k)$ در مقیاس لگاریتمی | نشان‌دهنده سرعت همگرایی سالور |
 
-plt.tight_layout()
-plt.savefig('plot1_landscape.png', dpi=120, bbox_inches='tight')
-plt.show()
-```
+### ⚖️ تفاوت بصری دو رویکرد: SLSQP در برابر Interior Point
 
-### پلات ۲ — مسیر همگرایی SciPy
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/patterneffort/NLP/plot4_slsqp_vs_ip.png" alt="SLSQP vs Interior Point Path Comparison" style="width: 90%; height: auto; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+پلات ۴ — مقایسه مسیر همگرایی: SLSQP روی مرز ناحیه شدنی حرکت می‌کند، IPOPT از داخل آن عبور می‌کند.
+</div>
 
-این پلات نشان می‌دهد:
-- از کجا شروع شد (`x0`)
-- در هر تکرار به کجا رفت (مسیر آبی)
-- چقدر طول کشید به جواب بهینه برسد
-- نحوه کاهش تابع هدف و نقض قیودها در طول تکرارها
+> 💡 این تفاوت توضیح می‌دهد چرا IPOPT برای مسائل بزرگ‌مقیاس کارآمدتر است — مسیر کوتاه‌تری از داخل ناحیه شدنی طی می‌شود در حالی که SLSQP روی مرز حرکت می‌کند.
 
-```python
-fig, axes = plt.subplots(1, 3, figsize=(17, 5))
-x_path = np.array(scipy_history['x'])
-iters  = np.arange(len(scipy_history['f']))
-
-# ① مسیر روی Contour
-axes[0].contourf(X1, X2, F_plot, levels=25, cmap='YlOrRd', alpha=0.8)
-axes[0].contour(X1, X2, G2_plot, levels=[1.0], colors='#e63946', linewidths=2, linestyles='--')
-axes[0].plot(x_path[:, 0], x_path[:, 1], 'o-', color='#1d3557', linewidth=1.8)
-axes[0].set_title('① Iteration Path on Contour Map')
-
-# ② کاهش تابع هدف
-axes[1].semilogy(iters, scipy_history['f'], 'o-', color='#e76f51')
-axes[1].axhline(y=3.0, color='#2d6a4f', linestyle='--')
-axes[1].set_title('② Objective Decrease per Iteration')
-
-# ③ نقض قیودها
-axes[2].semilogy(iters, np.array(scipy_history['g1']) + 1e-16, 's-', color='#457b9d', label='|g₁|')
-axes[2].semilogy(iters, np.array(scipy_history['g2']) + 1e-16, '^-', color='#e63946', label='|g₂|')
-axes[2].set_title('③ Constraint Convergence to Zero')
-axes[2].legend()
-
-plt.tight_layout()
-plt.savefig('plot2_convergence.png', dpi=120, bbox_inches='tight')
-plt.show()
-```
+---
 
 ### پلات ۳ — مقایسه جامع سه سالور
 
-```python
-libs   = ['SciPy', 'GEKKO', 'CasADi']
-colors = ['#e76f51', '#457b9d', '#2a9d8f']
-
-devs = [np.linalg.norm(results[lib]['sol'] - np.array([1,1,1])) for lib in libs]
-objs = [results[lib]['obj'] for lib in libs]
-
-fig, axes = plt.subplots(2, 2, figsize=(14, 10))
-
-# ① مقدار f(x*) هر سالور
-axes[0,0].bar(libs, objs, color=colors)
-axes[0,0].axhline(y=3.0, color='#e63946', linestyle='--')
-axes[0,0].set_title('① Objective Value at Optimum')
-
-# ② انحراف از جواب تحلیلی
-axes[0,1].bar(libs, devs, color=colors)
-axes[0,1].set_yscale('log')
-axes[0,1].set_title('② Deviation from Analytical Solution')
-
-# ③ مقادیر x1, x2, x3
-x_idx, width = np.arange(3), 0.22
-for i, (lib, col) in enumerate(zip(libs, colors)):
-    axes[1,0].bar(x_idx + i*width, results[lib]['sol'], width, label=lib, color=col)
-axes[1,0].axhline(y=1.0, color='#e63946', linestyle='--')
-axes[1,0].set_title('③ Solution Variables x1, x2, x3')
-axes[1,0].legend()
-
-# ④ جدول مشخصات کیفی
-axes[1,1].axis('off')
-# (جدول مشخصات در نوت‌بوک به‌صورت جدول رنگی نمایش داده می‌شود)
-
-plt.tight_layout()
-plt.savefig('plot3_comparison.png', dpi=120, bbox_inches='tight')
-plt.show()
-```
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/patterneffort/NLP/plot3_comparison.png" alt="NLP Solvers Comprehensive Comparison" style="width: 90%; height: auto; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+پلات ۳ — مقایسه SciPy، GEKKO و CasADi از نظر: (①) مقدار $f(x^*)$، (②) انحراف از جواب تحلیلی (مقیاس لگاریتمی)، (③) مقادیر $x_1, x_2, x_3$، (④) جدول مشخصات کیفی.
+</div>
 
 ---
 
@@ -519,11 +478,11 @@ print(df.to_string())
 
 **خروجی نمونه:**
 
-| #   | کتابخانه | x₁  | x₂  | x₃  | f(x*) | ‖x−x*‖ | الگوریتم         | گرادیان              |
-| --- | -------- | --- | --- | --- | ----- | ------ | ---------------- | -------------------- |
-| 1   | SciPy    | 1.0 | 1.0 | 1.0 | 3.0   | ~1e-10 | SLSQP            | Finite Difference    |
-| 2   | GEKKO    | 1.0 | 1.0 | 1.0 | 3.0   | ~1e-11 | IPOPT (built-in) | Auto-Diff (internal) |
-| 3   | CasADi   | 1.0 | 1.0 | 1.0 | 3.0   | ~1e-12 | IPOPT (built-in) | Exact AD             |
+| # | کتابخانه | x₁ | x₂ | x₃ | f(x*) | ‖x−x*‖ | الگوریتم | گرادیان |
+|---|---------|-----|-----|-----|-------|--------|---------|---------|
+| 1 | SciPy | 1.0 | 1.0 | 1.0 | 3.0 | ~1e-10 | SLSQP | Finite Difference |
+| 2 | GEKKO | 1.0 | 1.0 | 1.0 | 3.0 | ~1e-11 | IPOPT (built-in) | Auto-Diff (internal) |
+| 3 | CasADi | 1.0 | 1.0 | 1.0 | 3.0 | ~1e-12 | IPOPT (built-in) | Exact AD |
 
 > 🎯 **جواب تحلیلی:** $x_1 = x_2 = x_3 = 1.0 \quad \Rightarrow \quad f^* = 3.0$ (از نامساوی AM-GM)
 
@@ -539,64 +498,72 @@ print(df.to_string())
 
 ### تفاوت اصلی: روش محاسبه گرادیان
 
-| سالور      | روش گرادیان       | دقت                    | توضیح                                                              |
-| ---------- | ----------------- | ---------------------- | ------------------------------------------------------------------ |
-| **SciPy**  | Finite Difference | تقریبی $O(h)$          | $\frac{\partial f}{\partial x_i} \approx \frac{f(x+he_i)-f(x)}{h}$ |
-| **GEKKO**  | Auto-Diff (داخلی) | بالا                   | از گراف محاسباتی IPOPT                                             |
-| **CasADi** | Exact Auto-Diff   | دقت ماشین ≈ $10^{-16}$ | Chain Rule روی گراف نمادین SX                                      |
+| سالور | روش گرادیان | دقت | توضیح |
+|-------|------------|-----|-------|
+| **SciPy** | Finite Difference | تقریبی $O(h)$ | $\frac{\partial f}{\partial x_i} \approx \frac{f(x+he_i)-f(x)}{h}$ |
+| **GEKKO** | Auto-Diff (داخلی) | بالا | از گراف محاسباتی IPOPT |
+| **CasADi** | Exact Auto-Diff | دقت ماشین ≈ $10^{-16}$ | Chain Rule روی گراف نمادین SX |
 
 ---
 
-### مراحل کلی حل هر NLP (مشترک بین هر سه سالور)
+### مراحل کلی حل NLP (مشترک بین هر سه سالور)
 
-```
-① تعریف f(x) — تابع هدف
-② تعریف g(x) = 0 — قیود تساوی
-③ x₀ — نقطه شروع اولیه
-④ حل ← سالور (SLSQP یا IPOPT)
-   ↳ محاسبه گرادیان ∇f و ژاکوبین ∇g
-   ↳ حل زیرمسأله (QP یا barrier)
-   ↳ به‌روزرسانی x ← x + αΔx
-   ↳ بررسی شرایط KKT (Karush-Kuhn-Tucker)
-⑤ خروجی: x* ، f(x*) ، ضرایب لاگرانژ λ
-```
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="/assets/patterneffort/NLP/plot5_nlp_flowchart.png" alt="NLP Algorithm Flowchart" style="width: 75%; height: auto; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+پلات ۵ — فلوچارت کلی الگوریتم حل NLP: از تعریف مسأله تا خروجی بهینه، شامل حلقه بهینه‌سازی و شرط توقف KKT.
+</div>
 
 ---
 
-### راهنمای انتخاب
+---
 
-| سناریو شما                      | پیشنهاد    |
-| ------------------------------- | ---------- |
-| شروع سریع، بدون نصب اضافی       | **SciPy**  |
-| کنترل بهینه، سیستم دینامیک، DAE | **GEKKO**  |
-| رباتیک، MPC، گرادیان دقیق، C++  | **CasADi** |
+## 📚 یادگیری مقایسه‌ای ابزارها (Tool Awareness & Critical Thinking)
 
-> 💡 **قانون سرانگشتی:** مسأله کوچک؟ → SciPy. نیاز به دقت بالا یا مقیاس بزرگ؟ → CasADi.
+> دانشجو یاد می‌گیرد که همه سالورها **«یکسان» نیستند** و انتخاب ابزار وابسته به چهار عامل کلیدی است:
+
+| عامل انتخاب | SciPy | GEKKO | CasADi |
+|-------------|-------|-------|--------|
+| **دقت گرادیان** | تقریبی $O(h)$ | بالا (Auto-Diff) | دقت ماشین $10^{-16}$ |
+| **مقیاس مسأله** | کوچک–متوسط | متوسط–بزرگ | بزرگ‌مقیاس |
+| **نوع مشتق‌گیری** | Finite Difference | Automatic (داخلی) | Symbolic Exact AD |
+| **کاربرد نهایی** | تحقیق عمومی، آموزش | کنترل، DAE، صنعت | ML، رباتیک، MPC |
+
+### راهنمای انتخاب بر اساس هدف آموزشی
+
+| هدف آموزشی | ابزار مناسب | دلیل |
+|-----------|------------|------|
+| آشنایی اولیه با NLP | **SciPy** | ساده، بدون نصب، `callback` برای مشاهده مسیر همگرایی |
+| سیستم‌های واقعی و کنترلی | **GEKKO** | IPOPT داخلی، مناسب DAE و مسائل دینامیک |
+| گرادیان دقیق و پژوهش پیشرفته | **CasADi** | Exact AD، هسیان دقیق، اینترفیس C++/MATLAB |
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 16px;">
+    <img src="/assets/patterneffort/NLP/plot6_radar_comparison.png" alt="Tool Comparison Radar Chart" style="width: 90%; height: auto; object-fit: contain;">
+</div>
+<div class="caption" style="text-align: center; margin-top: 8px;">
+پلات ۶ — رادار چارت مقایسه سه ابزار در ۶ بُعد: دقت گرادیان، مقیاس‌پذیری، سادگی استفاده، سرعت، پشتیبانی از DAE، و دقت AD.
+</div>
+
+> 💡 **قانون سرانگشتی:** مسأله کوچک یا آموزشی؟ → **SciPy**. سیستم دینامیک یا کنترل؟ → **GEKKO**. نیاز به دقت بالا، پژوهش پیشرفته یا مقیاس بزرگ؟ → **CasADi**.
 
 ---
 
 ## 📦 نصب پکیج‌ها
 
 ```bash
-# SciPy (معمولاً از قبل نصب است)
-pip install scipy numpy
-
-# GEKKO
-pip install gekko
-
-# CasADi
-pip install casadi
-
-# برای تصویرسازی
-pip install matplotlib pandas
+pip install scipy numpy gekko casadi matplotlib pandas
 ```
 
 ---
 
-## 📁 فایل‌های خروجی
+## 📬 راه‌های ارتباطی
 
-| فایل                    | توضیح                                    |
-| ----------------------- | ---------------------------------------- |
-| `plot1_landscape.png`   | چشم‌انداز مسأله — Contour 2D و Surface 3D |
-| `plot2_convergence.png` | مسیر همگرایی SLSQP در هر تکرار           |
-| `plot3_comparison.png`  | مقایسه جامع سه سالور از نظر دقت و جواب   |
+<p align="center">
+  <a href="https://github.com/arvinreihani">
+    <img src="https://img.shields.io/badge/GitHub-arvinreihani-181717?logo=github&logoColor=white&style=flat-square" />
+  </a>
+  <a href="mailto:your.arvin.r2001@gmail.com">
+    <img src="https://img.shields.io/badge/arvin.r2001.email%40gmail.com-EA4335?logo=gmail&logoColor=white&style=flat-square" />
+  </a>
+</p>
