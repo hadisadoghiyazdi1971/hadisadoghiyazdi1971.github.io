@@ -1,5 +1,4 @@
 ---
-
 layout: persian  # یا single با کلاس rtl-layout
 classes: wide rtl-layout
 dir: rtl
