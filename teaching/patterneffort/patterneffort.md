@@ -219,7 +219,20 @@ Generalization Error</strong>
 
 <!--32-->
 <div class="english-text">
-<strong>Aision Action In Brain</strong>
+<strong>Vision Action In Brain</strong>
 </div>
 <a href="/teaching/patterneffort/Histiory_Vla" style="text-decoration:underline; color:green;" target="_blank"><strong> بینایی–کنش؛ داستان دو مسیر در مغز </strong></a>
+
+<!--33-->
+<div class="english-text">
+<strong>Vision Transformer</strong>
+</div>
+<a href="/teaching/patterneffort/Vision_Transformer" style="text-decoration:underline; color:green;" target="_blank"><strong> بینایی–ترنسفرمر </strong></a>
+
+<!--34-->
+<div class="english-text">
+<strong>Non Linear Programming</strong>
+</div>
+<a href="/teaching/patterneffort/nlp_libraries_comparison" style="text-decoration:underline; color:green;" target="_blank"><strong> بهینه‌سازی غیرخطی (NLP) — مقایسه کتابخانه‌ها در پایتون </strong></a>
+
 
