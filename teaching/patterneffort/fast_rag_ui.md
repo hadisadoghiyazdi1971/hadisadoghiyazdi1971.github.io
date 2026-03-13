@@ -14,9 +14,6 @@ header:
 
 ---
 
-# fast rag ui
-
-
 **نویسنده**: محمد صالح علی اکبری
 
 <img src="https://quera.org/media/CACHE/images/public/avatars/8e111895562e470888dde40a0018e0eb/f93253aa8612f91a5a7b7f9d25cfabd4.jpg" />

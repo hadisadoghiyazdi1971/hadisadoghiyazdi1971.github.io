@@ -121,3 +121,9 @@ header:
 <strong>Gaussian Processes</strong>
 </div>
 <a href="/teaching/toolkit/GP" style="text-decoration:underline; color:green;" target="_blank"><strong> فرآیندهای گوسی</strong></a>
+
+<!--18-->
+<div class="english-text">
+<strong>dataset_sharing</strong>
+</div>
+<a href="/teaching/toolkit/GP" style="text-decoration:underline; color:green;" target="_blank"><strong>سامانه به اشتراک گذاری داده‌ها</strong></a>
