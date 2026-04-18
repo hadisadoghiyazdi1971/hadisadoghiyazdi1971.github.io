@@ -484,30 +484,7 @@ API مستند شده
 
 
 
-```mermaid
-gantt
-    title برنامه زمان‌بندی ۶ ماهه پروژه
-    dateFormat  YYYY-MM-DD
 
-    section فاز ۱: تحلیل
-    تحلیل نیازمندی‌ها        :a1, 2026-05-01, 30d
-
-    section فاز ۲: طراحی
-    طراحی معماری            :a2, after a1, 20d
-
-    section فاز ۳: توسعه
-    توسعه Backend           :a3, after a2, 40d
-    توسعه Frontend          :a4, after a2, 40d
-
-    section فاز ۴: داده
-    آماده‌سازی Dataset      :a5, after a1, 60d
-
-    section فاز ۵: استقرار
-    استقرار MVP             :a6, after a3, 20d
-
-    section فاز ۶: پایلوت
-    اجرای پایلوت            :a7, after a6, 30d
-```
 
 ```mermaid
 gantt
