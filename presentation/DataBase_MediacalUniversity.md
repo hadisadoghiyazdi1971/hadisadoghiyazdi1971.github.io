@@ -48,7 +48,9 @@ flowchart LR
 مسئله مدیریت داده در دانشگاه علوم پزشکی صرفاً یک مشکل فنی نیست، بلکه یک مسئله چندبعدی شامل لایه‌های داده، فرآیند، امنیت و فرهنگ سازمانی است.
 
 ```mermaid
-flowchart TB
+flowchart LR
+    direction LR
+
     D["لایه داده (Data Layer)"] --> P["لایه فرآیند (Process Layer)"]
     P --> S["لایه امنیت (Security Layer)"]
     S --> O["لایه سازمانی (Organizational Layer)"]
