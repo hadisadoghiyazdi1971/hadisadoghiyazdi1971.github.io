@@ -475,10 +475,10 @@ API مستند شده
 مسئولیت‌ها:
 
 حل تعارض‌ها
+
 تصویب سیاست‌ها
+
 نظارت بر پیشرفت پروژه
-
-
 
 
 
@@ -507,6 +507,47 @@ gantt
 
     section فاز ۶: پایلوت
     اجرای پایلوت            :a7, after a6, 30d
+```
+
+```mermaid
+gantt
+    title Roadmap (6 Months)
+    dateFormat YYYY-MM-DD
+
+    section Analysis
+    Requirements :a1, 2026-05-01, 30d
+
+    section Design
+    Architecture :a2, after a1, 20d
+
+    section Development
+    Backend :a3, after a2, 40d
+    Frontend :a4, after a2, 40d
+
+    section Data
+    Dataset Prep :a5, after a1, 60d
+
+    section Deployment
+    MVP :a6, after a3, 20d
+
+    section Pilot
+    Pilot :a7, after a6, 30d
+```
+
+
+```mermaid
+flowchart LR
+
+    A["فاز ۱: تحلیل<br/>۳۰ روز"] --> B["فاز ۲: طراحی<br/>۲۰ روز"]
+    A --> E["فاز ۴: آماده‌سازی داده<br/>۶۰ روز"]
+
+    B --> C["فاز ۳: توسعه Backend<br/>۴۰ روز"]
+    B --> D["فاز ۳: توسعه Frontend<br/>۴۰ روز"]
+
+    C --> F["فاز ۵: استقرار MVP<br/>۲۰ روز"]
+    D --> F
+
+    F --> G["فاز ۶: پایلوت<br/>۳۰ روز"]
 ```
 
 
