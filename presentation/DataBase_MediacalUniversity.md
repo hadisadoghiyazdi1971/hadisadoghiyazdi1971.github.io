@@ -92,16 +92,16 @@ Logging (ثبت رویداد) = ذخیره تمام فعالیت‌های کار
 عدم تعریف مالکیت داده
 
 📌 تعریف:
- (حاکمیت داده) = مجموعه سیاست‌ها و فرآیندهایی برای مدیریت داده
-
-
-
-
-<a href="https://en.wikipedia.org/wiki/Data_governance" style="text-decoration:none; color:green;" target="_blank">
+ (<a href="https://en.wikipedia.org/wiki/Data_governance" style="text-decoration:none; color:green;" target="_blank">
 <strong>
-Data Governance
+حاکمیت داده
 </strong>
-    </a>
+    </a>) = مجموعه سیاست‌ها و فرآیندهایی برای مدیریت داده
+
+
+
+
+
 
 
 
