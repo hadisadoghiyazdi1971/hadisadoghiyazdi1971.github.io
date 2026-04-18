@@ -42,3 +42,21 @@ flowchart LR
     style F fill:#cc0000,stroke:#333,color:#fff
 ```
 
+---
+
+## تحلیل عمیق مسئله
+
+مسئله مدیریت داده در دانشگاه علوم پزشکی صرفاً یک مشکل فنی نیست، بلکه یک مسئله چندبعدی شامل لایه‌های داده، فرآیند، امنیت و فرهنگ سازمانی است.
+
+```mermaid
+flowchart TB
+    D["لایه داده (Data Layer)"] --> P["لایه فرآیند (Process Layer)"]
+    P --> S["لایه امنیت (Security Layer)"]
+    S --> O["لایه سازمانی (Organizational Layer)"]
+
+    style D fill:#99ccff
+    style P fill:#cce5cc
+    style S fill:#ffcc99
+    style O fill:#ff9999
+    ```
+    
