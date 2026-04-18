@@ -1,5 +1,5 @@
 ---
-layout: persian  # یا single با کلاس rtl-layout
+layout: persian # یا single با کلاس rtl-layout
 classes: wide rtl-layout
 dir: rtl
 title: "تلاشهای دانشجویان درس مدار و الکترونیک"
@@ -13,12 +13,13 @@ header:
 ---
 
 # تلاش‌های ماندگار دانشجویان
+
 در شناسایی الگو و یادگیری ماشین، فداکاری و تلاش دانشجویان یادگاری برای دیگر دانشجویان است. این دانشجویان از طریق پروژه‌های عملی، حل مسئله دقیق و آزمایش‌های خلاقانه، پایه محکمی در دنیای پیچیده داده‌ها و الگوریتم‌ها بنا می‌کنند که سال‌های سال با آنها باقی می‌ماند. آنها با پشتکار و کنجکاوی به مفاهیم پیچیده‌ای مانند استنتاج آماری، بهینه‌سازی مدل‌ها و تفسیر خروجی‌های شبکه‌های عصبی نزدیک می‌شوند و اغلب مرزهای درک خود را جابجا می‌کنند. این سفر با ساعت‌ها همکاری و کشف فردی مشخص می‌شود و هر پروژه را به گواهی بر رشد و عزم آنها تبدیل می‌کند. کار آنها نه تنها برای موفقیت تحصیلی آنها ضروری است، بلکه به پیشرفت‌های مداوم در فناوری و هوش مصنوعی نیز کمک می‌کند و سال‌هاست که در صنایع و تحقیقات منعکس می‌شود.
 
-<!-- 
+<!--
  <div class="english-text">
     <strong style="font-weight: 900;"></strong>
-</div>  -- 
+</div>  --
 
 -->
 
@@ -108,7 +109,6 @@ Generalization Error</strong>
 </div>
 <a href="/teaching/patterneffort/SGD" style="text-decoration:underline; color:green;" target="_blank"><strong>Stochastic Gradient Descent (SGD)</strong></a>
 
-
 <!--15-->
 <div class="english-text">
 <strong> LMS-RBF</strong>
@@ -121,13 +121,11 @@ Generalization Error</strong>
 </div>
 <a href="/teaching/patterneffort/vla" style="text-decoration:underline; color:green;" target="_blank"><strong> بینایی–زبان–کنش (VLA)</strong></a>
 
-
 <!--17-->
 <div class="english-text">
 <strong>Vision–Language–Action _LLM (VLA)</strong>
 </div>
 <a href="/teaching/patterneffort/vla_LLM" style="text-decoration:underline; color:green;" target="_blank"><strong> بینایی–زبان–کنش (VLA_LLM)</strong></a>
-
 
 <!--18-->
 <div class="english-text">
@@ -135,20 +133,17 @@ Generalization Error</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/unsupervised_text_classification" style="text-decoration:underline; color:green;" target="_blank"><strong> طقبه بندی متن ها بدون لیبل با مدل های زبانی</strong></a>
 
-
 <!--19-->
 <div class="english-text">
 <strong>A synergistic multi-stage RAG architecture for boosting context relevance in data science literature</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/synergistic-rag" style="text-decoration:underline; color:green;" target="_blank"><strong>معماری RAG هم‌افزایانه</strong></a>
 
-
 <!--20-->
 <div class="english-text">
 <strong>fast_rag_ui</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/fast_rag_ui" style="text-decoration:underline; color:green;" target="_blank"><strong> اجرای یک ui سبک برای اجرای سیستم‌های rag روی سرور ابری</strong></a>
-
 
 <!--21-->
 <div class="english-text">
@@ -167,7 +162,6 @@ Generalization Error</strong>
 <strong>Semantic Search (URL) Project</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/SemanticSearchURLProject" style="text-decoration:underline; color:green;" target="_blank"><strong>پروژه جست‌وجو معنایی آدرس‌های وب</strong></a>
-
 
 <!--24-->
 <div class="english-text">
@@ -216,3 +210,27 @@ Generalization Error</strong>
 <strong>Prompt Engineering</strong>
 </div>
 <a href="/teaching/studenteffort/patterneffort/prompt_engineering" style="text-decoration:underline; color:green;" target="_blank"><strong> مهندسی پرامپت</strong></a>
+
+<!--32-->
+<div class="english-text">
+<strong>Vision Action In Brain</strong>
+</div>
+<a href="/teaching/patterneffort/Histiory_Vla" style="text-decoration:underline; color:green;" target="_blank"><strong> بینایی–کنش؛ داستان دو مسیر در مغز </strong></a>
+
+<!--33-->
+<div class="english-text">
+<strong>Vision Transformer</strong>
+</div>
+<a href="/teaching/patterneffort/Vision_Transformer" style="text-decoration:underline; color:green;" target="_blank"><strong> بینایی–ترنسفرمر </strong></a>
+
+<!--34-->
+<div class="english-text">
+<strong>Non Linear Programming</strong>
+</div>
+<a href="/teaching/patterneffort/nlp_libraries_comparison" style="text-decoration:underline; color:green;" target="_blank"><strong> بهینه‌سازی غیرخطی (NLP) — مقایسه کتابخانه‌ها در پایتون </strong></a>
+
+<!--34-->
+<div class="english-text">
+<strong>CVXPY Guidance</strong>
+</div>
+<a href="/teaching/patterneffort/cvxpy_guidance" style="text-decoration:underline; color:green;" target="_blank"><strong> CVXPY - راهنمای جامع بهینه سازی محدب با </strong></a>
