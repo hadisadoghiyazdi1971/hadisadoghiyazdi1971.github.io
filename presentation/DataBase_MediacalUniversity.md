@@ -95,7 +95,9 @@ Logging (ثبت رویداد) = ذخیره تمام فعالیت‌های کار
  (حاکمیت داده) = مجموعه سیاست‌ها و فرآیندهایی برای مدیریت داده
 
 
-<a ref="https://en.wikipedia.org/wiki/Data_governance" style="text-decoration:none; color:green;" target="_blank">
+
+
+<a href="https://en.wikipedia.org/wiki/Data_governance" style="text-decoration:none; color:green;" target="_blank">
 <strong>
 Data Governance
 </strong>
