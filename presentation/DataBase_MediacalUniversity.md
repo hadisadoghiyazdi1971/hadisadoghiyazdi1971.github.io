@@ -181,6 +181,7 @@ https://react.dev/
 نمایش داده‌ها
 ارسال درخواست به Backend
 مدیریت UI
+
 ۲. Backend
 
 📌 تعریف:
@@ -197,6 +198,7 @@ https://en.wikipedia.org/wiki/REST
 مدیریت منطق سیستم
 کنترل دسترسی
 پردازش درخواست‌ها
+
 ۳. پایگاه داده
 
 📌 تعریف:
@@ -207,6 +209,7 @@ https://www.postgresql.org/
 
 ذخیره metadata
 ذخیره روابط
+
 ۴. Object Storage
 
 📌 تعریف:
@@ -249,6 +252,7 @@ De-identification
 
 حذف نام
 حذف کد ملی
+
 ۲. رمزنگاری
 
 📌 تعریف:
@@ -259,6 +263,7 @@ Encryption (رمزنگاری)
 
 At Rest (در ذخیره)
 In Transit (در انتقال)
+
 ۳. کنترل دسترسی
 
 📌 تعریف:
