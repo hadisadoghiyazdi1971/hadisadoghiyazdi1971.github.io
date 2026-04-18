@@ -103,9 +103,8 @@ Data Governance
 
 
 
-# 🧩 مرحله ۳: تعریف دقیق راه‌حل (Solution Architecture Thinking)
+## 🧩 مرحله ۳: تعریف دقیق راه‌حل (Solution Architecture Thinking)
 
-## تعریف راه‌حل پیشنهادی
 
 راه‌حل پیشنهادی یک **پلتفرم متمرکز مدیریت داده** است که سه قابلیت کلیدی را فراهم می‌کند:
 
@@ -152,4 +151,156 @@ Access Control (کنترل دسترسی) = تعیین اینکه چه کسی ب�
 
 📌 تعریف:
 Machine Learning (یادگیری ماشین) = الگوریتم‌هایی که از داده یاد می‌گیرند
+
+
+
+
+
+## معماری فنی سیستم (تحلیل دقیق)
+
+```mermaid
+flowchart TB
+    U["User (کاربر)"] --> F["Frontend (React)"]
+    F --> B["Backend (Django REST API)"]
+    B --> DB["PostgreSQL Database"]
+    B --> ST["Object Storage (MinIO)"]
+    B --> AU["Auth Service"]
+```
+
+۱. Frontend
+
+📌 تعریف:
+React = کتابخانه JavaScript برای ساخت رابط کاربری
+https://react.dev/
+
+وظایف:
+
+نمایش داده‌ها
+ارسال درخواست به Backend
+مدیریت UI
+۲. Backend
+
+📌 تعریف:
+Django = فریمورک Python برای توسعه وب
+https://www.djangoproject.com/
+
+📌 تعریف:
+REST API (Representational State Transfer)
+= استانداردی برای ارتباط بین سیستم‌ها
+https://en.wikipedia.org/wiki/REST
+
+وظایف:
+
+مدیریت منطق سیستم
+کنترل دسترسی
+پردازش درخواست‌ها
+۳. پایگاه داده
+
+📌 تعریف:
+PostgreSQL = سیستم مدیریت پایگاه داده رابطه‌ای
+https://www.postgresql.org/
+
+وظیفه:
+
+ذخیره metadata
+ذخیره روابط
+۴. Object Storage
+
+📌 تعریف:
+MinIO = سیستم ذخیره‌سازی سازگار با S3
+https://min.io/
+
+📌 تعریف:
+S3 (Simple Storage Service)
+= استاندارد ذخیره‌سازی شیء
+https://en.wikipedia.org/wiki/Amazon_S3
+
+وظیفه:
+
+ذخیره فایل‌های حجیم
+جداسازی فایل از دیتابیس
+
+
+---
+
+# 🧩 مرحله ۵: امنیت (سطح حرفه‌ای پزشکی)
+
+```md
+---
+
+## امنیت داده‌های پزشکی
+
+```mermaid
+flowchart LR
+    A["Raw Data"] --> B["De-identification"]
+    B --> C["Encryption"]
+    C --> D["Access Control"]
+    D --> E["Audit Log"]
+```
+
+۱. ناشناس‌سازی
+
+📌 تعریف:
+De-identification
+= حذف اطلاعات هویتی از داده
+
+مثال:
+
+حذف نام
+حذف کد ملی
+۲. رمزنگاری
+
+📌 تعریف:
+Encryption (رمزنگاری)
+= تبدیل داده به فرم غیرقابل خواندن
+
+انواع:
+
+At Rest (در ذخیره)
+In Transit (در انتقال)
+۳. کنترل دسترسی
+
+📌 تعریف:
+RBAC (Role-Based Access Control)
+= کنترل دسترسی مبتنی بر نقش
+https://en.wikipedia.org/wiki/Role-based_access_control
+
+۴. ثبت لاگ
+
+📌 تعریف:
+Audit Log
+= ثبت تمام فعالیت‌ها برای بررسی امنیت
+
+
+
+## نسخه‌بندی داده‌ها (Dataset Versioning)
+
+```mermaid
+flowchart LR
+    V1["Version 1"] --> V2["Version 2"]
+    V2 --> V3["Version 3"]
+```
+
+تعریف:
+
+Versioning
+= نگهداری نسخه‌های مختلف یک Dataset در طول زمان
+
+ویژگی‌های سیستم:
+هر نسخه immutable (غیرقابل تغییر)
+امکان بازگشت (Rollback)
+ثبت تغییرات
+
+📌 تعریف:
+Immutable = غیرقابل تغییر
+
+مزیت:
+reproducibility (تکرارپذیری پژوهش)
+
+📌 تعریف:
+Reproducibility
+= امکان تکرار یک آزمایش با همان نتایج
+
+
+
 
