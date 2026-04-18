@@ -398,3 +398,8 @@ flowchart LR
 
     style P fill:#ff4d4d,color:#fff,stroke-width:3px
 ```
+
+ما از Kaggle قابلیت Dataset و Challenge را می‌گیریم،
+از DHIS2 مدیریت داده‌های سلامت را،
+و از Galaxy مدیریت فرآیند پژوهش را،
+و همه را در یک پلتفرم یکپارچه دانشگاهی ترکیب می‌کنیم.
