@@ -42,7 +42,6 @@ flowchart LR
     style F fill:#cc0000,stroke:#333,color:#fff
 ```
 
----
 
 ## تحلیل عمیق مسئله
 
@@ -58,7 +57,7 @@ flowchart TB
     style P fill:#cce5cc
     style S fill:#ffcc99
     style O fill:#ff9999
-    ```
+```
 
 ۱. لایه داده (Data Layer)
 
@@ -221,12 +220,10 @@ https://en.wikipedia.org/wiki/Amazon_S3
 جداسازی فایل از دیتابیس
 
 
----
 
-# 🧩 مرحله ۵: امنیت (سطح حرفه‌ای پزشکی)
 
-```md
----
+## 🧩 مرحله ۵: امنیت (سطح حرفه‌ای پزشکی)
+
 
 ## امنیت داده‌های پزشکی
 
