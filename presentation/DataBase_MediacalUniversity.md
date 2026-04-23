@@ -197,101 +197,74 @@ flowchart TD
     style V fill:#ffe6cc,stroke:#333
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# ذی‌نفعان و موارد کاربرد
+اصلی‌ترین ذی‌نفعان این سامانه عبارتند از: دانشجویان و پژوهشگران پزشکی (تهیه‌کنندگان و مصرف‌کنندگان داده)، اساتید و دانشگاه‌ها، وزارت بهداشت، کمیته‌های اخلاق پژوهش، و نهادهای قانونی. موارد کاربرد شامل:
 
 ```mermaid
-flowchart LR
-    direction LR
-    P["پراکندگی داده‌های بالینی"] --> M["عدم استاندارد متادیتا"]
-    M --> A["عدم قابلیت جستجو"]
-    A --> R["عدم استفاده مجدد"]
-    R --> L["اتلاف منابع پژوهشی"]
-    L --> F["کاهش بهره‌وری علمی"]
-    
-    style P fill:#99ccff,stroke:#333
-    style M fill:#ffcc99,stroke:#333
-    style A fill:#ff9999,stroke:#333
-    style R fill:#ff6666,stroke:#333
-    style F fill:#cc0000,stroke:#333,color:#fff
+flowchart TD
+    subgraph Stakeholders [ذی‌نفعان اصلی]
+        direction TB
+        R[/"دانشجویان و پژوهشگران"\]
+        U[/"اساتید و دانشگاه‌ها"\]
+        M[/"وزارت بهداشت و نهادهای قانونی"\]
+        E[/"کمیته‌های اخلاق"\]
+    end
+
+    Sys[("سامانه ملی یکپارچه داده‌ها")]
+
+    %% موارد کاربرد و تعاملات
+    R -- "۱. بارگذاری داده‌ها (بالینی/تصویری/ژنومی)" --> Sys
+    Sys -- "۲. جستجو، دسترسی و صدور DOI" --> R
+    R -.->|بازخورد| Sys
+
+    U -- "۳. پژوهش‌های مشترک بین دانشگاهی" --> Sys
+    Sys -- "۴. تولید گزارش‌های کلان تحقیقات" --> U
+
+    M -- "نظارت و سیاست‌گذاری" --> Sys
+    E -- "تایید کد اخلاق و رعایت حریم" --> Sys
+
+    style Sys fill:#f9f,stroke:#333,stroke-width:3px
+    style Stakeholders fill:#f4f4f4,stroke:#999,color:#000
+    style R fill:#e1f5fe
+    style U fill:#e8f5e9
+    style M fill:#fff3e0
+    style E fill:#fce4ec
 ```
 
 
-## تحلیل عمیق مسئله
 
-مسئله مدیریت داده در دانشگاه علوم پزشکی صرفاً یک مشکل فنی نیست، بلکه یک مسئله چندبعدی شامل لایه‌های داده، فرآیند، امنیت و فرهنگ سازمانی است.
 
-```mermaid
-flowchart LR
-    direction LR
 
-    D["لایه داده (Data Layer)"] --> P["لایه فرآیند (Process Layer)"]
-    P --> S["لایه امنیت (Security Layer)"]
-    S --> O["لایه سازمانی (Organizational Layer)"]
 
-    style D fill:#99ccff
-    style P fill:#cce5cc
-    style S fill:#ffcc99
-    style O fill:#ff9999
-```
 
-۱. لایه داده (Data Layer)
 
-در این لایه، مشکلات زیر وجود دارد:
 
-نبود استاندارد متادیتا
-عدم یکنواختی فرمت داده‌ها
-نبود schema مشخص برای dataset
 
-📌 تعریف:
-Metadata (فراداده) = داده درباره داده (مثلاً نوع داده، منبع، تاریخ تولید)
 
-۲. لایه فرآیند (Process Layer)
-فرآیند مشخصی برای ثبت Dataset وجود ندارد
-کنترل کیفیت داده انجام نمی‌شود
-نسخه‌بندی وجود ندارد
 
-📌 تعریف:
-Versioning (نسخه‌بندی) = نگهداری تاریخچه تغییرات داده‌ها به‌صورت ساختاریافته
 
-۳. لایه امنیت (Security Layer)
-داده‌های حساس بدون کنترل مناسب در دسترس هستند
-ثبت لاگ (Logging) ناقص است
 
-📌 تعریف:
-Logging (ثبت رویداد) = ذخیره تمام فعالیت‌های کاربران و سیستم برای بررسی و امنیت
 
-۴. لایه سازمانی (Organizational Layer)
-نبود سیاست مشخص برای اشتراک داده
-عدم تعریف مالکیت داده
 
-📌 تعریف:
- (<a href="https://en.wikipedia.org/wiki/Data_governance" style="text-decoration:none; color:green;" target="_blank">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://en.wikipedia.org/wiki/Data_governance" style="text-decoration:none; color:green;" target="_blank">
 <strong>
 حاکمیت داده
 </strong>
-    </a>) = مجموعه سیاست‌ها و فرآیندهایی برای مدیریت داده
-
-
-
-
-
-
+    </a>
 
 
 
