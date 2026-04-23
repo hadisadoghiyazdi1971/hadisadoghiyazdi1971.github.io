@@ -233,7 +233,7 @@ flowchart TD
 
 
 ```mermaid
-graph LR
+flowchart TD
     subgraph S ["ذی‌نفعان"]
         D["پژوهشگران و دانشجویان"]
         U["اساتید و دانشگاه‌ها"]
