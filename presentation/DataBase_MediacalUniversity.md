@@ -230,6 +230,38 @@ flowchart TD
     style M fill:#fff3e0
     style E fill:#fce4ec
 ```
+```mermaid
+flowchart TD
+    subgraph Stakeholders ["ذی‌نفعان اصلی"]
+        direction TB
+        D["پژوهشگران و دانشجویان"]
+        U["اساتید و دانشگاه‌ها"]
+        M["وزارت بهداشت"]
+    end
+
+    Sys["سامانه ملی یکپارچه داده‌ها"]
+    E["کمیته اخلاق"]
+
+    %% تعاملات اصلی
+    D -- "۱. بارگذاری داده" --> Sys
+    Sys -- "۲. دریافت داده و DOI" --> D
+
+    U -- "۳. درخواست پژوهش مشترک" --> Sys
+    Sys -- "۴. گزارش های کلان" --> U
+
+    M -- "۵. سیاست گذاری و نظارت" --> Sys
+
+    %% فرآیند اخلاق (خطوط چین‌دار برای تفکیک)
+    D -.->|"۶. ارسال پروپوزال"| E
+    E -.->|"۷. تایید مجوز اخلاق"| Sys
+
+    style Sys fill:#f9f,stroke:#333,stroke-width:3px
+    style E fill:#ffcccc,stroke:#333
+    style Stakeholders fill:#f4f4f4,stroke:#999,color:#000
+    style D fill:#e1f5fe
+    style U fill:#e8f5e9
+    style M fill:#fff3e0
+```
 
 
 ```mermaid
