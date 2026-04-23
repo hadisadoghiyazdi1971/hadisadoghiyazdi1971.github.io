@@ -80,6 +80,30 @@ flowchart LR
     style O fill:#66b3ff,stroke:#333,color:#000
 ```
 
+```mermaid
+flowchart TD
+    direction TB
+    Main["<b>اهداف سامانه ملی یکپارچه داده‌های پژوهش پزشکی</b>"]
+    
+    Main --> O1["۱. دسترسی آسان و سریع<br/>حذف مراجعه حضوری"]
+    Main --> O2["۲. حفظ حریم شخصی<br/>ارائه داده‌های ناشناس‌شده"]
+    Main --> O3["۳. جستجوی هدفمند<br/>فیلترهای پیچیده و دقیق"]
+    Main --> O4["۴. تحلیل داده‌ها<br/>ابزارهای آماری و نموداری"]
+    Main --> O5["۵. امنیت داده‌ها<br/>رمزنگاری و کنترل دسترسی"]
+    Main --> O6["۶. قابلیت توسعه<br/>پذیرش قابلیت‌های نوین آینده"]
+    Main --> O7["۷. ارزیابی سازمانی<br/>سنجش عملکرد مراکز درمانی"]
+    Main --> O8["۸. جامعیت داده‌ها<br/>جمع‌آوری سراسری و چندمرکزی"]
+
+    style Main fill:#004d40,stroke:#333,color:#fff
+    style O1 fill:#e0f7fa,stroke:#333
+    style O2 fill:#e0f2f1,stroke:#333
+    style O3 fill:#fff3e0,stroke:#333
+    style O4 fill:#f3e5f5,stroke:#333
+    style O5 fill:#ffebee,stroke:#333
+    style O6 fill:#e0e0e0,stroke:#333
+    style O7 fill:#fff9c4,stroke:#333
+    style O8 fill:#e1f5fe,stroke:#333
+```
 
 
 # بیان مسئله
