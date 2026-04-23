@@ -42,11 +42,17 @@ header:
   * دسترسی سریع و آنلاین به داده‌ها
 * **مزیت مهم:** حفظ کامل حریم خصوصی با ناشناس‌سازی داده‌ها
 * **تغییر پارادایم:** حذف فرآیندهای حضوری و کاغذی → دسترسی دیجیتال و هوشمند
-* **تجربه موفق داخلی:**
+* **تجربه های داخلی:**
   * <a href="https://rabit.ir/" style="text-decoration:none; color:green;" target="_blank">
       <strong> پلتفرم ربیت</strong>
     </a>
   * دیجیتالی‌سازی بیش از ۳۰۰ پروژه در دانشگاه شهید بهشتی
+    * <a href="https://irancohorts.ir/?lang=fa" style="text-decoration:none; color:green;" target="_blank">
+      <strong>  پرشین کوهورت</strong>
+    </a>
+* <a href="https://v-research.mums.ac.ir/index.php/component/content/article/43-persian-category/1319-mums-persian-cohort/" style="text-decoration:none; color:blue;" target="_blank">
+      <strong> کوهورت دانشگاه علوم پزشکی مشهد و دیگر شهرها</strong>
+    </a>
 * **ارزش افزوده ملی:**
   * امکان پژوهش‌های چندمرکزی
   * افزایش کیفیت و سرعت تولید علم
