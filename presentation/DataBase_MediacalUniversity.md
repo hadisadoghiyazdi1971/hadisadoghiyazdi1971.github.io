@@ -309,8 +309,45 @@ flowchart TD
     style F fill:#fff9c4,stroke:#333
 ```
 
+```mermaid
+flowchart TD
+    Root["انواع داده ها و ساختارها"]
 
+    %% گروه‌بندی در دو ستون برای عمودی شدن نمودار
+    subgraph S1 [ ]
+        direction TB
+        A["الف: داده های بالینی"]
+        B["ب: تصویربرداری پزشکی"]
+        C["ج: داده های ژنومی"]
+    end
 
+    subgraph S2 [ ]
+        direction TB
+        D["د: پرسشنامه و نظرسنجی"]
+        E["ه: نتایج آزمایشگاهی"]
+        F["و: متادیتا"]
+    end
+
+    %% اتصال ریشه به گروه‌ها
+    Root --> S1
+    Root --> S2
+
+    %% زیرشاخه‌ها (استانداردها)
+    A --> A1["FHIR / OMOP CDM"]
+    B --> B1["DICOM"]
+    C --> C1["FASTQ / VCF"]
+    D --> D1["CSV / JSON"]
+    E --> E1["LOINC / SNOMED"]
+    F --> F1["DataCite / DCAT"]
+
+    style Root fill:#f9f,stroke:#333,stroke-width:3px
+    style A fill:#e1f5fe,stroke:#333
+    style B fill:#e8f5e9,stroke:#333
+    style C fill:#fff3e0,stroke:#333
+    style D fill:#f3e5f5,stroke:#333
+    style E fill:#ffebee,stroke:#333
+    style F fill:#fff9c4,stroke:#333
+```
 
 
 
