@@ -263,35 +263,53 @@ flowchart TD
     style M fill:#fff3e0
 ```
 
+# انواع داده‌ها و ساختارها
 
 ```mermaid
 flowchart TD
-    subgraph S ["ذی‌نفعان"]
-        D["پژوهشگران و دانشجویان"]
-        U["اساتید و دانشگاه‌ها"]
-        M["وزارت بهداشت"]
-    end
+    Root["انواع داده ها و ساختارها"]
 
-    Sys["سامانه ملی داده ها"]
+    %% الف: داده های بالینی
+    Root --> A["الف: داده های بالینی"]
+    A --> A1["منابع: FHIR, OMOP CDM"]
+    A --> A2["محتوا: پرونده، تشخیص، درمان"]
 
-    E{{"کمیته اخلاق"}}
+    %% ب: تصویربرداری
+    Root --> B["ب: تصویربرداری پزشکی"]
+    B --> B1["استاندارد: DICOM"]
+    B --> B2["محتوا: رادیولوژی، MRI، CT"]
 
-    %% تعاملات
-    D -->|"بارگذاری داده"| Sys
-    Sys -->|"دریافت داده و DOI"| D
+    %% ج: ژنومی
+    Root --> C["ج: داده های ژنومی"]
+    C --> C1["فرمت: FASTQ, BAM, VCF"]
+    C --> C2["استاندارد: GA4GH"]
 
-    U -->|"درخواست پژوهش مشترک"| Sys
-    Sys -->|"گزارش های کلان"| U
+    %% د: پرسشنامه
+    Root --> D["د: پرسشنامه و نظرسنجی"]
+    D --> D1["فرمت: CSV, JSON"]
+    D --> D2["ساختار: REDCap, ODM"]
 
-    M -->|"سیاست گذاری و نظارت"| Sys
+    %% ه: آزمایشگاه
+    Root --> E["ه: نتایج آزمایشگاهی"]
+    E --> E1["کدگذاری: LOINC, SNOMED CT"]
+    E --> E2["ساختار: FHIR Observation"]
 
-    D -.->|"ارسال پروپوزال"| E
-    E -.->|"تایید مجوز اخلاق"| Sys
+    %% و: متادیتا
+    Root --> F["و: متادیتا"]
+    F --> F1["شما: DataCite, DCAT"]
+    F --> F2["هدف: توصیف و یافت پذیری"]
 
-    style Sys fill:#f9f,stroke:#333,stroke-width:2px
-    style E fill:#ffcccc,stroke:#333
-    style S fill:#f4f4f4,stroke:#999
+    %% استایل‌دهی
+    style Root fill:#f9f,stroke:#333,stroke-width:3px
+    style A fill:#e1f5fe,stroke:#333
+    style B fill:#e8f5e9,stroke:#333
+    style C fill:#fff3e0,stroke:#333
+    style D fill:#f3e5f5,stroke:#333
+    style E fill:#ffebee,stroke:#333
+    style F fill:#fff9c4,stroke:#333
 ```
+
+
 
 
 
