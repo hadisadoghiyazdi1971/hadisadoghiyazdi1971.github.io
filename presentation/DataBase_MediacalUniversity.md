@@ -53,7 +53,32 @@ header:
   * بهره‌برداری مجدد از داده‌ها
 * **خروجی نهایی:** حرکت به سمت پزشکی داده‌محور و بهبود نظام سلامت کشور
 
+```mermaid
+flowchart LR
+    direction LR
+    P["مسئله اصلی:<br/>پراکندگی و بلااستفاده ماندن داده‌ها"] --> G["شکاف موجود:<br/>نبود زیرساخت ملی یکپارچه"]
+    G --> N["نیاز حیاتی:<br/>دسترسی به داده‌های باکیفیت (AI/ML)"]
+    N --> S["راهکار پیشنهادی:<br/>سامانه ملی یکپارچه داده‌ها"]
+    
+    S --> F["ویژگی کلیدی:<br/>جستجوی پیشرفته، اتصال HIS/EHR"]
+    S --> M["مزیت مهم:<br/>حفظ حریم خصوصی (ناشناس‌سازی)"]
+    S --> C["تغییر پارادایم:<br/>دسترسی دیجیتال (حذف کاغذ)"]
+    S --> E["تجربه موفق:<br/>پلتفرم ربیت"]
+    
+    F & M & C & E --> V["ارزش افزوده ملی:<br/>پژوهش چندمرکزی، استفاده مجدد"]
+    V --> O["خروجی نهایی:<br/>پزشکی داده‌محور و بهبود سلامت"]
 
+    style P fill:#ffcccc,stroke:#333
+    style G fill:#ffcc99,stroke:#333
+    style N fill:#ffffcc,stroke:#333
+    style S fill:#ccffcc,stroke:#333,stroke-width:2px
+    style F fill:#e6f3ff,stroke:#333
+    style M fill:#e6f3ff,stroke:#333
+    style C fill:#e6f3ff,stroke:#333
+    style E fill:#d9d9d9,stroke:#333
+    style V fill:#99ccff,stroke:#333
+    style O fill:#66b3ff,stroke:#333,color:#000
+```
 
 
 
