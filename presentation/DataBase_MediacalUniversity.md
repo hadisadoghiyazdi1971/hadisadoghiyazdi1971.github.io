@@ -104,6 +104,7 @@ style C1 fill:#cccccc
 style C2 fill:#cccccc
 style C3 fill:#cccccc
 ```
+
 ## نشت/دسترسی غیرمجاز داده
 
 ```mermaid
@@ -179,6 +180,93 @@ style C1 fill:#cccccc
 style C2 fill:#cccccc
 ```
 
+##  ساختار  (Execution / Integration / Data Flow)
+
+```mermaid
+flowchart LR
+
+%% --- Hazard ---
+subgraph HZ["Hazard"]
+    H["پیچیدگی و شکنندگی جریان داده"]
+end
+
+%% --- Threats ---
+subgraph TH["Threats / Causes"]
+    T1["شکست ETL"]
+    T2["ناسازگاری Semantic / Mapping"]
+    T3["خطای API Integration"]
+    T4["کیفیت پایین داده"]
+end
+
+%% --- Preventive Barriers ---
+subgraph PB["Preventive Barriers"]
+    P1["ETL استاندارد + Validation"]
+    P2["Canonical Model (FHIR/OMOP)"]
+    P3["API Gateway + SLA"]
+    P4["Data Quality Rules"]
+end
+
+%% --- Top Event ---
+subgraph TE["Top Event"]
+    TE1["Failure در Data Pipeline"]
+end
+
+%% --- Mitigative Barriers ---
+subgraph MB["Mitigative Barriers"]
+    M1["Monitoring & Alerting"]
+    M2["Rollback / Recovery"]
+    M3["Failover Pipelines"]
+end
+
+%% --- Consequences ---
+subgraph CS["Consequences"]
+    C1["عدم استفاده سیستم"]
+    C2["نتایج پژوهشی غلط"]
+    C3["از دست رفتن اعتماد"]
+end
+
+%% --- Connections ---
+H --> T1
+H --> T2
+H --> T3
+H --> T4
+
+T1 --> P1
+T2 --> P2
+T3 --> P3
+T4 --> P4
+
+P1 --> TE1
+P2 --> TE1
+P3 --> TE1
+P4 --> TE1
+
+TE1 --> M1
+TE1 --> M2
+TE1 --> M3
+
+M1 --> C1
+M2 --> C2
+M3 --> C3
+
+%% --- Styles ---
+style H fill:#ffcc00,stroke:#333,stroke-width:3px
+style T1 fill:#99ccff
+style T2 fill:#99ccff
+style T3 fill:#99ccff
+style T4 fill:#99ccff
+style P1 fill:#99ff99
+style P2 fill:#99ff99
+style P3 fill:#99ff99
+style P4 fill:#99ff99
+style TE1 fill:#ff3333,color:#fff,stroke-width:3px
+style M1 fill:#ffcc99
+style M2 fill:#ffcc99
+style M3 fill:#ffcc99
+style C1 fill:#cccccc
+style C2 fill:#cccccc
+style C3 fill:#cccccc
+```
 
 # مقدمه و چکیده
 
