@@ -179,7 +179,93 @@ style M2 fill:#ffcc99
 style C1 fill:#cccccc
 style C2 fill:#cccccc
 ```
+##
 
+```mermaid
+flowchart LR
+
+%% --- Hazard ---
+subgraph HZ["Hazard"]
+    H["ریسک حاکمیت و استفاده از داده انسانی"]
+end
+
+%% --- Threats ---
+subgraph TH["Threats / Causes"]
+    T1["ابهام مالکیت داده"]
+    T2["شکست مدیریت رضایت"]
+    T3["عدم انطباق با IRB"]
+    T4["استفاده ثانویه غیرمجاز"]
+end
+
+%% --- Preventive Barriers ---
+subgraph PB["Preventive Barriers"]
+    P1["Data Governance Framework"]
+    P2["Consent Management System"]
+    P3["IRB Workflow Integration"]
+    P4["Policy-based Access Control"]
+end
+
+%% --- Top Event ---
+subgraph TE["Top Event"]
+    TE1["نقض الزامات اخلاقی/حقوقی"]
+end
+
+%% --- Mitigative Barriers ---
+subgraph MB["Mitigative Barriers"]
+    M1["Audit Trail"]
+    M2["Access Revocation"]
+    M3["Compliance Response"]
+end
+
+%% --- Consequences ---
+subgraph CS["Consequences"]
+    C1["توقف پروژه ملی"]
+    C2["از دست رفتن اعتماد"]
+    C3["ریسک حقوقی"]
+end
+
+%% --- Connections ---
+H --> T1
+H --> T2
+H --> T3
+H --> T4
+
+T1 --> P1
+T2 --> P2
+T3 --> P3
+T4 --> P4
+
+P1 --> TE1
+P2 --> TE1
+P3 --> TE1
+P4 --> TE1
+
+TE1 --> M1
+TE1 --> M2
+TE1 --> M3
+
+M1 --> C1
+M2 --> C2
+M3 --> C3
+
+%% --- Styles ---
+style H fill:#ffcc00,stroke:#333,stroke-width:3px
+style T1 fill:#99ccff
+style T2 fill:#99ccff
+style T3 fill:#99ccff
+style T4 fill:#99ccff
+style P1 fill:#99ff99
+style P2 fill:#99ff99
+style P3 fill:#99ff99
+style P4 fill:#99ff99
+style TE1 fill:#ff3333,color:#fff,stroke-width:3px
+style M1 fill:#ffcc99
+style M2 fill:#ffcc99
+style M3 fill:#ffcc99
+style C1 fill:#cccccc
+style C2 fill:#cccccc
+style C3 fill:#cccccc
+```
 ##  ساختار  (Execution / Integration / Data Flow)
 
 ```mermaid
@@ -266,6 +352,139 @@ style M3 fill:#ffcc99
 style C1 fill:#cccccc
 style C2 fill:#cccccc
 style C3 fill:#cccccc
+```
+
+## شکست در هماهنگی و تقسیم مسئولیت‌ها
+
+```mermaid
+flowchart LR
+
+%% --- Hazard ---
+subgraph HZ["خطر"]
+    H["پیچیدگی مدیریت چندذی‌نفعی در پروژه ملی"]
+end
+
+%% --- Threats ---
+subgraph TH["علل / تهدیدها"]
+    T1["ابهام در نقش‌ها"]
+    T2["تعارض تصمیم‌گیری"]
+    T3["نبود چارچوب RACI"]
+    T4["ضعف پاسخگویی"]
+end
+
+%% --- Preventive Barriers ---
+subgraph PB["موانع پیشگیرانه"]
+
+    subgraph U1["🏥 دانشگاه علوم پزشکی"]
+        P1["حکمرانی داده"]
+        P2["سیاست‌های اخلاقی و دسترسی"]
+        P3["تصویب نقش‌ها (RACI)"]
+        P4["کمیته راهبری و اخلاق"]
+    end
+
+    subgraph E1["🧑‍💻 بخش مهندسی"]
+        P5["پیاده‌سازی سیستم نقش‌ها"]
+        P6["کنترل دسترسی نرم‌افزاری"]
+        P7["داشبورد پایش پروژه"]
+    end
+
+    subgraph S1["🔗 مشترک"]
+        P8["SLA و استاندارد همکاری"]
+        P9["مالکیت هر کنترل ریسک"]
+    end
+
+end
+
+%% --- Top Event ---
+subgraph TE["رویداد مرکزی"]
+    TE1["شکست در هماهنگی اجرایی پروژه"]
+end
+
+%% --- Mitigative Barriers ---
+subgraph MB["موانع کاهش پیامد"]
+
+    subgraph U2["🏥 دانشگاه علوم پزشکی"]
+        M1["حل اختلاف در کمیته راهبری"]
+        M2["اصلاح سیاست‌ها"]
+        M3["نظارت اخلاقی و قانونی"]
+    end
+
+    subgraph E2["🧑‍💻 بخش مهندسی"]
+        M4["اصلاح فنی سریع سیستم"]
+        M5["گزارش خطا و مانیتورینگ"]
+        M6["بازیابی نسخه پایدار"]
+    end
+
+    subgraph S2["🔗 مشترک"]
+        M7["پایش شاخص‌های عملکرد"]
+        M8["جلسات بازبینی دوره‌ای"]
+    end
+
+end
+
+%% --- Consequences ---
+subgraph CS["پیامدها"]
+    C1["تأخیر پروژه"]
+    C2["شکست استقرار سامانه"]
+    C3["کاهش اعتماد سازمانی"]
+end
+
+%% --- Connections ---
+H --> T1
+H --> T2
+H --> T3
+H --> T4
+
+T1 --> P1
+T2 --> P4
+T3 --> P3
+T4 --> P5
+
+P1 --> TE1
+P2 --> TE1
+P3 --> TE1
+P4 --> TE1
+P5 --> TE1
+P6 --> TE1
+P7 --> TE1
+P8 --> TE1
+P9 --> TE1
+
+TE1 --> M1
+TE1 --> M4
+TE1 --> M7
+
+M1 --> C1
+M4 --> C2
+M7 --> C3
+
+%% --- Styles ---
+style H fill:#ffcc00,stroke:#333,stroke-width:3px
+style TE1 fill:#ff3333,color:#fff,stroke-width:3px
+
+style T1 fill:#99ccff
+style T2 fill:#99ccff
+style T3 fill:#99ccff
+style T4 fill:#99ccff
+
+style P1 fill:#99ff99
+style P2 fill:#99ff99
+style P3 fill:#99ff99
+style P4 fill:#99ff99
+style P5 fill:#99ff99
+style P6 fill:#99ff99
+style P7 fill:#99ff99
+style P8 fill:#99ff99
+style P9 fill:#99ff99
+
+style M1 fill:#ffcc99
+style M4 fill:#ffcc99
+style M7 fill:#ffcc99
+
+style C1 fill:#cccccc
+style C2 fill:#cccccc
+style C3 fill:#cccccc
+
 ```
 
 # مقدمه و چکیده
