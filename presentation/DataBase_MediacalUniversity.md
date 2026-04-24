@@ -14,6 +14,172 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
+# چکیده
+
+
+## عدم تحقق/عدم پیاده‌سازی پلتفرم
+
+```mermaid
+flowchart LR
+
+%% --- Hazard ---
+subgraph HZ["Hazard"]
+    H["پیچیدگی مدیریت داده‌های پزشکی در مقیاس ملی"]
+end
+
+%% --- Threats ---
+subgraph TH["Threats / Causes"]
+    T1["مقاومت سازمانی"]
+    T2["عدم استانداردسازی"]
+    T3["کمبود منابع"]
+    T4["چالش‌های حقوقی"]
+end
+
+%% --- Preventive Barriers ---
+subgraph PB["Preventive Barriers"]
+    P1["Data Governance Framework"]
+    P2["استانداردهای ملی (FHIR/OMOP)"]
+    P3["تأمین بودجه و فازبندی"]
+    P4["چارچوب حقوقی شفاف"]
+end
+
+%% --- Top Event ---
+subgraph TE["Top Event"]
+    TE1["عدم استقرار پلتفرم داده"]
+end
+
+%% --- Mitigative Barriers ---
+subgraph MB["Mitigative Barriers"]
+    M1["اجرای MVP / پایلوت"]
+    M2["بازطراحی تدریجی"]
+    M3["بهینه‌سازی با AI"]
+end
+
+%% --- Consequences ---
+subgraph CS["Consequences"]
+    C1["تداوم پراکندگی داده"]
+    C2["عقب‌ماندگی در AI پزشکی"]
+    C3["کاهش بهره‌وری علمی"]
+end
+
+%% --- Connections ---
+H --> T1
+H --> T2
+H --> T3
+H --> T4
+
+T1 --> P1
+T2 --> P2
+T3 --> P3
+T4 --> P4
+
+P1 --> TE1
+P2 --> TE1
+P3 --> TE1
+P4 --> TE1
+
+TE1 --> M1
+TE1 --> M2
+TE1 --> M3
+
+M1 --> C1
+M2 --> C2
+M3 --> C3
+
+%% --- Styles ---
+style H fill:#ffcc00,stroke:#333,stroke-width:3px
+style T1 fill:#99ccff
+style T2 fill:#99ccff
+style T3 fill:#99ccff
+style T4 fill:#99ccff
+style P1 fill:#99ff99
+style P2 fill:#99ff99
+style P3 fill:#99ff99
+style P4 fill:#99ff99
+style TE1 fill:#ff3333,color:#fff,stroke-width:3px
+style M1 fill:#ffcc99
+style M2 fill:#ffcc99
+style M3 fill:#ffcc99
+style C1 fill:#cccccc
+style C2 fill:#cccccc
+style C3 fill:#cccccc
+```
+## نشت/دسترسی غیرمجاز داده
+
+```mermaid
+flowchart LR
+
+%% --- Hazard ---
+subgraph HZ["Hazard"]
+    H["تمرکز داده‌های حساس پزشکی"]
+end
+
+%% --- Threats ---
+subgraph TH["Threats"]
+    T1["حمله سایبری"]
+    T2["عدم استانداردسازی"]
+    T3["خطای انسانی"]
+end
+
+%% --- Preventive Barriers ---
+subgraph PB["Preventive Barriers"]
+    P1["رمزنگاری TLS/AES"]
+    P2["کنترل دسترسی RBAC"]
+    P3["استانداردسازی داده"]
+end
+
+%% --- Top Event ---
+subgraph TE["Top Event"]
+    TE1["نشت/دسترسی غیرمجاز داده"]
+end
+
+%% --- Mitigative Barriers ---
+subgraph MB["Mitigative Barriers"]
+    M1["IDS/IPS"]
+    M2["Incident Response + Backup"]
+end
+
+%% --- Consequences ---
+subgraph CS["Consequences"]
+    C1["نقض حریم خصوصی"]
+    C2["اختلال پژوهشی"]
+end
+
+%% --- Connections ---
+H --> T1
+H --> T2
+H --> T3
+
+T1 --> P1
+T2 --> P3
+T3 --> P2
+
+P1 --> TE1
+P2 --> TE1
+P3 --> TE1
+
+TE1 --> M1
+TE1 --> M2
+
+M1 --> C1
+M2 --> C2
+
+%% --- Styles ---
+style H fill:#ffcc00,stroke:#333,stroke-width:3px
+style T1 fill:#99ccff
+style T2 fill:#99ccff
+style T3 fill:#99ccff
+style P1 fill:#99ff99
+style P2 fill:#99ff99
+style P3 fill:#99ff99
+style TE1 fill:#ff6666,color:#fff,stroke-width:3px
+style M1 fill:#ffcc99
+style M2 fill:#ffcc99
+style C1 fill:#cccccc
+style C2 fill:#cccccc
+```
+
+
 # مقدمه و چکیده
 
 در سال‌های اخیر، نظام پژوهش پزشکی در ایران شاهد تولید حجم قابل‌توجهی از داده‌های ارزشمند توسط دانشجویان، مراکز تحقیقاتی و دانشگاه‌های علوم پزشکی بوده است. با این حال، به‌دلیل نبود یک زیرساخت ملی یکپارچه، این داده‌ها غالباً به‌صورت پراکنده، ناهمگون و غیرقابل‌اشتراک باقی می‌مانند و در عمل، بخش قابل‌توجهی از ظرفیت علمی کشور بلااستفاده می‌ماند. این چالش، به‌ویژه در عصر توسعه روش‌های داده‌محور در پزشکی—از جمله یادگیری ماشین، یادگیری عمیق، پردازش تصویر پزشکی و تحلیل سیگنال‌های زیستی—اهمیت دوچندان یافته است؛ چراکه پیشرفت در این حوزه‌ها مستقیماً وابسته به دسترسی به داده‌های باکیفیت، ساختاریافته و قابل استفاده مجدد است.
