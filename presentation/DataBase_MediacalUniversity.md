@@ -145,7 +145,7 @@ end
 %% --- Mitigative Barriers ---
 subgraph MB["Mitigative Barriers"]
     M1["IDS/IPS"]
-    M2["Incident Response + Backup"]
+    M2["پاسخ به حادثه + پشتیبان گیری"]
 end
 
 %% --- Consequences ---
