@@ -16,11 +16,6 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
-<div class="english-text">
-<strong>
-  UniForCE
-</strong>
-</div>
 
 ## نویسنده
 

@@ -229,8 +229,19 @@ Generalization Error</strong>
 </div>
 <a href="/teaching/patterneffort/nlp_libraries_comparison" style="text-decoration:underline; color:green;" target="_blank"><strong> بهینه‌سازی غیرخطی (NLP) — مقایسه کتابخانه‌ها در پایتون </strong></a>
 
-<!--34-->
+<!--35-->
 <div class="english-text">
 <strong>CVXPY Guidance</strong>
 </div>
 <a href="/teaching/patterneffort/cvxpy_guidance" style="text-decoration:underline; color:green;" target="_blank"><strong> CVXPY - راهنمای جامع بهینه سازی محدب با </strong></a>
+
+<!--36-->
+<strong>lang chain intro</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/lang_chain_intro" style="text-decoration:underline; color:green;" target="_blank"><strong>لنگچین</strong></a>
+
+<!--37-->
+<div class="english-text">
+<strong>n8n Workflow Automation & Integration System</strong>
+</div>
+<a href="/teaching/studenteffort/patterneffort/n8nOverviewfa" style="text-decoration:underline; color:green;" target="_blank"><strong>سیستم اتوماسیون و یکپارچه‌سازی گردش کار n8n</strong></a>
