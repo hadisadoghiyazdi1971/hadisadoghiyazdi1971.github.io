@@ -193,7 +193,7 @@ header:
   <!-- 12  پروژه  -->
   <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
     <a href="/presentation/EmkanAI/" style="text-decoration: none; color: inherit;">
-      <img src="/assets/Presentationimages/EmkanAI/MainIco_DB_MU.png" 
+      <img src="/assets/Presentationimages/EmkanAI/MainIco_EmkanAI.png" 
            alt="Presentation3" 
            class="project-image"
            style="width: 100%; height: 200px; object-fit: cover; display: block;">
