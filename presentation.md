@@ -189,6 +189,21 @@ header:
     </a>
   </div>
 
+
+  <!-- 12  پروژه  -->
+  <div class="project-card" style="width: calc(33.33% - 20px); border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 20px;">
+    <a href="/presentation/EmkanAI/" style="text-decoration: none; color: inherit;">
+      <img src="/assets/Presentationimages/EmkanAI/MainIco_DB_MU.png" 
+           alt="Presentation3" 
+           class="project-image"
+           style="width: 100%; height: 200px; object-fit: cover; display: block;">
+      <div class="project-content" style="padding: 10px;">
+        <h3 class="project-title" style="font-size: 16px; font-weight: bold; margin: 0 0 10px;">
+پروژه امکان؛ از آموزش هوش مصنوعی تا مهارت، نمونه‌کار و استقلال حرفه‌ای        </h3>
+      </div>
+    </a>
+  </div>
+
   <!-- 111 -->
 
   <!-- پروژه 9 -->
