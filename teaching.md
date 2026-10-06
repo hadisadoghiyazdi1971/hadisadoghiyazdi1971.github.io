@@ -59,7 +59,7 @@ header:
       </a>
     </div>
     <div class="project-card">
-      <a href="[/teaching/signal-processing/](https://laboratorypatternrecognition.github.io/SignalSystem/SignalSystemStart.html)">
+      <a href="[/teaching/signal-processing/](https://laboratorypatternrecognition.github.io/SignalSystem/SignalSystemStart.html">
         <img src="{{ '/assets/images/ECG_1.jpg' | relative_url }}" 
              alt="Signal Processing" 
              class="project-image">
