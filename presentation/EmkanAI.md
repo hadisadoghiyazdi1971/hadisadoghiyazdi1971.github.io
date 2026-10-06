@@ -26,97 +26,73 @@ header:
 
 ---
 ```mermaid
-graph LR;
-
+flowchart LR
     %% -------- Threats --------
-    C1["ریزش، بی‌انگیزگی و ناتمام ماندن مسیر"];
-    C2["آموزش نظری یا کپی‌کاری با AI بدون فهم واقعی"];
-    C3["وابستگی به اینترنت، یک سرویس AI یا زیرساخت ناپایدار"];
-    C4["گواهی بدون مهارت و نبود پیوند واقعی با صنعت"];
-    C5["پروژه نامتناسب با سن، داده حساس یا مسئله پرریسک"];
+    C1["<b>Dropout</b><br>ریزش و بی‌انگیزگی"]
+    C2["<b>Shallow Learning</b><br>یادگیری سطحی و کپی با AI"]
+    C3["<b>Technology Dependency</b><br>وابستگی به ابزار و اینترنت"]
+    C4["<b>Market Disconnect</b><br>فاصله آموزش از بازار واقعی"]
 
     %% -------- Preventive Barriers --------
-    PB1["پذیرش و هدایت آموزشی + پایش هفتگی + موفقیت‌های کوتاه"];
-    PB2["آموزش پروژه‌محور + دفاع شفاهی + آزمون تغییر کد + Commit History"];
-    PB3["طراحی Vendor-Neutral + محتوای آفلاین + ابزار جایگزین"];
-    PB4["پرتفولیو + Brief واقعی + منتور + شریک صنعتی"];
-    PB5["غربال سن، ایمنی، محرمانگی و مالکیت پیش از پروژه"];
+    PB1["<b>Learning Support</b><br>پذیرش، هدایت و پایش مستمر"]
+    PB2["<b>Project-Based Learning</b><br>پروژه، دفاع و سنجش عملی"]
+    PB3["<b>Resilient Infrastructure</b><br>ابزار جایگزین و طراحی مستقل از سرویس"]
+    PB4["<b>Industry Connection</b><br>پرتفولیو، منتور و پروژه واقعی"]
 
     %% -------- Top Event --------
-    TE(("Top Event: پایان دوره بدون مهارت قابل اثبات و بدون مسیر حرفه‌ای واقعی"));
+    TE(("🔥 <b>Top Event</b><br>شکست تبدیل آموزش<br>به توانمندی واقعی"))
 
     %% -------- Hazard --------
-    H["Hazard: شکاف میان آموزش فناوری و توان ورود واقعی به اقتصاد دیجیتال"];
+    H["<b>Hazard</b><br>شکاف آموزش و اقتصاد دیجیتال"]
 
     %% -------- Mitigative Barriers --------
-    MB1["منتورینگ جبرانی و مسیر رفع ضعف"];
-    MB2["بازطراحی پروژه نهایی و تکمیل پرتفولیو"];
-    MB3["بازخورد بیرونی، Demo Day و اتصال مجدد به پروژه واقعی"];
-    MB4["پیگیری ۶ و ۱۲ ماهه و هدایت به مسیر تخصص، کارآموزی یا ادامه آموزش"];
+    MB1["<b>Remedial Mentoring</b><br>منتورینگ و رفع ضعف"]
+    MB2["<b>Portfolio Recovery</b><br>تکمیل پروژه و پرتفولیو"]
+    MB3["<b>Industry Reconnection</b><br>بازخورد بیرونی و Demo Day"]
+    MB4["<b>Follow-up Pathway</b><br>پیگیری و هدایت پس از دوره"]
 
     %% -------- Consequences --------
-    CO1["گواهی بدون ارزش واقعی در بازار"];
-    CO2["نبود نمونه‌کار قابل ارائه به کارفرما"];
-    CO3["اتلاف زمان، تجهیزات و منابع آموزشی"];
-    CO4["قطع ارتباط با صنعت و فرصت‌های واقعی"];
-    CO5["تداوم وابستگی و نامشخص ماندن مسیر آینده"];
-
-    %% -------- Final Design Target --------
-    G["هدف نهایی طرح: مهارت واقعی + نمونه‌کار واقعی + شبکه حرفه‌ای واقعی + مسیر آینده"];
+    CO1["<b>Weak Credential</b><br>گواهی بدون ارزش واقعی"]
+    CO2["<b>No Portfolio</b><br>نبود نمونه‌کار قابل ارائه"]
+    CO3["<b>Resource Waste</b><br>اتلاف منابع آموزشی"]
+    CO4["<b>Unclear Future Path</b><br>نامشخص ماندن مسیر آینده"]
 
     %% -------- Connections --------
-    C1 --> PB1 --> TE;
-    C2 --> PB2 --> TE;
-    C3 --> PB3 --> TE;
-    C4 --> PB4 --> TE;
-    C5 --> PB5 --> TE;
+    C1 --> PB1 --> TE
+    C2 --> PB2 --> TE
+    C3 --> PB3 --> TE
+    C4 --> PB4 --> TE
 
-    H --- TE;
+    H --- TE
 
-    TE --> MB1 --> CO1;
-    TE --> MB2 --> CO2;
-    TE --> MB3 --> CO3;
-    TE --> MB3 --> CO4;
-    TE --> MB4 --> CO5;
-
-    PB1 -.-> G;
-    PB2 -.-> G;
-    PB3 -.-> G;
-    PB4 -.-> G;
-    PB5 -.-> G;
-    MB1 -.-> G;
-    MB2 -.-> G;
-    MB3 -.-> G;
-    MB4 -.-> G;
+    TE --> MB1 --> CO1
+    TE --> MB2 --> CO2
+    TE --> MB3 --> CO3
+    TE --> MB4 --> CO4
 
     %% -------- Styling --------
-    style C1 fill:#99ccff,stroke:#333;
-    style C2 fill:#99ccff,stroke:#333;
-    style C3 fill:#99ccff,stroke:#333;
-    style C4 fill:#99ccff,stroke:#333;
-    style C5 fill:#99ccff,stroke:#333;
+    style C1 fill:#99ccff,stroke:#333
+    style C2 fill:#99ccff,stroke:#333
+    style C3 fill:#99ccff,stroke:#333
+    style C4 fill:#99ccff,stroke:#333
 
-    style PB1 fill:#cce5cc,stroke:#333;
-    style PB2 fill:#cce5cc,stroke:#333;
-    style PB3 fill:#cce5cc,stroke:#333;
-    style PB4 fill:#cce5cc,stroke:#333;
-    style PB5 fill:#cce5cc,stroke:#333;
+    style PB1 fill:#cce5cc,stroke:#333
+    style PB2 fill:#cce5cc,stroke:#333
+    style PB3 fill:#cce5cc,stroke:#333
+    style PB4 fill:#cce5cc,stroke:#333
 
-    style TE fill:#ff4d4d,stroke:#333,stroke-width:3px,color:#fff;
-    style H fill:#ffff99,stroke:#333,stroke-width:2px;
+    style TE fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
+    style H fill:#ffff99,stroke:#333,stroke-width:2px
 
-    style MB1 fill:#ffe6cc,stroke:#333;
-    style MB2 fill:#ffe6cc,stroke:#333;
-    style MB3 fill:#ffe6cc,stroke:#333;
-    style MB4 fill:#ffe6cc,stroke:#333;
+    style MB1 fill:#ffe6cc,stroke:#333
+    style MB2 fill:#ffe6cc,stroke:#333
+    style MB3 fill:#ffe6cc,stroke:#333
+    style MB4 fill:#ffe6cc,stroke:#333
 
-    style CO1 fill:#ff9999,stroke:#333;
-    style CO2 fill:#ff9999,stroke:#333;
-    style CO3 fill:#ff9999,stroke:#333;
-    style CO4 fill:#ff9999,stroke:#333;
-    style CO5 fill:#ff9999,stroke:#333;
-
-    style G fill:#123F52,stroke:#D6A52B,stroke-width:3px,color:#fff;
+    style CO1 fill:#ff9999,stroke:#333
+    style CO2 fill:#ff9999,stroke:#333
+    style CO3 fill:#ff9999,stroke:#333
+    style CO4 fill:#ff9999,stroke:#333
 ```
 
 
